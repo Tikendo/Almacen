@@ -1,0 +1,21 @@
+# -----------------------------------------------
+# TiKendo - automatizaciondealmacen.com
+# Hostinger / Apache
+# -----------------------------------------------
+
+# Activar motor de reescritura
+RewriteEngine On
+
+# Redirigir URLs con .html a la versión sin extensión (301 permanente)
+# Evita contenido duplicado en Google
+RewriteCond %{THE_REQUEST} /([^.]+)\.html [NC]
+RewriteRule ^ /%1 [NC,L,R=301]
+
+# Servir archivos .html cuando se pida la URL sin extensión
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^([^\.]+)$ $1.html [NC,L]
+
+# Quitar barra final innecesaria (opcional pero recomendado)
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)/$ /$1 [L,R=301]
