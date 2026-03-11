@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Productos para Automatización de Almacén en México | TiKendo</title>
+    <meta name="description" content="Catálogo de productos tecnológicos para almacén: impresoras de etiquetas, escáneres de código de barras, tecnología RFID, computadoras móviles y WMS. Marcas Zebra, Honeywell y más.">
+    <link rel="canonical" href="https://automatizaciondealmacen.com/productos.html">
+    <meta property="og:title" content="Productos para Automatización de Almacén | TiKendo">
+    <meta property="og:description" content="Soluciones tecnológicas para almacén: impresoras de etiquetas, escáneres, RFID, computadoras móviles y WMS en México.">
+    <meta property="og:url" content="https://automatizaciondealmacen.com/productos.html">
+    <meta property="og:type" content="website">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "name": "Productos para Automatización de Almacén",
+      "url": "https://automatizaciondealmacen.com/productos.html",
+      "numberOfItems": 6,
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Impresoras de Etiquetas", "url": "https://automatizaciondealmacen.com/impresoras-de-etiquetas.html" },
+        { "@type": "ListItem", "position": 2, "name": "Escáneres de Código de Barras", "url": "https://automatizaciondealmacen.com/escaneres-codigo-barras.html" },
+        { "@type": "ListItem", "position": 3, "name": "Computadoras para Almacén", "url": "https://automatizaciondealmacen.com/computadoras-para-almacen.html" },
+        { "@type": "ListItem", "position": 4, "name": "Tecnología RFID", "url": "https://automatizaciondealmacen.com/tecnologia-rfid.html" },
+        { "@type": "ListItem", "position": 5, "name": "Suministros y Refacciones", "url": "https://automatizaciondealmacen.com/suministros-y-refacciones.html" },
+        { "@type": "ListItem", "position": 6, "name": "Sistemas de Gestión de Almacén WMS", "url": "https://automatizaciondealmacen.com/sistemas-gestion-almacen-wms.html" }
+      ]
+    }
+    </script>
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
+    <link rel="stylesheet" href="assets/css/vendor.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <style>
+        :root {
+            --naranja:      #FA4318;
+            --naranja-dark: #d93610;
+            --blanco:       #ffffff;
+            --gris-claro:   #f9f9f9;
+            --texto:        #333333;    
+            --texto-suave:  #666666;
+        }
+        /* Hero */
+        .hero-productos { position: relative; min-height: 340px; display: flex; align-items: center; overflow: hidden; }
+        .hero-bg { position: absolute; inset: 0; background-image: url('assets/img/banner/1.jpg'); background-size: cover; background-position: center; }
+        .hero-overlay { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(0,0,0,0.78) 0%, rgba(0,0,0,0.28) 100%); }
+        .hero-content { position: relative; z-index: 2; padding: 70px 0 55px; }
+        .hero-tag { display: inline-block; background: var(--naranja); color: #fff; font-size: 11px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; padding: 5px 14px; border-radius: 3px; margin-bottom: 18px; }
+        .hero-content h1 { color: #fff; font-size: 44px; font-weight: 800; margin-bottom: 14px; line-height: 1.2; max-width: 640px; }
+        .hero-content h1 span { color: var(--naranja); }
+        .hero-content p { color: rgba(255,255,255,0.85); font-size: 16px; margin-bottom: 22px; max-width: 520px; }
+        .breadcrumb-list { display: flex; align-items: center; gap: 8px; list-style: none; padding: 0; margin: 0; }
+        .breadcrumb-list li { color: rgba(255,255,255,0.5); font-size: 13px; }
+        .breadcrumb-list li a { color: rgba(255,255,255,0.85); text-decoration: none; }
+        .breadcrumb-list li a:hover { color: var(--naranja); }
+        .breadcrumb-list li.sep { color: rgba(255,255,255,0.3); }
+        /* Marcas */
+        .brands-strip { background: var(--blanco); padding: 22px 0; border-bottom: 1px solid #eee; }
+        .brands-inner { display: flex; align-items: center; justify-content: center; gap: 36px; flex-wrap: wrap; }
+        .brands-label { font-size: 11px; font-weight: 700; color: #bbb; text-transform: uppercase; letter-spacing: 1.5px; }
+        .brands-strip img { height: 32px; object-fit: contain; filter: grayscale(100%); opacity: 0.5; transition: all .25s; }
+        .brands-strip img:hover { filter: grayscale(0%); opacity: 1; }
+        /* Filtros */
+        .filter-bar { background: var(--blanco); border-bottom: 2px solid #eee; padding: 13px 0; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 8px rgba(0,0,0,0.05); }
+        .filter-inner { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+        .filter-label { font-size: 11px; font-weight: 700; color: #aaa; text-transform: uppercase; letter-spacing: 1px; }
+        .filter-btn { padding: 6px 18px; border-radius: 20px; border: 1.5px solid #ddd; background: var(--blanco); font-size: 13px; color: var(--texto-suave); cursor: pointer; transition: all .2s; font-weight: 500; }
+        .filter-btn:hover, .filter-btn.active { border-color: var(--naranja); background: var(--naranja); color: #fff; }
+        /* Sección */
+        .products-area { padding: 60px 0 80px; background: var(--gris-claro); }
+        .section-header { text-align: center; margin-bottom: 8px; }
+        .section-header .subtitle { display: inline-block; font-size: 11px; font-weight: 700; letter-spacing: 2.5px; text-transform: uppercase; color: var(--naranja); margin-bottom: 10px; }
+        .section-header h2 { font-size: 28px; font-weight: 700; color: var(--texto); margin-bottom: 12px; }
+        .section-header p { color: var(--texto-suave); font-size: 15px; max-width: 580px; margin: 0 auto; }
+        /* Grid */
+        .products-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 26px; margin-top: 40px; }
+        @media(max-width:991px){ .products-grid { grid-template-columns: repeat(2,1fr); } }
+        @media(max-width:575px){ .products-grid { grid-template-columns: 1fr; } }
+        /* Card */
+        .product-card { background: var(--blanco); border-radius: 10px; overflow: hidden; box-shadow: 0 2px 12px rgba(0,0,0,0.07); transition: transform .3s, box-shadow .3s, border-bottom-color .3s; display: flex; flex-direction: column; text-decoration: none; color: inherit; border-bottom: 3px solid transparent; }
+        .product-card:hover { transform: translateY(-6px); box-shadow: 0 14px 36px rgba(250,67,24,0.14); border-bottom-color: var(--naranja); text-decoration: none; color: inherit; }
+        .card-img { position: relative; height: 210px; overflow: hidden; background: #f5f5f5; }
+        .card-img img.main { width: 100%; height: 100%; object-fit: cover; transition: transform .4s; }
+        .product-card:hover .card-img img.main { transform: scale(1.05); }
+        .card-badge { position: absolute; top: 12px; left: 12px; background: var(--naranja); color: #fff; font-size: 10px; font-weight: 700; padding: 3px 10px; border-radius: 3px; text-transform: uppercase; letter-spacing: 1px; }
+        .card-badge.software { background: #2e7d32; }
+        .card-icon { position: absolute; bottom: 0px; right: 16px; width: 44px; height: 44px; background: var(--blanco); border-radius: 50%; box-shadow: 0 4px 12px rgba(0,0,0,0.12); display: flex; align-items: center; justify-content: center; }
+        .card-icon img { width: 26px; height: 26px; object-fit: contain; }
+        .card-body { padding: 30px 22px 22px; flex: 1; display: flex; flex-direction: column; }
+        .card-body h3 { font-size: 16px; font-weight: 700; color: var(--texto); margin-bottom: 10px; line-height: 1.3; transition: color .2s; }
+        .product-card:hover .card-body h3 { color: var(--naranja); }
+        .card-body p { font-size: 13px; color: var(--texto-suave); line-height: 1.65; margin-bottom: 14px; flex: 1; }
+        .card-tags { display: flex; flex-wrap: wrap; gap: 5px; margin-bottom: 18px; }
+        .tag { font-size: 11px; padding: 3px 10px; background: #fff3f0; color: var(--naranja); border-radius: 3px; font-weight: 600; border: 1px solid #ffd5cc; }
+        .card-footer-row { display: flex; align-items: center; justify-content: space-between; padding-top: 14px; border-top: 1px solid #f0f0f0; }
+        .btn-ver { background: var(--naranja); color: #fff; padding: 8px 18px; border-radius: 5px; font-size: 13px; font-weight: 600; text-decoration: none; transition: background .2s; }
+        .btn-ver:hover { background: var(--naranja-dark); color: #fff; text-decoration: none; }
+        .btn-cot { color: var(--naranja); font-size: 13px; font-weight: 600; text-decoration: none; }
+        .btn-cot:hover { color: var(--naranja-dark); text-decoration: underline; }
+        /* Stats */
+        .stats-row { display: flex; justify-content: center; gap: 60px; flex-wrap: wrap; margin-top: 50px; padding-top: 40px; border-top: 1px solid #e5e5e5; }
+        .stat-item { text-align: center; }
+        .stat-num { font-size: 40px; font-weight: 800; color: var(--naranja); display: block; line-height: 1; }
+        .stat-lbl { font-size: 11px; color: #999; text-transform: uppercase; letter-spacing: .5px; margin-top: 6px; display: block; }
+        /* CTA */
+        .cta-banner { background: var(--naranja); padding: 60px 0; text-align: center; color: #fff; }
+        .cta-banner h2 { font-size: 30px; font-weight: 800; margin-bottom: 10px; }
+        .cta-banner p  { font-size: 16px; opacity: .92; margin-bottom: 28px; color: #fff; }
+        .btn-blanco { background: #fff; color: var(--naranja); padding: 13px 36px; border-radius: 5px; font-weight: 700; font-size: 15px; text-decoration: none; display: inline-block; transition: transform .2s, box-shadow .2s; }
+        .btn-blanco:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,0.2); color: var(--naranja); text-decoration: none; }
+    </style>
+</head>
+<body>
+
+    <!-- WhatsApp -->
+    <div class="whatsapp-icon">
+        <a href="https://wa.me/525549022481?text=Hola%20me%20gustaría%20saber%20más%20sobre%20los%20productos%20de%20almacén." target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="Contactar a TiKendo por WhatsApp">
+        </a>
+    </div>
+
+    <!-- Navbar -->
+    <header class="navbar-area">
+        <nav class="navbar navbar-area-2 navbar-area navbar-expand-lg">
+            <div class="container nav-container">
+                <div class="responsive-mobile-menu">
+                    <button class="menu toggle-btn d-block d-lg-none" data-target="#transpro_main_menu" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="icon-left"></span>
+                        <span class="icon-right"></span>
+                    </button>
+                </div>
+                <div class="logo">
+                    <a href="index.html" class="logo-1">
+                        <img src="assets/img/home-2/logo_1.png" alt="TiKendo - Soluciones para automatización de almacén">
+                    </a>
+                    <a href="index.html" class="logo-2">
+                        <img src="assets/img/logo-2.png" alt="TiKendo logo">
+                    </a>
+                </div>
+                <div class="nav-right-part nav-right-part-mobile">
+                    <a class="btn btn-base" href="index.html#Formulario">Solicita una cotización</a>
+                </div>
+                <div class="collapse navbar-collapse" id="transpro_main_menu">
+                    <ul class="navbar-nav menu-open text-end">
+                        <li><a href="index.html#nosotros">Nosotros</a></li>
+                        <li><a href="index.html#servicios">Servicios</a></li>
+                        <li><a href="productos.html" style="color:var(--naranja);font-weight:700;">Productos</a></li>
+                        <li><a href="index.html#soluciones">Soluciones</a></li>
+                        <li><a href="index.html#FAQ">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="nav-right-part nav-right-part-desktop">
+                    <a class="btn btn-base" href="index.html#Formulario">Solicita una cotización</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero -->
+    <div class="hero-productos">
+        <div class="hero-bg"></div>
+        <div class="hero-overlay"></div>
+        <div class="container hero-content"><br><br><br>
+            <span class="hero-tag">Catálogo</span>
+            <h1>Productos para <span>Automatización</span><br>de Almacén en México</h1>
+            <p>Soluciones tecnológicas de las mejores marcas para optimizar cada proceso de tu cadena de suministro.</p>
+            <ul class="breadcrumb-list">
+                <li><a href="/">Inicio</a></li>
+                <li class="sep">›</li>
+                <li>Productos</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Marcas -->
+    <div class="brands-strip">
+        <div class="container">
+            <div class="brands-inner">
+                <span class="brands-label">Marcas:</span>
+                <img src="assets/img/partner/zebra.png" alt="Zebra Technologies distribuidor autorizado México">
+                <img src="assets/img/partner/Honeywell.png" alt="Honeywell soluciones AIDC almacén">
+                <img src="assets/img/partner/Datalogic.png" alt="Datalogic escáneres código de barras">
+                <img src="assets/img/partner/Metapace.png" alt="Metapace impresoras etiquetas">
+                <img src="assets/img/partner/Odoo.png" alt="Odoo software WMS almacén">
+                <img src="assets/img/partner/Elo.png" alt="Elo pantallas táctiles punto de venta">
+            </div>
+        </div>
+    </div>
+
+    <!-- Filtros -->
+    <div class="filter-bar">
+        <div class="container">
+            <div class="filter-inner">
+                <span class="filter-label">Filtrar:</span>
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="hardware">Hardware</button>
+                <button class="filter-btn" data-filter="software">Software</button>
+                <button class="filter-btn" data-filter="suministros">Suministros</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Grid productos -->
+    <section class="products-area">
+        <div class="container">
+            <div class="section-header">
+                <span class="subtitle">Catálogo completo</span>
+                <h2>Tecnología para cada proceso de tu almacén</h2>
+                <p>Desde la recepción hasta el despacho, tenemos la solución ideal para automatizar tu operación.</p>
+            </div>
+            <div class="products-grid">
+
+                <!-- Impresoras -->
+                <a href="impresoras-de-etiquetas.html" class="product-card" data-category="hardware">
+                    <div class="card-img">
+                        <img class="main" src="assets/img/service/Impresora de etiquetas Zebra - TiKendo.png" alt="Impresora de etiquetas Zebra para almacén - TiKendo">
+                        <span class="card-badge">Popular</span>
+                        <div class="card-icon"><img src="assets/img/service/Soluciones de almacén - Impresiones de etiquetas.png" alt="Icono impresoras de etiquetas"></div>
+                    </div>
+                    <div class="card-body">
+                        <h3>Impresoras de Etiquetas</h3>
+                        <p>Soluciones de impresión de etiquetas de códigos de barras, tickets y rótulos. Modelos de escritorio, portátiles e industriales para cualquier volumen.</p>
+                        <div class="card-tags">
+                            <span class="tag">Zebra</span><span class="tag">Honeywell</span><span class="tag">RFID</span><span class="tag">Térmica</span>
+                        </div>
+                        <div class="card-footer-row">
+                            <span class="btn-ver">Ver productos</span>
+                            <a href="index.html#Formulario" class="btn-cot" onclick="event.stopPropagation()">Cotizar →</a>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Escáneres -->
+                <a href="escaneres-codigo-barras.html" class="product-card" data-category="hardware">
+                    <div class="card-img">
+                        <img class="main" src="assets/img/service/Escáner de código de barras - TiKendo.png" alt="Escáner de código de barras para almacén - TiKendo">
+                        <div class="card-icon"><img src="assets/img/service/Soluciones de almacén - Escáner de código de barras.png" alt="Icono escáneres código de barras"></div>
+                    </div>
+                    <div class="card-body">
+                        <h3>Escáneres de Código de Barras</h3>
+                        <p>Lectores 1D y 2D para cualquier entorno: de mano, manos libres, ultrarresistentes y de montaje fijo para almacén, retail y puntos de venta.</p>
+                        <div class="card-tags">
+                            <span class="tag">1D / 2D</span><span class="tag">Zebra</span><span class="tag">Datalogic</span><span class="tag">Resistentes</span>
+                        </div>
+                        <div class="card-footer-row">
+                            <span class="btn-ver">Ver productos</span>
+                            <a href="index.html#Formulario" class="btn-cot" onclick="event.stopPropagation()">Cotizar →</a>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Computadoras -->
+                <a href="computadoras-para-almacen.html" class="product-card" data-category="hardware">
+                    <div class="card-img">
+                        <img class="main" src="assets/img/service/Computadoras - TiKendo.png" alt="Computadoras móviles para almacén - TiKendo">
+                        <div class="card-icon"><img src="assets/img/service/Soluciones de almacén - Computadoras para almacén.png" alt="Icono computadoras para almacén"></div>
+                    </div>
+                    <div class="card-body">
+                        <h3>Computadoras para Almacén</h3>
+                        <p>Cómputo móvil para la cadena de suministro: handhelds, tablets, computadoras vestibles y para montaje vehicular con sistemas Android y Windows.</p>
+                        <div class="card-tags">
+                            <span class="tag">Handheld</span><span class="tag">Vestibles</span><span class="tag">Vehicular</span><span class="tag">Android</span>
+                        </div>
+                        <div class="card-footer-row">
+                            <span class="btn-ver">Ver productos</span>
+                            <a href="index.html#Formulario" class="btn-cot" onclick="event.stopPropagation()">Cotizar →</a>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- RFID -->
+                <a href="tecnologia-rfid.html" class="product-card" data-category="hardware">
+                    <div class="card-img">
+                        <img class="main" src="assets/img/service/Tecnología RFID - TiKendo.png" alt="Tecnología RFID para automatización de almacén - TiKendo">
+                        <div class="card-icon"><img src="assets/img/service/Soluciones de almacén - RFID.png" alt="Icono tecnología RFID"></div>
+                    </div>
+                    <div class="card-body">
+                        <h3>Tecnología RFID</h3>
+                        <p>Identificación por radiofrecuencia para seguimiento de inventario en tiempo real. Sin contacto visual, mayor velocidad y precisión en logística y manufactura.</p>
+                        <div class="card-tags">
+                            <span class="tag">Tiempo real</span><span class="tag">Inventario</span><span class="tag">Logística</span><span class="tag">Retail</span>
+                        </div>
+                        <div class="card-footer-row">
+                            <span class="btn-ver">Ver productos</span>
+                            <a href="index.html#Formulario" class="btn-cot" onclick="event.stopPropagation()">Cotizar →</a>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Suministros -->
+                <a href="suministros-y-refacciones.html" class="product-card" data-category="suministros">
+                    <div class="card-img">
+                        <img class="main" src="assets/img/service/Suministros y Refacciones - TiKendo.png" alt="Suministros y refacciones para impresoras y escáneres - TiKendo">
+                        <div class="card-icon"><img src="assets/img/service/Soluciones de almacén - Suministros y refacciones.png" alt="Icono suministros y refacciones"></div>
+                    </div>
+                    <div class="card-body">
+                        <h3>Suministros y Refacciones</h3>
+                        <p>Ribbons, etiquetas térmicas, cabezales de impresión y refacciones originales para impresoras Zebra, Honeywell y más. Mantén tu operación sin interrupciones.</p>
+                        <div class="card-tags">
+                            <span class="tag">Ribbons</span><span class="tag">Etiquetas</span><span class="tag">Cabezales</span><span class="tag">Originales</span>
+                        </div>
+                        <div class="card-footer-row">
+                            <span class="btn-ver">Ver productos</span>
+                            <a href="index.html#Formulario" class="btn-cot" onclick="event.stopPropagation()">Cotizar →</a>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- WMS -->
+                <a href="sistemas-gestion-almacen-wms.html" class="product-card" data-category="software">
+                    <div class="card-img">
+                        <img class="main" src="assets/img/service/Sistema de gestión de Almacén - TiKendo.png" alt="Sistema de gestión de almacén WMS - TiKendo">
+                        <span class="card-badge software">Software</span>
+                        <div class="card-icon"><img src="assets/img/service/Soluciones de almacén - Sistemas de gestión de almacén.png" alt="Icono sistema WMS"></div>
+                    </div>
+                    <div class="card-body">
+                        <h3>Sistemas de Gestión de Almacén WMS</h3>
+                        <p>Implementamos y desarrollamos sistemas WMS a la medida para controlar inventario, optimizar rutas de picking y mejorar la visibilidad de tu cadena de suministro.</p>
+                        <div class="card-tags">
+                            <span class="tag">WMS</span><span class="tag">Odoo</span><span class="tag">A la medida</span><span class="tag">Inventario</span>
+                        </div>
+                        <div class="card-footer-row">
+                            <span class="btn-ver">Ver productos</span>
+                            <a href="index.html#Formulario" class="btn-cot" onclick="event.stopPropagation()">Cotizar →</a>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+
+            <!-- Stats -->
+            <div class="stats-row">
+                <div class="stat-item"><span class="stat-num">32+</span><span class="stat-lbl">Marcas líderes</span></div>
+                <div class="stat-item"><span class="stat-num">186+</span><span class="stat-lbl">Proyectos realizados</span></div>
+                <div class="stat-item"><span class="stat-num">46+</span><span class="stat-lbl">Clientes satisfechos</span></div>
+                <div class="stat-item"><span class="stat-num">124+</span><span class="stat-lbl">Procesos automatizados</span></div>
+            </div>
+        </div>
+    </section>
+    
+
+
+    <!-- Footer -->
+    <section id="Contacto">
+        <footer class="footer-area">    
+        <!-- CTA -->
+            <div class="cta-banner">
+                <div class="container">
+                    <h2>¿No encuentras lo que buscas?</h2>
+                    <p>Cuéntanos tu necesidad y te recomendamos la solución ideal para tu almacén.</p>
+                    <a href="https://wa.me/525549022481?text=Hola%20me%20gustaría%20saber%20más%20sobre%20los%20productos%20de%20almacén." class="btn-blanco">Solicitar cotización ahora</a>
+                </div>
+            </div>
+
+            <div class="footer-top" style="background-image: url(assets/img/footer/bg.png);">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-4 col-md-6">
+                            <div class="single-footer-top">
+                                <div class="icon"><img src="assets/img/icon/map-marker.png" alt="Dirección TiKendo - San Mateo Atenco, Estado de México"></div>
+                                <div class="details">
+                                    <h6>DIRECCIÓN:</h6>
+                                    <p>Blvd. Solidaridad las Torres,</p>
+                                    <p>Álvaro Obregón, 52100 San Mateo Atenco, Méx.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="single-footer-top">
+                                <div class="icon"><img src="assets/img/icon/phone.png" alt="Teléfonos de contacto TiKendo"></div>
+                                <div class="details">
+                                    <h6>CONTÁCTANOS</h6>
+                                    <p>+52 55 1328 7995</p>
+                                    <p>+52 722 326 0677</p>
+                                    <p>ventas@tikendo.mx</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="single-footer-top after-none">
+                                <div class="icon"><img src="assets/img/icon/clock.png" alt="Horarios de atención TiKendo"></div>
+                                <div class="details">
+                                    <h6>HORARIOS DE ATENCIÓN</h6>
+                                    <p>Lunes a Viernes</p>
+                                    <p>9:00 hrs a 18:00 hrs.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="footer-bottom-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 text-lg-start text-center">
+                        <p>© Copyright 2025 By <a href="https://tikendo.com.mx">Tikendo S.A. de C.V.</a>, Todos los derechos reservados.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="back-to-top"><span class="back-top"><i class="fa fa-angle-up"></i></span></div>
+
+    <script src="assets/js/vendor.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                const filter = btn.dataset.filter;
+                document.querySelectorAll('.product-card').forEach(card => {
+                    card.style.display = (filter === 'all' || card.dataset.category === filter) ? 'flex' : 'none';
+                });
+            });
+        });
+    </script>
+</body>
+</html>

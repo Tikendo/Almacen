@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sistema de Gestión de Almacén (WMS) en México | Odoo y Más | TiKendo</title>
+    <meta name="description" content="Sistema WMS para almacén en México: control de inventario en tiempo real, picking, recepción y despacho. Implementación de Odoo WMS con soporte local. Cotiza hoy.">
+    <link rel="canonical" href="https://automatizaciondealmacen.com/sistemas-gestion-almacen-wms.html">
+    <meta property="og:title" content="Sistema WMS para Almacén en México | TiKendo">
+    <meta property="og:description" content="Implementación de WMS para almacén en México. Control de inventario en tiempo real, integración con ERP y hardware AIDC. Soporte local.">
+    <meta property="og:url" content="https://automatizaciondealmacen.com/sistemas-gestion-almacen-wms.html">
+    <meta property="og:type" content="website">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "name": "Sistema de Gestión de Almacén (WMS)",
+      "description": "Implementación de WMS para almacén en México. Control de inventario en tiempo real, picking, recepción, despacho e integración con ERP y hardware AIDC.",
+      "brand": { "@type": "Brand", "name": "Odoo" },
+      "offers": {
+        "@type": "Offer",
+        "url": "https://automatizaciondealmacen.com/sistemas-gestion-almacen-wms.html",
+        "priceCurrency": "MXN",
+        "availability": "https://schema.org/InStock",
+        "seller": { "@type": "Organization", "name": "TiKendo" }
+      }
+    }
+    </script>
+
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
+    <link rel="stylesheet" href="assets/css/vendor.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
+    <style>
+        :root {
+            --naranja:      #FA4318;
+            --naranja-dark: #d93610;
+            --blanco:       #ffffff;
+            --gris-claro:   #f9f9f9;
+            --texto:        #333333;
+            --texto-suave:  #666666;
+            --azul-wms:     #1a4fa0;
+        }
+        /* Hero */
+        .hero-productos { position: relative; min-height: 360px; display: flex; align-items: center; overflow: hidden; }
+        .hero-bg { position: absolute; inset: 0; background-image: url('assets/img/banner/Software-de-gestion-de-almacenes.jpg'); background-size: cover; background-position: center; }
+        .hero-overlay { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(10,30,70,0.88) 0%, rgba(10,30,70,0.35) 100%); }
+        .hero-content { position: relative; z-index: 2; padding: 75px 0 60px; }
+        .hero-tag { display: inline-block; background: var(--naranja); color: #fff; font-size: 11px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; padding: 5px 14px; border-radius: 3px; margin-bottom: 18px; }
+        .hero-content h1 { color: #fff; font-size: 44px; font-weight: 800; margin-bottom: 14px; line-height: 1.2; max-width: 680px; }
+        .hero-content h1 span { color: var(--naranja); }
+        .hero-content p { color: rgba(255,255,255,0.88); font-size: 16px; margin-bottom: 26px; max-width: 560px; line-height: 1.7; }
+        .hero-btns { display: flex; gap: 14px; flex-wrap: wrap; margin-bottom: 28px; }
+        .btn-naranja { background: var(--naranja); color: #fff; padding: 12px 28px; border-radius: 5px; font-weight: 700; font-size: 14px; text-decoration: none; transition: background .2s; }
+        .btn-naranja:hover { background: var(--naranja-dark); color: #fff; text-decoration: none; }
+        .btn-outline-white { background: transparent; color: #fff; padding: 12px 28px; border-radius: 5px; font-weight: 700; font-size: 14px; text-decoration: none; border: 2px solid rgba(255,255,255,0.6); transition: all .2s; }
+        .btn-outline-white:hover { background: rgba(255,255,255,0.1); color: #fff; text-decoration: none; }
+        .breadcrumb-list { display: flex; align-items: center; gap: 8px; list-style: none; padding: 0; margin: 0; }
+        .breadcrumb-list li { color: rgba(255,255,255,0.5); font-size: 13px; }
+        .breadcrumb-list li a { color: rgba(255,255,255,0.85); text-decoration: none; }
+        .breadcrumb-list li a:hover { color: var(--naranja); }
+        .breadcrumb-list li.sep { color: rgba(255,255,255,0.3); }
+        /* Stats strip */
+        .stats-strip { background: var(--naranja); padding: 32px 0; }
+        .stats-grid { display: grid; grid-template-columns: repeat(4,1fr); }
+        @media(max-width:767px){ .stats-grid { grid-template-columns: repeat(2,1fr); } }
+        .stat-item { text-align: center; padding: 16px; border-right: 1px solid rgba(255,255,255,0.25); }
+        .stat-item:last-child { border-right: none; }
+        .stat-item .num { font-size: 34px; font-weight: 800; color: #fff; line-height: 1; margin-bottom: 6px; }
+        .stat-item .label { font-size: 12px; color: rgba(255,255,255,0.88); }
+        /* Títulos */
+        .subtitle-tag { font-size: 11px; font-weight: 700; letter-spacing: 2.5px; text-transform: uppercase; color: var(--naranja); display: block; margin-bottom: 10px; }
+        .section-left h2 { font-size: 28px; font-weight: 700; color: var(--texto); margin-bottom: 14px; }
+        .section-left p { color: var(--texto-suave); font-size: 15px; line-height: 1.7; }
+        .section-center { text-align: center; }
+        .section-center h2 { font-size: 28px; font-weight: 700; color: var(--texto); margin-bottom: 14px; }
+        .section-center p { color: var(--texto-suave); font-size: 15px; max-width: 620px; margin: 0 auto; }
+        /* Funcionalidades */
+        .func-area { padding: 70px 0; background: var(--gris-claro); }
+        .func-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 20px; margin-top: 40px; }
+        @media(max-width:991px){ .func-grid { grid-template-columns: repeat(2,1fr); } }
+        @media(max-width:575px){ .func-grid { grid-template-columns: 1fr; } }
+        .func-card { background: var(--blanco); border-radius: 10px; padding: 28px 22px; border-top: 3px solid var(--naranja); transition: box-shadow .2s, transform .2s; }
+        .func-card:hover { box-shadow: 0 10px 30px rgba(250,67,24,0.1); transform: translateY(-3px); }
+        .func-icon { font-size: 32px; margin-bottom: 14px; }
+        .func-card h3 { font-size: 15px; font-weight: 700; color: var(--texto); margin-bottom: 10px; }
+        .func-card p { font-size: 13px; color: var(--texto-suave); line-height: 1.65; margin-bottom: 14px; }
+        .func-card ul { list-style: none; padding: 0; margin: 0; }
+        .func-card ul li { font-size: 12px; color: var(--texto-suave); padding: 3px 0; display: flex; gap: 7px; }
+        .func-card ul li::before { content: '›'; color: var(--naranja); font-weight: 700; }
+        /* Cómo funciona */
+        .proceso-area { padding: 70px 0; background: var(--blanco); }
+        .proceso-steps { display: grid; grid-template-columns: repeat(5,1fr); gap: 0; margin-top: 48px; position: relative; }
+        @media(max-width:991px){ .proceso-steps { grid-template-columns: repeat(3,1fr); gap: 24px; } }
+        @media(max-width:575px){ .proceso-steps { grid-template-columns: 1fr; gap: 16px; } }
+        .proceso-steps::before { content: ''; position: absolute; top: 36px; left: 10%; right: 10%; height: 2px; background: linear-gradient(90deg, var(--naranja), #ffa07a); z-index: 0; }
+        @media(max-width:991px){ .proceso-steps::before { display: none; } }
+        .paso { text-align: center; position: relative; z-index: 1; padding: 0 12px; }
+        .paso-num { width: 72px; height: 72px; border-radius: 50%; background: var(--naranja); color: #fff; font-size: 22px; font-weight: 800; display: flex; align-items: center; justify-content: center; margin: 0 auto 16px; box-shadow: 0 4px 16px rgba(250,67,24,0.3); }
+        .paso h4 { font-size: 13px; font-weight: 700; color: var(--texto); margin-bottom: 8px; }
+        .paso p { font-size: 12px; color: var(--texto-suave); line-height: 1.55; }
+        /* Integraciones */
+        .integ-area { padding: 70px 0; background: var(--gris-claro); }
+        .integ-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 24px; margin-top: 40px; }
+        @media(max-width:767px){ .integ-grid { grid-template-columns: 1fr; } }
+        .integ-col { background: var(--blanco); border-radius: 10px; padding: 30px 26px; }
+        .integ-col h3 { font-size: 15px; font-weight: 700; color: var(--texto); margin-bottom: 18px; display: flex; align-items: center; gap: 10px; }
+        .integ-items { display: flex; flex-wrap: wrap; gap: 10px; }
+        .integ-tag { font-size: 12px; padding: 6px 14px; border-radius: 5px; font-weight: 600; border: 1.5px solid #e5e5e5; color: var(--texto); background: var(--gris-claro); transition: border-color .2s; }
+        .integ-tag:hover { border-color: var(--naranja); color: var(--naranja); }
+        /* Especificaciones */
+        .specs-area { padding: 70px 0; background: var(--blanco); }
+        .specs-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 24px; margin-top: 40px; }
+        @media(max-width:991px){ .specs-grid { grid-template-columns: repeat(2,1fr); } }
+        @media(max-width:575px){ .specs-grid { grid-template-columns: 1fr; } }
+        .spec-card { background: var(--gris-claro); border-radius: 10px; padding: 28px 24px; }
+        .spec-icon { width: 44px; height: 44px; background: #fff3f0; border-radius: 8px; display: flex; align-items: center; justify-content: center; margin-bottom: 16px; font-size: 22px; }
+        .spec-card h4 { font-size: 14px; font-weight: 700; color: var(--texto); margin-bottom: 10px; }
+        .spec-table { width: 100%; }
+        .spec-table tr td { font-size: 13px; padding: 5px 0; border-bottom: 1px solid #eaeaea; }
+        .spec-table tr td:first-child { color: var(--texto-suave); width: 55%; }
+        .spec-table tr td:last-child { color: var(--texto); font-weight: 600; text-align: right; }
+        /* Industrias */
+        .industrias-area { padding: 70px 0; background: var(--gris-claro); }
+        .industrias-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 20px; margin-top: 40px; }
+        @media(max-width:991px){ .industrias-grid { grid-template-columns: repeat(2,1fr); } }
+        @media(max-width:575px){ .industrias-grid { grid-template-columns: 1fr; } }
+        .industria-card { background: var(--blanco); border-radius: 10px; padding: 28px 24px; border-left: 4px solid var(--naranja); transition: box-shadow .2s; }
+        .industria-card:hover { box-shadow: 0 8px 24px rgba(250,67,24,0.1); }
+        .ind-icon { font-size: 32px; margin-bottom: 14px; }
+        .industria-card h3 { font-size: 15px; font-weight: 700; color: var(--texto); margin-bottom: 10px; }
+        .industria-card p { font-size: 13px; color: var(--texto-suave); line-height: 1.6; margin-bottom: 12px; }
+        .industria-card ul { list-style: none; padding: 0; margin: 0; }
+        .industria-card ul li { font-size: 12px; color: var(--texto-suave); padding: 3px 0; display: flex; gap: 7px; align-items: flex-start; }
+        .industria-card ul li::before { content: '›'; color: var(--naranja); font-weight: 700; }
+        /* Por qué TiKendo */
+        .tikendo-area { padding: 70px 0; background: var(--blanco); }
+        .tikendo-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center; margin-top: 20px; }
+        @media(max-width:767px){ .tikendo-grid { grid-template-columns: 1fr; } }
+        .tikendo-img { border-radius: 12px; overflow: hidden; }
+        .tikendo-img img { width: 100%; height: 360px; object-fit: cover; }
+        .ventaja-item { display: flex; gap: 16px; margin-bottom: 24px; align-items: flex-start; }
+        .ventaja-icon { width: 46px; height: 46px; background: #fff3f0; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 22px; flex-shrink: 0; }
+        .ventaja-text h4 { font-size: 14px; font-weight: 700; color: var(--texto); margin-bottom: 5px; }
+        .ventaja-text p { font-size: 13px; color: var(--texto-suave); line-height: 1.6; margin: 0; }
+        /* CTA */
+        .cta-banner { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%); padding: 70px 0; text-align: center; color: #fff; }
+        .cta-banner h2 { font-size: 32px; font-weight: 800; margin-bottom: 12px; color: #fff;}
+        .cta-banner p { font-size: 16px; opacity: .88; margin-bottom: 32px; max-width: 560px; margin-left: auto; margin-right: auto; color: #fff;}
+        .cta-btns { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+        .btn-naranja-cta { background: var(--naranja); color: #fff; padding: 14px 36px; border-radius: 5px; font-weight: 700; font-size: 15px; text-decoration: none; display: inline-block; transition: transform .2s, box-shadow .2s; }
+        .btn-naranja-cta:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(250,67,24,0.5); color: #fff; text-decoration: none; }
+        .btn-outline-cta { background: transparent; color: #fff; padding: 14px 36px; border-radius: 5px; font-weight: 700; font-size: 15px; text-decoration: none; border: 2px solid rgba(255,255,255,0.5); transition: all .2s; display: inline-block; }
+        .btn-outline-cta:hover { background: rgba(255,255,255,0.1); color: #fff; text-decoration: none; }
+        .nav-active { color: var(--naranja) !important; font-weight: 700 !important; }
+    </style>
+</head>
+<body>
+
+    <!-- WhatsApp -->
+    <div class="whatsapp-icon">
+        <a href="https://wa.me/525549022481?text=Hola%20me%20gustaría%20conocer%20más%20sobre%20el%20sistema%20WMS%20para%20almacén." target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="Contactar a TiKendo por WhatsApp">
+        </a>
+    </div>
+
+    <!-- Navbar -->
+    <header class="navbar-area">
+        <nav class="navbar navbar-area-2 navbar-area navbar-expand-lg">
+            <div class="container nav-container">
+                <div class="responsive-mobile-menu">
+                    <button class="menu toggle-btn d-block d-lg-none" data-target="#transpro_main_menu" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="icon-left"></span>
+                        <span class="icon-right"></span>
+                    </button>
+                </div>
+                <div class="logo">
+                    <a href="index.html" class="logo-1"><img src="assets/img/home-2/logo_1.png" alt="TiKendo - Soluciones para automatización de almacén"></a>
+                    <a href="index.html" class="logo-2"><img src="assets/img/logo-2.png" alt="TiKendo logo"></a>
+                </div>
+                <div class="nav-right-part nav-right-part-mobile">
+                    <a class="btn btn-base" href="index.html#Formulario">Solicita una cotización</a>
+                </div>
+                <div class="collapse navbar-collapse" id="transpro_main_menu">
+                    <ul class="navbar-nav menu-open text-end">
+                        <li><a href="index.html#nosotros">Nosotros</a></li>
+                        <li><a href="index.html#servicios">Servicios</a></li>
+                        <li><a href="productos.html" class="nav-active">Productos</a></li>
+                        <li><a href="index.html#soluciones">Soluciones</a></li>
+                        <li><a href="index.html#FAQ">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="nav-right-part nav-right-part-desktop">
+                    <a class="btn btn-base" href="index.html#Formulario">Solicita una cotización</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero -->
+    <div class="hero-productos">
+        <div class="hero-bg"></div>
+        <div class="hero-overlay"></div>
+        <div class="container hero-content"><br><br><br>
+            <span class="hero-tag">Solución integral</span>
+            <h1>Sistema de Gestión<br>de Almacén <span>(WMS)</span></h1>
+            <p>Toma el control total de tu inventario en tiempo real. Automatiza la recepción, el picking y el despacho con un WMS conectado a tu hardware AIDC y tu ERP.</p>
+            <div class="hero-btns">
+                <a href="index.html#Formulario" class="btn-naranja">Solicitar demostración</a>
+                <a href="#funcionalidades" class="btn-outline-white">Ver funcionalidades</a>
+            </div>
+            <ul class="breadcrumb-list">
+                <li><a href="/">Inicio</a></li>
+                <li class="sep">›</li>
+                <li><a href="productos.html">Productos</a></li>
+                <li class="sep">›</li>
+                <li>WMS — Sistema de Gestión de Almacén</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Stats strip -->
+    <div class="stats-strip">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="num">99%</div>
+                    <div class="label">Precisión de inventario</div>
+                </div>
+                <div class="stat-item">
+                    <div class="num">40%</div>
+                    <div class="label">Reducción de errores de picking</div>
+                </div>
+                <div class="stat-item">
+                    <div class="num">30%</div>
+                    <div class="label">Más productividad por operador</div>
+                </div>
+                <div class="stat-item">
+                    <div class="num">100%</div>
+                    <div class="label">Visibilidad en tiempo real</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Funcionalidades -->
+    <section id="funcionalidades" class="func-area">
+        <div class="container">
+            <div class="section-center">
+                <span class="subtitle-tag">Funcionalidades</span>
+                <h2>Todo lo que tu WMS debe hacer</h2>
+                <p>Un sistema WMS completo cubre cada proceso del almacén, desde la entrada de mercancía hasta la salida al cliente, con trazabilidad total en cada paso.</p>
+            </div>
+            <div class="func-grid">
+
+                <div class="func-card">
+                    <div class="func-icon"><img src="assets/img/icon/recepcion.png" alt=""></div>
+                    <h3>Recepción de Mercancía</h3>
+                    <p>Agiliza y valida la entrada de productos contra órdenes de compra desde el dispositivo móvil del operador.</p>
+                    <ul>
+                        <li>Recepción contra PO con escaneo</li>
+                        <li>Verificación de cantidades y lotes</li>
+                        <li>Inspección de calidad en recepción</li>
+                        <li>Generación automática de etiquetas</li>
+                        <li>Almacenamiento dirigido en ubicaciones</li>
+                    </ul>
+                </div>
+
+                <div class="func-card">
+                    <div class="func-icon"><img src="assets/img/icon/ubicaciones.png" alt=""></div>
+                    <h3>Gestión de Ubicaciones</h3>
+                    <p>Define la estructura de tu almacén en el sistema y controla exactamente dónde está cada producto en todo momento.</p>
+                    <ul>
+                        <li>Zonas, pasillos, racks y celdas configurables</li>
+                        <li>Almacenamiento inteligente por reglas</li>
+                        <li>Control de capacidad por ubicación</li>
+                        <li>Mapas visuales del almacén</li>
+                        <li>Soporte para múltiples almacenes</li>
+                    </ul>
+                </div>
+
+                <div class="func-card">
+                    <div class="func-icon"><img src="assets/img/icon/la-gestion-del-inventario.png" alt=""></div>
+                    <h3>Control de Inventario</h3>
+                    <p>Visibilidad total del stock en tiempo real, con trazabilidad por lote, serie, fecha de caducidad y número de palé.</p>
+                    <ul>
+                        <li>Inventario cíclico y físico desde handheld</li>
+                        <li>Trazabilidad por lote y número de serie</li>
+                        <li>Control de fechas de caducidad (FEFO)</li>
+                        <li>Alertas de mínimos y máximos</li>
+                        <li>Reportes de movimientos y ajustes</li>
+                    </ul>
+                </div>
+
+                <div class="func-card">
+                    <div class="func-icon"><img src="assets/img/icon/pedidos.png" alt=""></div>
+                    <h3>Picking y Preparación de Pedidos</h3>
+                    <p>Guía a los operadores por las rutas más eficientes para surtir pedidos con el menor número de movimientos.</p>
+                    <ul>
+                        <li>Picking dirigido por dispositivo móvil</li>
+                        <li>Estrategias FIFO, FEFO y LIFO</li>
+                        <li>Picking por lote, oleada y zona</li>
+                        <li>Picking por voz y por luz (pick-to-light)</li>
+                        <li>Verificación por escaneo antes de empaque</li>
+                    </ul>
+                </div>
+
+                <div class="func-card">
+                    <div class="func-icon"><img src="assets/img/icon/despacho.png" alt=""></div>
+                    <h3>Despacho y Embarques</h3>
+                    <p>Controla la salida de mercancía con validación electrónica, generación de documentos y trazabilidad de carga.</p>
+                    <ul>
+                        <li>Verificación de pedidos antes de carga</li>
+                        <li>Generación de guías y etiquetas de envío</li>
+                        <li>Control de muelles y puertas</li>
+                        <li>Gestión de transportistas y rutas</li>
+                        <li>Confirmación de despacho en tiempo real</li>
+                    </ul>
+                </div>
+
+                <div class="func-card">
+                    <div class="func-icon"><img src="assets/img/icon/tablero.png" alt=""></div>
+                    <h3>Reportes y Analítica</h3>
+                    <p>Toma decisiones basadas en datos con reportes en tiempo real sobre productividad, precisión y niveles de inventario.</p>
+                    <ul>
+                        <li>Dashboard de operaciones en tiempo real</li>
+                        <li>KPIs de productividad por operador</li>
+                        <li>Reportes de precisión de inventario</li>
+                        <li>Análisis de rotación y antigüedad</li>
+                        <li>Exportación a Excel y PDF</li>
+                    </ul>
+                </div>
+
+                <div class="func-card">
+                    <div class="func-icon"><img src="assets/img/icon/Reabastecimiento.png" alt=""></div>
+                    <h3>Reabastecimiento</h3>
+                    <p>Automatiza el reabastecimiento de zonas de picking desde el almacén de reserva para evitar faltantes.</p>
+                    <ul>
+                        <li>Reabastecimiento por mínimos automático</li>
+                        <li>Solicitudes de reabastecimiento en handheld</li>
+                        <li>Priorización de tareas por urgencia</li>
+                        <li>Integración con pronósticos de demanda</li>
+                        <li>Gestión de palés completos</li>
+                    </ul>
+                </div>
+
+                <div class="func-card">
+                    <div class="func-icon"><img src="assets/img/icon/logistica-inversa.png" alt=""></div>
+                    <h3>Logística Inversa</h3>
+                    <p>Gestiona las devoluciones de clientes de forma ordenada, clasificando mercancía para reintegro, reparación o disposición.</p>
+                    <ul>
+                        <li>Recepción y clasificación de devoluciones</li>
+                        <li>Inspección y decisión de disposición</li>
+                        <li>Reintegro al inventario disponible</li>
+                        <li>Registro de motivos de devolución</li>
+                        <li>Notas de crédito automáticas (con ERP)</li>
+                    </ul>
+                </div>
+
+                <div class="func-card">
+                    <div class="func-icon"><img src="assets/img/icon/app.png" alt=""></div>
+                    <h3>App Móvil para Operadores</h3>
+                    <p>Interfaz optimizada para handhelds, tablets y dispositivos vestibles. Sin papel, sin errores manuales.</p>
+                    <ul>
+                        <li>Compatible con Android y Windows CE/Mobile</li>
+                        <li>Diseño para pantalla pequeña y uso con guantes</li>
+                        <li>Trabajo sin conexión (offline mode)</li>
+                        <li>Sincronización automática al reconectar</li>
+                        <li>Gestión de usuarios y permisos</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Cómo funciona -->
+    <section id="proceso" class="proceso-area">
+        <div class="container">
+            <div class="section-center">
+                <span class="subtitle-tag">Metodología</span>
+                <h2>Proceso de Implementación</h2>
+                <p>Implementamos tu WMS en 5 etapas estructuradas para garantizar una puesta en marcha exitosa sin afectar tu operación actual.</p>
+            </div>
+            <div class="proceso-steps">
+                <div class="paso">
+                    <div class="paso-num">1</div>
+                    <h4>Diagnóstico</h4>
+                    <p>Análisis de tus procesos actuales, flujos de trabajo, volúmenes y requerimientos específicos de tu almacén.</p>
+                </div>
+                <div class="paso">
+                    <div class="paso-num">2</div>
+                    <h4>Diseño de solución</h4>
+                    <p>Configuración del WMS según tu estructura de almacén, reglas de negocio, integraciones y hardware AIDC.</p>
+                </div>
+                <div class="paso">
+                    <div class="paso-num">3</div>
+                    <h4>Configuración y pruebas</h4>
+                    <p>Instalación, parametrización y pruebas en ambiente de desarrollo con escenarios reales de tu operación.</p>
+                </div>
+                <div class="paso">
+                    <div class="paso-num">4</div>
+                    <h4>Capacitación</h4>
+                    <p>Entrenamiento presencial o remoto a operadores, supervisores y administradores del sistema.</p>
+                </div>
+                <div class="paso">
+                    <div class="paso-num">5</div>
+                    <h4>Salida en vivo y soporte</h4>
+                    <p>Acompañamiento durante el arranque en productivo y soporte post-implementación para garantizar el éxito.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Integraciones -->
+    <section id="integraciones" class="integ-area">
+        <div class="container">
+            <div class="section-center">
+                <span class="subtitle-tag">Ecosistema</span>
+                <h2>Integraciones Disponibles</h2>
+                <p>El WMS se conecta con los sistemas y plataformas que ya usas en tu empresa para eliminar la doble captura y mantener un solo flujo de datos.</p>
+            </div>
+            <div class="integ-grid">
+                <div class="integ-col">
+                    <h3><img src="assets/img/icon/erp.png" alt=""> ERP y Sistemas empresariales</h3>
+                    <div class="integ-items">
+                        <span class="integ-tag">Odoo</span>
+                        <span class="integ-tag">SAP Business One</span>
+                        <span class="integ-tag">SAP S/4HANA</span>
+                        <span class="integ-tag">Microsoft Dynamics 365</span>
+                        <span class="integ-tag">Oracle NetSuite</span>
+                        <span class="integ-tag">Aspel COI / NOI</span>
+                        <span class="integ-tag">Contpaq</span>
+                        <span class="integ-tag">Microsip</span>
+                        <span class="integ-tag">Sistemas a la medida</span>
+                    </div>
+                </div>
+                <div class="integ-col">
+                    <h3><img src="assets/img/icon/e-commerce.png" alt=""> E-commerce y Marketplaces</h3>
+                    <div class="integ-items">
+                        <span class="integ-tag">Shopify</span>
+                        <span class="integ-tag">WooCommerce</span>
+                        <span class="integ-tag">Magento</span>
+                        <span class="integ-tag">MercadoLibre</span>
+                        <span class="integ-tag">Amazon Seller</span>
+                        <span class="integ-tag">Walmart Marketplace</span>
+                        <span class="integ-tag">Liverpool Connect</span>
+                        <span class="integ-tag">Coppel Digital</span>
+                    </div>
+                </div>
+                <div class="integ-col">
+                    <h3><img src="assets/img/icon/transport.png" alt=""> Transporte y Logística</h3>
+                    <div class="integ-items">
+                        <span class="integ-tag">DHL Express</span>
+                        <span class="integ-tag">FedEx</span>
+                        <span class="integ-tag">Estafeta</span>
+                        <span class="integ-tag">Redpack</span>
+                        <span class="integ-tag">Paquetexpress</span>
+                        <span class="integ-tag">99minutos</span>
+                        <span class="integ-tag">TMS propio</span>
+                        <span class="integ-tag">EDI / AS2</span>
+                    </div>
+                </div>
+                <div class="integ-col">
+                    <h3><img src="assets/img/icon/escaner-barras.png" alt=""> Hardware AIDC</h3>
+                    <div class="integ-items">
+                        <span class="integ-tag">Escáneres Zebra</span>
+                        <span class="integ-tag">Escáneres Honeywell</span>
+                        <span class="integ-tag">Handhelds Android</span>
+                        <span class="integ-tag">Computadoras Zebra TC</span>
+                        <span class="integ-tag">Lectores RFID Zebra FX</span>
+                        <span class="integ-tag">Impresoras Zebra ZT</span>
+                        <span class="integ-tag">Dispositivos vestibles</span>
+                        <span class="integ-tag">Pick-to-light</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Especificaciones -->
+    <section id="specs" class="specs-area">
+        <div class="container">
+            <div class="section-center">
+                <span class="subtitle-tag">Referencia técnica</span>
+                <h2>Especificaciones Técnicas</h2>
+                <p>Parámetros de arquitectura, infraestructura y funcionalidad para evaluar el WMS según tu entorno tecnológico.</p>
+            </div>
+            <div class="specs-grid">
+                <div class="spec-card">
+                    <div class="spec-icon"><img src="assets/img/icon/infraestructura.png" alt=""></div>
+                    <h4>Infraestructura y despliegue</h4>
+                    <table class="spec-table">
+                        <tr><td>Modalidad</td><td>Cloud, on-premise o híbrido</td></tr>
+                        <tr><td>Cloud</td><td>AWS, Azure, Google Cloud</td></tr>
+                        <tr><td>On-premise SO</td><td>Ubuntu, Debian, Windows Server</td></tr>
+                        <tr><td>Contenedores</td><td>Docker y Kubernetes</td></tr>
+                        <tr><td>Alta disponibilidad</td><td>Failover y replicación</td></tr>
+                        <tr><td>Backup</td><td>Automático diario / en tiempo real</td></tr>
+                    </table>
+                </div>
+                <div class="spec-card">
+                    <div class="spec-icon"><img src="assets/img/icon/dispositivos.png" alt=""></div>
+                    <h4>Compatibilidad de dispositivos</h4>
+                    <table class="spec-table">
+                        <tr><td>Android</td><td>8.0 o superior</td></tr>
+                        <tr><td>Windows</td><td>Windows 10 / 11 / IoT</td></tr>
+                        <tr><td>Navegador web</td><td>Chrome, Edge, Firefox</td></tr>
+                        <tr><td>Resolución mínima</td><td>320px (móvil) — 1024px (PC)</td></tr>
+                        <tr><td>Trabajo offline</td><td>Sí, con sincronización auto</td></tr>
+                        <tr><td>Lectores de código</td><td>USB, Bluetooth, integrado</td></tr>
+                    </table>
+                </div>
+                <div class="spec-card">
+                    <div class="spec-icon"><img src="assets/img/icon/cumplimiento.png" alt=""></div>
+                    <h4>Seguridad y cumplimiento</h4>
+                    <table class="spec-table">
+                        <tr><td>Autenticación</td><td>Usuario/contraseña, SSO, 2FA</td></tr>
+                        <tr><td>Roles y permisos</td><td>Granulares por módulo</td></tr>
+                        <tr><td>Cifrado en tránsito</td><td>TLS 1.3</td></tr>
+                        <tr><td>Cifrado en reposo</td><td>AES-256</td></tr>
+                        <tr><td>Auditoría</td><td>Log completo de acciones</td></tr>
+                        <tr><td>GDPR / LFPDPPP</td><td>Cumplimiento incluido</td></tr>
+                    </table>
+                </div>
+                <div class="spec-card">
+                    <div class="spec-icon"><img src="assets/img/icon/alto-rendimiento.png" alt=""></div>
+                    <h4>Rendimiento y escalabilidad</h4>
+                    <table class="spec-table">
+                        <tr><td>Usuarios simultáneos</td><td>Desde 5 hasta 500+</td></tr>
+                        <tr><td>Transacciones/día</td><td>Hasta 500,000+</td></tr>
+                        <tr><td>Tiempo de respuesta</td><td>Menor a 2 segundos</td></tr>
+                        <tr><td>Almacenes</td><td>Múltiples ubicaciones</td></tr>
+                        <tr><td>SKUs soportados</td><td>Sin límite</td></tr>
+                        <tr><td>Escalabilidad</td><td>Horizontal y vertical</td></tr>
+                    </table>
+                </div>
+                <div class="spec-card">
+                    <div class="spec-icon"><img src="assets/img/icon/api.png" alt=""></div>
+                    <h4>Integración y API</h4>
+                    <table class="spec-table">
+                        <tr><td>API tipo</td><td>REST / JSON</td></tr>
+                        <tr><td>Webhooks</td><td>Eventos en tiempo real</td></tr>
+                        <tr><td>EDI</td><td>ANSI X12, EDIFACT</td></tr>
+                        <tr><td>Middleware</td><td>MuleSoft, Zapier, Make</td></tr>
+                        <tr><td>Documentación</td><td>OpenAPI / Swagger</td></tr>
+                        <tr><td>Soporte técnico API</td><td>Incluido en implementación</td></tr>
+                    </table>
+                </div>
+                <div class="spec-card">
+                    <div class="spec-icon"><img src="assets/img/icon/apoyo-tecnico.png" alt=""></div>
+                    <h4>Soporte y mantenimiento</h4>
+                    <table class="spec-table">
+                        <tr><td>SLA de respuesta</td><td>4h crítico / 8h normal</td></tr>
+                        <tr><td>Canales soporte</td><td>WhatsApp, email, teléfono</td></tr>
+                        <tr><td>Actualizaciones</td><td>Incluidas en suscripción</td></tr>
+                        <tr><td>Capacitación</td><td>Presencial y en línea</td></tr>
+                        <tr><td>Base de conocimiento</td><td>Portal de clientes</td></tr>
+                        <tr><td>Idioma soporte</td><td>Español (México)</td></tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Industrias -->
+    <section id="industrias" class="industrias-area">
+        <div class="container">
+            <div class="section-center">
+                <span class="subtitle-tag">Aplicaciones</span>
+                <h2>Casos de Uso por Industria</h2>
+                <p>El WMS se adapta a los flujos y requerimientos específicos de cada sector para maximizar la eficiencia operativa.</p>
+            </div>
+            <div class="industrias-grid">
+                <div class="industria-card">
+                    <div class="ind-icon"><img src="assets/img/icon/centro-de-distribucion.png" alt=""></div>
+                    <h3>Distribución y 3PL</h3>
+                    <p>Centro de distribución con alta rotación y múltiples clientes o canales.</p>
+                    <ul>
+                        <li>Multi-cliente en un solo almacén</li>
+                        <li>Picking por oleadas para múltiples pedidos</li>
+                        <li>Integración con TMS de transporte</li>
+                        <li>Facturación de servicios logísticos</li>
+                        <li>Cross-docking sin almacenamiento</li>
+                    </ul>
+                </div>
+                <div class="industria-card">
+                    <div class="ind-icon"><img src="assets/img/icon/tienda.png" alt=""></div>
+                    <h3>Retail y E-commerce</h3>
+                    <p>Omnicanalidad y fulfillment ágil para tiendas físicas y ventas en línea.</p>
+                    <ul>
+                        <li>Fulfillment de pedidos en línea (B2C)</li>
+                        <li>Reabastecimiento de tiendas (B2B)</li>
+                        <li>Gestión de devoluciones de e-commerce</li>
+                        <li>Integración con marketplaces</li>
+                        <li>Control de inventario omnicanal</li>
+                    </ul>
+                </div>
+                <div class="industria-card">
+                    <div class="ind-icon"><img src="assets/img/icon/fabricar.png" alt=""></div>
+                    <h3>Manufactura</h3>
+                    <p>Almacén de materias primas, producto en proceso y producto terminado.</p>
+                    <ul>
+                        <li>Control de materias primas por lote</li>
+                        <li>Surtido de materiales a línea de producción</li>
+                        <li>Control de producto en proceso (WIP)</li>
+                        <li>Almacén de producto terminado</li>
+                        <li>Integración con ERP de manufactura</li>
+                    </ul>
+                </div>
+                <div class="industria-card">
+                    <div class="ind-icon"><img src="assets/img/icon/comida-y-bebida.png" alt=""></div>
+                    <h3>Alimentos y Bebidas</h3>
+                    <p>Trazabilidad y control de caducidades para cumplimiento normativo.</p>
+                    <ul>
+                        <li>Control FEFO (primero en expirar, primero en salir)</li>
+                        <li>Trazabilidad por lote hacia atrás y adelante</li>
+                        <li>Alertas de productos por vencer</li>
+                        <li>Control de temperatura por zona</li>
+                        <li>Cumplimiento NOM y BPM</li>
+                    </ul>
+                </div>
+                <div class="industria-card">
+                    <div class="ind-icon"><img src="assets/img/icon/farmaceutico.png" alt=""></div>
+                    <h3>Farmacéutica y Médica</h3>
+                    <p>Cumplimiento regulatorio y trazabilidad completa de medicamentos.</p>
+                    <ul>
+                        <li>Serialización GS1 y COFEPRIS</li>
+                        <li>Control por número de serie y lote</li>
+                        <li>Gestión de cuarentenas y rechazos</li>
+                        <li>Almacenamiento por condiciones especiales</li>
+                        <li>Auditorías regulatorias</li>
+                    </ul>
+                </div>
+                <div class="industria-card">
+                    <div class="ind-icon"><img src="assets/img/icon/refacciones.png" alt=""></div>
+                    <h3>Refacciones y MRO</h3>
+                    <p>Control de partes críticas para evitar paros de planta.</p>
+                    <ul>
+                        <li>Inventario de refacciones críticas</li>
+                        <li>Integración con CMMS de mantenimiento</li>
+                        <li>Préstamo y devolución de herramientas</li>
+                        <li>Alertas de mínimos para partes críticas</li>
+                        <li>Control de activos y herramientas</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Por qué TiKendo -->
+    <section class="tikendo-area">
+        <div class="container">
+            <div class="tikendo-grid">
+                <div class="tikendo-img">
+                    <img src="assets/img/banner/Computadoras para almacen.png" alt="Implementación WMS con hardware AIDC por TiKendo en México">
+                </div>
+                <div>
+                    <span class="subtitle-tag">¿Por qué TiKendo?</span>
+                    <h2 style="font-size:26px;font-weight:700;color:var(--texto);margin-bottom:28px;">La ventaja de tener software y hardware del mismo proveedor</h2>
+                    <div class="ventaja-item">
+                        <div class="ventaja-icon"><img src="assets/img/icon/proveedor.png" alt=""></div>
+                        <div class="ventaja-text">
+                            <h4>Un solo proveedor, una sola responsabilidad</h4>
+                            <p>Proveemos el WMS, los escáneres, las computadoras móviles, las impresoras y las etiquetas. Sin señalarse entre proveedores cuando algo no funciona.</p>
+                        </div>
+                    </div>
+                    <div class="ventaja-item">
+                        <div class="ventaja-icon"><img src="assets/img/icon/informatica.png" alt="">    </div>
+                        <div class="ventaja-text">
+                            <h4>Hardware y software preintegrados</h4>
+                            <p>Los dispositivos Zebra y Honeywell ya están configurados y probados con el WMS antes de llegar a tu almacén. Arranque más rápido, menos problemas.</p>
+                        </div>
+                    </div>
+                    <div class="ventaja-item">
+                        <div class="ventaja-icon"><img src="assets/img/icon/bandera.png" alt=""></div>
+                        <div class="ventaja-text">
+                            <h4>Soporte local en México</h4>
+                            <p>Equipo de implementación y soporte técnico en México. Atención en español, sin diferencias de zona horaria y con visitas en sitio cuando es necesario.</p>
+                        </div>
+                    </div>
+                    <div class="ventaja-item">
+                        <div class="ventaja-icon"><img src="assets/img/icon/implementacion.png" alt=""></div>
+                        <div class="ventaja-text">
+                            <h4>Implementaciones comprobadas</h4>
+                            <p>Más de 124 procesos automatizados y 46 clientes satisfechos respaldan nuestra experiencia en proyectos de almacén en México.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Footer -->
+    <section id="Contacto">
+        <footer class="footer-area">
+                <!-- CTA -->
+            <div class="cta-banner">
+                <div class="container">
+                    <h2>¿Listo para transformar tu almacén?</h2>
+                    <p>Agenda una demostración personalizada del WMS con tus procesos reales. Sin compromiso.</p>
+                    <div class="cta-btns">
+                        <a href="index.html#Formulario" class="btn-naranja-cta">Solicitar demostración</a>
+                        <a href="tel:+525513287995" class="btn-outline-cta">Llamar ahora</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-top" style="background-image: url(assets/img/footer/bg.png);">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-4 col-md-6">
+                            <div class="single-footer-top">
+                                <div class="icon"><img src="assets/img/icon/map-marker.png" alt="Dirección TiKendo - San Mateo Atenco, Estado de México"></div>
+                                <div class="details">
+                                    <h6>DIRECCIÓN:</h6>
+                                    <p>Blvd. Solidaridad las Torres,</p>
+                                    <p>Álvaro Obregón, 52100 San Mateo Atenco, Méx.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="single-footer-top">
+                                <div class="icon"><img src="assets/img/icon/phone.png" alt="Teléfonos de contacto TiKendo"></div>
+                                <div class="details">
+                                    <h6>CONTÁCTANOS</h6>
+                                    <p>+52 55 1328 7995</p>
+                                    <p>+52 722 326 0677</p>
+                                    <p>ventas@tikendo.mx</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="single-footer-top after-none">
+                                <div class="icon"><img src="assets/img/icon/clock.png" alt="Horarios de atención TiKendo"></div>
+                                <div class="details">
+                                    <h6>HORARIOS DE ATENCIÓN</h6>
+                                    <p>Lunes a Viernes</p>
+                                    <p>9:00 hrs a 18:00 hrs.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="footer-bottom-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 text-lg-start text-center">
+                        <p>© Copyright 2025 By <a href="https://tikendo.com.mx">Tikendo S.A. de C.V.</a>, Todos los derechos reservados.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="back-to-top"><span class="back-top"><i class="fa fa-angle-up"></i></span></div>
+    <script src="assets/js/vendor.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
