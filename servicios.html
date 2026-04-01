@@ -1,0 +1,1041 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios | TiKendo – Automatización de Almacenes en México</title>
+    <meta name="description" content="Servicios de automatización de almacenes: gestión AIDC, soporte técnico, WMS, consultoría y demostraciones. TiKendo México.">
+    <link rel="canonical" href="https://automatizaciondealmacen.com/servicios.html">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Servicios | TiKendo – Automatización de Almacenes en México">
+    <meta property="og:description" content="Descubre los servicios de TiKendo para optimizar tu almacén: AIDC, WMS, soporte técnico, consultoría y demostraciones.">
+    <meta property="og:url" content="https://automatizaciondealmacen.com/servicios.html">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://automatizaciondealmacen.com/assets/img/og-image.jpg">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/css/vendor.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --naranja:      #FA4318;
+            --naranja-dark: #d93610;
+            --blanco:       #ffffff;
+            --gris-claro:   #f9f9f9;
+            --texto:        #333333;
+            --texto-suave:  #666666;
+
+            --shadow-sm:    0 2px 8px rgba(0,0,0,0.06);
+            --shadow-md:    0 8px 32px rgba(0,0,0,0.10);
+            --shadow-lg:    0 20px 60px rgba(0,0,0,0.13);
+            --radius:       14px;
+            --transition:   all 0.32s cubic-bezier(0.4,0,0.2,1);
+        }
+
+        *, *::before, *::after { box-sizing: border-box; }
+
+        body {
+            color: var(--texto);
+            background: #fff;
+            font-family: 'DM Sans', sans-serif;
+        }
+
+        /* ─── WHATSAPP FLOAT ─── */
+        .whatsapp-icon {
+            position: fixed;
+            bottom: 28px;
+            right: 28px;
+            z-index: 999;
+            filter: drop-shadow(0 4px 16px rgba(37,211,102,0.35));
+            transition: var(--transition);
+        }
+        .whatsapp-icon:hover { transform: scale(1.08) rotate(-4deg); }
+        .whatsapp-icon img { width: 56px; height: 56px; display: block; }
+
+        /* ─── SCROLL PROGRESS ─── */
+        .scroll-progress {
+            position: fixed;
+            top: 0; left: 0;
+            height: 3px;
+            background: var(--naranja);
+            z-index: 9999;
+            transition: width 0.1s linear;
+            box-shadow: 0 0 10px rgba(250,67,24,0.5);
+            width: 0%;
+        }
+
+        /* ─── HERO ─── */
+        .srv-hero {
+            position: relative;
+            min-height: 440px;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+            background:
+                linear-gradient(to bottom right, rgba(17,17,17,0.82) 0%, rgba(0,0,0,0.38) 100%),
+                #111 url('assets/img/banner/servicios.jpg') center center / cover no-repeat;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.28), 0 3px 8px rgba(0,0,0,0.18);
+        }
+
+        .srv-hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background-image:
+                linear-gradient(rgba(250,67,24,0.08) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(250,67,24,0.08) 1px, transparent 1px);
+            background-size: 60px 60px;
+            animation: gridShift 18s linear infinite;
+            z-index: 0;
+        }
+
+        .srv-hero::after {
+            content: '';
+            position: absolute;
+            width: 600px; height: 600px;
+            top: 50%; left: 50%;
+            transform: translate(-50%,-50%);
+            background: radial-gradient(circle, rgba(250,67,24,0.18) 0%, transparent 70%);
+            z-index: 1;
+            animation: pulse 5s ease-in-out infinite;
+        }
+
+        @keyframes gridShift {
+            0%   { background-position: 0 0; }
+            100% { background-position: 60px 60px; }
+        }
+        @keyframes pulse {
+            0%, 100% { opacity: 0.6; transform: translate(-50%,-50%) scale(1); }
+            50%       { opacity: 1;   transform: translate(-50%,-50%) scale(1.1); }
+        }
+
+        .srv-hero-content {
+            position: relative;
+            z-index: 2;
+            padding: 120px 0 80px;
+            text-align: center;
+            width: 100%;
+        }
+
+        .srv-hero-badge {
+            display: inline-block;
+            background: rgba(250,67,24,0.15);
+            border: 1px solid rgba(250,67,24,0.4);
+            color: var(--naranja);
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            padding: 6px 18px;
+            border-radius: 100px;
+            margin-bottom: 20px;
+            animation: fadeUp 0.6s ease both;
+        }
+
+        .srv-hero h1 {
+            color: #fff;
+            font-family: 'Syne', sans-serif;
+            font-size: 58px;
+            font-weight: 800;
+            line-height: 1.1;
+            margin-bottom: 18px;
+            letter-spacing: -0.02em;
+            animation: fadeUp 0.7s 0.1s ease both;
+        }
+
+        .srv-hero h1 span {
+            color: var(--naranja);
+            position: relative;
+        }
+
+        .srv-hero h1 span::after {
+            content: '';
+            position: absolute;
+            bottom: -4px; left: 0; right: 0;
+            height: 3px;
+            background: var(--naranja);
+            border-radius: 2px;
+            transform: scaleX(0);
+            transform-origin: left;
+            animation: underlineReveal 0.8s 0.8s cubic-bezier(0.4,0,0.2,1) forwards;
+        }
+
+        @keyframes underlineReveal { to { transform: scaleX(1); } }
+
+        .srv-hero p {
+            color: rgba(255,255,255,0.89);
+            font-size: 20px;
+            font-weight: 300;
+            max-width: 580px;
+            margin: 0 auto;
+            line-height: 1.7;
+            animation: fadeUp 0.7s 0.2s ease both;
+        }
+
+        /* Hero stats strip */
+        .hero-stats {
+            display: flex;
+            justify-content: center;
+            gap: 56px;
+            margin-top: 52px;
+            padding-top: 38px;
+            border-top: 1px solid rgba(255,255,255,0.08);
+            animation: fadeUp 0.7s 0.35s ease both;
+        }
+
+        .hero-stat { text-align: center; }
+
+        .hero-stat-num {
+            font-family: 'Syne', sans-serif;
+            font-size: 37px;
+            font-weight: 800;
+            color: var(--naranja);
+            line-height: 1;
+            display: block;
+        }
+
+        .hero-stat-label {
+            font-size: 14px;
+            color: rgba(255,255,255,0.6);
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            font-weight: 500;
+            margin-top: 4px;
+            display: block;
+        }
+
+        @keyframes fadeUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to   { opacity: 1; transform: translateY(0); }
+        }
+
+        /* ─── SECTION BASE ─── */
+        section.light { background: #fff; padding: 90px 0; }
+        section.gray  { background: var(--gris-claro); padding: 90px 0; }
+
+        .section-label {
+            display: inline-block;
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: var(--naranja);
+            margin-bottom: 12px;
+        }
+
+        .section-title {
+            font-family: 'Syne', sans-serif;
+            font-size: 36px;
+            font-weight: 800;
+            color: var(--texto);
+            letter-spacing: -0.02em;
+            line-height: 1.2;
+            margin: 0 0 18px;
+        }
+
+        .section-title em {
+            font-style: normal;
+            color: var(--naranja);
+        }
+
+        .section-lead {
+            font-size: 16px;
+            color: var(--texto-suave);
+            font-weight: 300;
+            line-height: 1.75;
+            max-width: 560px;
+        }
+
+        /* ─── INTRO / DESCRIPCIÓN ─── */
+        .intro-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 72px;
+            align-items: center;
+        }
+
+        .intro-visual {
+            position: relative;
+        }
+
+        .intro-box {
+            border-radius: var(--radius);
+            overflow: hidden;
+            background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
+            aspect-ratio: 4/3;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        .intro-box::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background-image:
+                linear-gradient(rgba(250,67,24,0.07) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(250,67,24,0.07) 1px, transparent 1px);
+            background-size: 40px 40px;
+        }
+
+        .intro-box-icon {
+            position: relative;
+            z-index: 1;
+            opacity: 0.18;
+        }
+
+        .intro-box-icon svg {
+            width: 80px; height: 80px;
+            stroke: #fff; fill: none; stroke-width: 1.2;
+        }
+
+        /* si existe imagen real */
+        .intro-box img {
+            width: 100%; height: 100%;
+            object-fit: cover;
+            position: absolute; inset: 0;
+        }
+
+        .intro-deco-line {
+            position: absolute;
+            top: 24px; left: -18px;
+            width: 4px; height: 110px;
+            background: var(--naranja);
+            border-radius: 2px;
+        }
+
+        .intro-badge-float {
+            position: absolute;
+            bottom: -18px; right: -18px;
+            background: var(--naranja);
+            color: #fff;
+            border-radius: 12px;
+            padding: 18px 22px;
+            box-shadow: var(--shadow-lg);
+            text-align: center;
+            z-index: 2;
+        }
+
+        .intro-badge-float strong {
+            font-family: 'Syne', sans-serif;
+            font-size: 32px;
+            font-weight: 800;
+            display: block;
+            line-height: 1;
+        }
+
+        .intro-badge-float span {
+            font-size: 11px;
+            opacity: 0.85;
+            display: block;
+            margin-top: 4px;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+        }
+
+        /* ─── SERVICIOS CARDS ─── */
+        .services-header {
+            text-align: center;
+            margin-bottom: 56px;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+
+        /* Tarjeta grande (featured) ocupa 2 columnas */
+        .srv-card {
+            background: #fff;
+            border-radius: var(--radius);
+            border: 1.5px solid #ebebeb;
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            opacity: 0;
+            transform: translateY(22px);
+            animation: fadeUp 0.55s ease forwards;
+        }
+
+        .srv-card:nth-child(1) { animation-delay: 0.05s; }
+        .srv-card:nth-child(2) { animation-delay: 0.13s; }
+        .srv-card:nth-child(3) { animation-delay: 0.21s; }
+        .srv-card:nth-child(4) { animation-delay: 0.29s; }
+        .srv-card:nth-child(5) { animation-delay: 0.37s; }
+
+        /* Tarjeta destacada: ocupa 2 cols en primera fila */
+        .srv-card.featured {
+            grid-column: span 2;
+        }
+
+        .srv-card:hover {
+            border-color: rgba(250,67,24,0.25);
+            box-shadow: var(--shadow-md);
+            transform: translateY(-4px);
+        }
+
+        /* Barra superior de color */
+        .srv-card-bar {
+            height: 4px;
+            background: #ebebeb;
+            transition: var(--transition);
+        }
+
+        .srv-card:hover .srv-card-bar {
+            background: var(--naranja);
+        }
+
+        .srv-card-body {
+            padding: 36px 32px 32px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Layout horizontal para featured */
+        .srv-card.featured .srv-card-body {
+            gap: 32px;
+            align-items: flex-start;
+        }
+
+        .srv-card.featured .srv-card-text {
+            flex: 1;
+        }
+
+        .srv-icon {
+            width: 56px; height: 56px;
+            background: rgba(250,67,24,0.08);
+            border-radius: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            margin-bottom: 20px;
+            transition: var(--transition);
+        }
+
+        .srv-card.featured .srv-icon {
+            width: 64px; height: 64px;
+            border-radius: 16px;
+            margin-bottom: 0;
+        }
+
+        .srv-card:hover .srv-icon {
+            background: var(--naranja);
+        }
+
+        .srv-icon svg {
+            width: 28px; height: 28px;
+            stroke: var(--naranja);
+            fill: none;
+            stroke-width: 1.7;
+            transition: var(--transition);
+        }
+
+        .srv-card.featured .srv-icon svg {
+            width: 32px; height: 32px;
+        }
+
+        .srv-card:hover .srv-icon svg {
+            stroke: #fff;
+        }
+
+        .srv-num {
+            font-size: 11px;
+            font-weight: 800;
+            color: var(--naranja);
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            margin-bottom: 8px;
+            display: block;
+        }
+
+        .srv-card h3 {
+            font-family: 'Syne', sans-serif;
+            font-size: 19px;
+            font-weight: 700;
+            color: var(--texto);
+            margin: 0 0 10px;
+            line-height: 1.25;
+        }
+
+        .srv-card.featured h3 {
+            font-size: 22px;
+        }
+
+        .srv-card p {
+            font-size: 14.5px;
+            color: var(--texto-suave);
+            font-weight: 300;
+            line-height: 1.72;
+            margin: 0;
+            flex: 1;
+        }
+
+        .srv-card-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 7px;
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--naranja);
+            text-decoration: none;
+            margin-top: 22px;
+            transition: var(--transition);
+            letter-spacing: 0.02em;
+        }
+
+        .srv-card-link svg {
+            width: 16px; height: 16px;
+            stroke: var(--naranja);
+            fill: none;
+            stroke-width: 2;
+            transition: var(--transition);
+        }
+
+        .srv-card-link:hover { gap: 12px; color: var(--naranja); }
+
+        /* ─── PROCESO / CÓMO TRABAJAMOS ─── */
+        .process-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .process-steps {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 0;
+            position: relative;
+        }
+
+        /* Línea conectora */
+        .process-steps::before {
+            content: '';
+            position: absolute;
+            top: 36px;
+            left: calc(12.5%);
+            right: calc(12.5%);
+            height: 2px;
+            background: linear-gradient(to right, var(--naranja), rgba(250,67,24,0.15));
+            z-index: 0;
+        }
+
+        .process-step {
+            text-align: center;
+            padding: 0 20px;
+            position: relative;
+            z-index: 1;
+            opacity: 0;
+            animation: fadeUp 0.55s ease forwards;
+        }
+
+        .process-step:nth-child(1) { animation-delay: 0.05s; }
+        .process-step:nth-child(2) { animation-delay: 0.15s; }
+        .process-step:nth-child(3) { animation-delay: 0.25s; }
+        .process-step:nth-child(4) { animation-delay: 0.35s; }
+
+        .step-num {
+            width: 72px; height: 72px;
+            border-radius: 50%;
+            background: #fff;
+            border: 2px solid var(--naranja);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 24px;
+            font-family: 'Syne', sans-serif;
+            font-size: 22px;
+            font-weight: 800;
+            color: var(--naranja);
+            box-shadow: 0 0 0 6px rgba(250,67,24,0.08);
+            transition: var(--transition);
+        }
+
+        .process-step:hover .step-num {
+            background: var(--naranja);
+            color: #fff;
+            box-shadow: 0 6px 24px rgba(250,67,24,0.35);
+        }
+
+        .process-step h4 {
+            font-family: 'Syne', sans-serif;
+            font-size: 16px;
+            font-weight: 700;
+            color: var(--texto);
+            margin: 0 0 8px;
+        }
+
+        .process-step p {
+            font-size: 14px;
+            color: var(--texto-suave);
+            font-weight: 300;
+            line-height: 1.65;
+            margin: 0;
+        }
+
+        /* ─── CTA BANNER ─── */
+        .cta-banner {
+            background: var(--naranja);
+            padding: 80px 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-banner::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background-image:
+                linear-gradient(rgba(255,255,255,0.05) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px);
+            background-size: 40px 40px;
+        }
+
+        .cta-deco {
+            position: absolute;
+            font-family: 'Syne', sans-serif;
+            font-size: 160px;
+            font-weight: 800;
+            color: rgba(255,255,255,0.06);
+            line-height: 1;
+            top: 50%; left: 50%;
+            transform: translate(-50%,-50%);
+            white-space: nowrap;
+            pointer-events: none;
+            letter-spacing: -0.04em;
+        }
+
+        .cta-banner .container { position: relative; z-index: 2; }
+
+        .cta-banner h2 {
+            font-family: 'Syne', sans-serif;
+            font-size: 38px;
+            font-weight: 800;
+            margin-bottom: 12px;
+            color: #fff;
+            letter-spacing: -0.02em;
+            line-height: 1.15;
+        }
+
+        .cta-banner p {
+            font-size: 16px;
+            opacity: 0.9;
+            margin-bottom: 34px;
+            color: #fff;
+            font-weight: 300;
+            max-width: 460px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.6;
+        }
+
+        .btn-blanco {
+            background: #fff;
+            color: var(--naranja);
+            padding: 15px 40px;
+            border-radius: 8px;
+            font-weight: 700;
+            font-size: 15px;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            transition: var(--transition);
+            box-shadow: 0 4px 30px rgba(0,0,0,0.15);
+            letter-spacing: 0.01em;
+        }
+
+        .btn-blanco svg { width: 18px; height: 18px; fill: currentColor; flex-shrink: 0; }
+
+        .btn-blanco:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 40px rgba(0,0,0,0.25);
+            color: var(--naranja);
+            text-decoration: none;
+        }
+
+        /* ─── RESPONSIVE ─── */
+        @media (max-width: 991px) {
+            .intro-grid { grid-template-columns: 1fr; gap: 50px; }
+            .intro-deco-line { display: none; }
+            .services-grid { grid-template-columns: 1fr 1fr; }
+            .srv-card.featured { grid-column: span 2; }
+            .process-steps { grid-template-columns: 1fr 1fr; gap: 40px; }
+            .process-steps::before { display: none; }
+        }
+
+        @media (max-width: 767px) {
+            .srv-hero h1 { font-size: 34px; }
+            .srv-hero p  { font-size: 16px; }
+            .hero-stats  { gap: 28px; flex-wrap: wrap; }
+            .hero-stat-num { font-size: 28px; }
+
+            section.light, section.gray { padding: 56px 0; }
+            .section-title { font-size: 26px; }
+
+            .services-grid { grid-template-columns: 1fr; }
+            .srv-card.featured { grid-column: span 1; }
+            .srv-card.featured .srv-card-body { flex-direction: column; }
+            .srv-card.featured .srv-icon { margin-bottom: 16px; }
+
+            .process-steps { grid-template-columns: 1fr 1fr; gap: 32px; }
+
+            .cta-banner h2 { font-size: 26px; }
+            .cta-deco { font-size: 80px; }
+        }
+
+        @media (max-width: 480px) {
+            .hero-stats { flex-direction: column; gap: 20px; }
+            .process-steps { grid-template-columns: 1fr; }
+            .intro-badge-float { right: 0; bottom: -14px; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Scroll progress -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- WhatsApp Float -->
+    <div class="whatsapp-icon">
+        <a href="https://wa.me/525549022481?text=Hola%20me%20gustaría%20saber%20más%20sobre%20automatización%20de%20almacenes." target="_blank" aria-label="Contactar a TiKendo por WhatsApp">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp TiKendo">
+        </a>
+    </div>
+
+    <!-- Navbar -->
+    <header class="navbar-area">
+        <nav class="navbar navbar-area-2 navbar-area navbar-expand-lg">
+            <div class="container nav-container">
+                <div class="responsive-mobile-menu">
+                    <button class="menu toggle-btn d-block d-lg-none" data-target="#transpro_main_menu" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="icon-left"></span>
+                        <span class="icon-right"></span>
+                    </button>
+                </div>
+                <div class="logo">
+                    <a href="index.html" class="logo-1"><img src="assets/img/home-2/logo_1.webp" alt="TiKendo"></a>
+                    <a href="index.html" class="logo-2"><img src="assets/img/logo-2.webp" alt="TiKendo automatización de almacenes"></a>
+                </div>
+                <div class="nav-right-part nav-right-part-mobile">
+                    <a class="btn btn-base" href="contacto.html">Solicita una cotización</a>
+                </div>
+                <div class="collapse navbar-collapse" id="transpro_main_menu">
+                    <ul class="navbar-nav menu-open text-end">
+                        <li><a href="nosotros.html">Nosotros</a></li>
+                        <li><a href="servicios.html">Servicios</a></li>
+                        <li><a href="productos.html" class="nav-active">Productos</a></li>
+                        <li><a href="soluciones.html">Soluciones</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="nav-right-part nav-right-part-desktop">
+                    <a class="btn btn-base" href="contacto.html">Solicita una cotización</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ═══════════════════════════════════════
+         HERO
+    ═══════════════════════════════════════ -->
+    <section class="srv-hero">
+        <div class="container">
+            <div class="srv-hero-content"><br>
+                <div class="srv-hero-badge">Lo que hacemos</div>
+                <h1>Nuestros <span>Servicios</span></h1>
+                <p>Soluciones integrales para optimizar tu cadena de suministro y la gestión de almacenes, desde la automatización hasta el soporte especializado.</p>
+
+                <div class="hero-stats">
+                    <div class="hero-stat">
+                        <span class="hero-stat-num">5+</span>
+                        <span class="hero-stat-label">Servicios especializados</span>
+                    </div>
+                    <div class="hero-stat">
+                        <span class="hero-stat-num">+15</span>
+                        <span class="hero-stat-label">Años de experiencia</span>
+                    </div>
+                    <div class="hero-stat">
+                        <span class="hero-stat-num">100%</span>
+                        <span class="hero-stat-label">Soporte en sitio</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         INTRO
+    ═══════════════════════════════════════ -->
+    <section class="light">
+        <div class="container">
+            <div class="intro-grid">
+                <!-- Imagen / visual -->
+                <div class="intro-visual">
+                    <div class="intro-deco-line"></div>
+                    <div class="intro-box">
+                        <!-- Reemplaza esta imagen con la real cuando esté disponible -->
+                        <img src="assets/img/banner/Tecnologías de almacén - TiKendo.webp" alt="Servicios TiKendo" onerror="this.style.display='none'">
+                    </div>
+                    <div class="intro-badge-float">
+                        <strong>AIDC</strong>
+                        <span>Tecnología avanzada</span>
+                    </div>
+                </div>
+
+                <!-- Texto -->
+                <div>
+                    <span class="section-label">¿Qué ofrecemos?</span>
+                    <h2 class="section-title">Tecnología que <em>transforma</em> tus operaciones</h2>
+                    <p class="section-lead">Nuestra empresa de tecnología ofrece soluciones innovadoras para optimizar tu cadena de suministro y la gestión de almacenes. Desde la automatización de procesos hasta el soporte técnico especializado, brindamos herramientas y servicios que mejoran la eficiencia operativa y prolongan la vida útil de tus equipos.</p>
+                    <p class="section-lead" style="margin-top:16px;">Trabajamos contigo en cada etapa: diagnóstico, implementación y seguimiento continuo, para garantizar resultados medibles en tu operación.</p>
+                    <a href="https://wa.me/525549022481?text=Hola%2C%20me%20interesa%20conocer%20sus%20servicios." class="btn-blanco" style="margin-top:32px; background:var(--naranja); color:#fff; box-shadow:0 4px 20px rgba(250,67,24,0.3);">
+                        <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                        Habla con un experto
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         SERVICIOS CARDS
+    ═══════════════════════════════════════ -->
+    <section class="gray">
+        <div class="container">
+            <div class="services-header">
+                <span class="section-label">Portafolio de servicios</span>
+                <h2 class="section-title">Todo lo que necesitas <em>en un solo lugar</em></h2>
+                <p style="font-size:16px;color:var(--texto-suave);font-weight:300;max-width:500px;margin:0 auto;line-height:1.7;">Desde la consultoría inicial hasta la implementación y el soporte continuo, te acompañamos en cada paso.</p>
+            </div>
+
+            <div class="services-grid">
+
+                <!-- CARD 1 – FEATURED -->
+                <div class="srv-card featured">
+                    <div class="srv-card-bar"></div>
+                    <div class="srv-card-body">
+                        <div class="srv-icon">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+                        </div>
+                        <div class="srv-card-text">
+                            <span class="srv-num">Servicio 01</span>
+                            <h3>Servicios de gestión de almacén (AIDC)</h3>
+                            <p>Con nuestros servicios de Identificación Automática y Captura de Datos (AIDC) logramos una automatización completa en tu cadena de suministro, almacén y gestión de centros de distribución. Integramos tecnologías de código de barras, RFID y visión artificial para eliminar errores manuales y acelerar tus procesos.</p>
+                            <a href="https://wa.me/525549022481?text=Hola%2C%20quiero%20más%20información%20sobre%20el%20servicio%20AIDC." class="srv-card-link">
+                                Conocer más
+                                <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARD 2 -->
+                <div class="srv-card">
+                    <div class="srv-card-bar"></div>
+                    <div class="srv-card-body">
+                        <div class="srv-icon">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+                        </div>
+                        <span class="srv-num">Servicio 02</span>
+                        <h3>Soporte y mantenimiento</h3>
+                        <p>El mantenimiento preventivo y correctivo de tus equipos agiliza la productividad y alarga la vida útil de tus impresoras térmicas, hand helds y lectores de códigos de barras. Agendamos tu mantenimiento en sitio a la medida de tu operación.</p>
+                        <a href="https://wa.me/525549022481?text=Hola%2C%20quiero%20agendar%20un%20mantenimiento." class="srv-card-link">
+                            Agendar mantenimiento
+                            <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- CARD 3 -->
+                <div class="srv-card">
+                    <div class="srv-card-bar"></div>
+                    <div class="srv-card-body">
+                        <div class="srv-icon">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                        </div>
+                        <span class="srv-num">Servicio 03</span>
+                        <h3>Desarrollo e implementación de WMS</h3>
+                        <p>Desarrollamos e implementamos sistemas de gestión de almacén (WMS), desde los más robustos del mercado hasta soluciones a la medida diseñadas específicamente para las necesidades de tu operación logística.</p>
+                        <a href="https://wa.me/525549022481?text=Hola%2C%20quiero%20información%20sobre%20WMS." class="srv-card-link">
+                            Cotizar WMS
+                            <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- CARD 4 -->
+                <div class="srv-card">
+                    <div class="srv-card-bar"></div>
+                    <div class="srv-card-body">
+                        <div class="srv-icon">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                        </div>
+                        <span class="srv-num">Servicio 04</span>
+                        <h3>Consultoría y asesoramiento</h3>
+                        <p>Te ayudamos a automatizar tu cadena de suministro sugiriendo soluciones tecnológicas que resuelvan tus problemáticas actuales. Analizamos tu operación y diseñamos una hoja de ruta de transformación digital.</p>
+                        <a href="https://wa.me/525549022481?text=Hola%2C%20quiero%20una%20consultoría." class="srv-card-link">
+                            Solicitar asesoría
+                            <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- CARD 5 -->
+                <div class="srv-card">
+                    <div class="srv-card-bar"></div>
+                    <div class="srv-card-body">
+                        <div class="srv-icon">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg>
+                        </div>
+                        <span class="srv-num">Servicio 05</span>
+                        <h3>Demostraciones de tecnología AIDC</h3>
+                        <p>Agenda una demostración de nuestros equipos y soluciones. Evalúa una solución integral en acción y descubre las ventajas reales de la automatización antes de tomar una decisión de inversión.</p>
+                        <a href="https://wa.me/525549022481?text=Hola%2C%20quiero%20agendar%20una%20demostración." class="srv-card-link">
+                            Agendar demo
+                            <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         PROCESO
+    ═══════════════════════════════════════ -->
+    <section class="light">
+        <div class="container">
+            <div class="process-header">
+                <span class="section-label">Cómo trabajamos</span>
+                <h2 class="section-title">Un proceso <em>claro y probado</em></h2>
+                <p style="font-size:16px;color:var(--texto-suave);font-weight:300;max-width:480px;margin:0 auto;line-height:1.7;">Cada proyecto sigue una metodología estructurada para garantizar resultados concretos y sostenibles.</p>
+            </div>
+
+            <div class="process-steps">
+                <div class="process-step">
+                    <div class="step-num">01</div>
+                    <h4>Diagnóstico</h4>
+                    <p>Analizamos tus procesos actuales e identificamos áreas de mejora en tu cadena de suministro.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-num">02</div>
+                    <h4>Propuesta</h4>
+                    <p>Diseñamos una solución a la medida con tecnología AIDC, WMS o soporte técnico según tus necesidades.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-num">03</div>
+                    <h4>Implementación</h4>
+                    <p>Instalamos y configuramos los equipos y sistemas en sitio con capacitación a tu equipo.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-num">04</div>
+                    <h4>Soporte continuo</h4>
+                    <p>Garantizamos el funcionamiento óptimo con mantenimientos preventivos y atención especializada.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════
+         FOOTER / CTA
+    ═══════════════════════════════════════ -->
+    <section id="Contacto">
+        <footer class="footer-area">
+            <section>
+                <div class="cta-banner">
+                    <div class="cta-deco">TIKENDO</div>
+                    <div class="container">
+                        <h2>¿Listo para optimizar tu almacén?</h2>
+                        <p>Agenda una sesión personalizada sin costo y conoce cómo podemos transformar tus operaciones logísticas.</p>
+                        <a href="https://wa.me/525549022481?text=Hola%2C%20quiero%20agendar%20una%20sesión%20de%20asesoría%20personalizada%20para%20optimizar%20mi%20almacén." class="btn-blanco">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                            Agenda tu asesoría
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <div class="footer-top" style="background-image: url(assets/img/footer/bg.webp);">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-4 col-md-6">
+                            <div class="single-footer-top">
+                                <div class="icon"><img src="assets/img/icon/map-marker.webp" alt="Dirección TiKendo"></div>
+                                <div class="details">
+                                    <h6>DIRECCIÓN:</h6>
+                                    <p>Blvd. Solidaridad las Torres,</p>
+                                    <p>Álvaro Obregón, 52100 San Mateo Atenco, Méx.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="single-footer-top">
+                                <div class="icon"><img src="assets/img/icon/phone.webp" alt="Teléfonos de contacto TiKendo"></div>
+                                <div class="details">
+                                    <h6>CONTÁCTANOS</h6>
+                                    <p>+52 55 1328 7995</p>
+                                    <p>+52 722 326 0677</p>
+                                    <p>ventas@tikendo.mx</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="single-footer-top after-none">
+                                <div class="icon"><img src="assets/img/icon/clock.webp" alt="Horarios de atención TiKendo"></div>
+                                <div class="details">
+                                    <h6>HORARIOS DE ATENCIÓN</h6>
+                                    <p>Lunes a Viernes</p>
+                                    <p>9:00 hrs a 18:00 hrs.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="footer-bottom-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 text-lg-start text-center">
+                        <p>© Copyright 2025 By <a href="https://tikendo.com.mx">Tikendo S.A. de C.V.</a>, Todos los derechos reservados.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="back-to-top"><span class="back-top"><i class="fa fa-angle-up"></i></span></div>
+
+    <script src="assets/js/vendor.js"></script>
+    <script src="assets/js/main.js" defer></script>
+
+    <script>
+        // Scroll progress bar
+        window.addEventListener('scroll', () => {
+            const scrolled = (window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100;
+            document.getElementById('scrollProgress').style.width = scrolled + '%';
+        });
+    </script>
+</body>
+</html>
