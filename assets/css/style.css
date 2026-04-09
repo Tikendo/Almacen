@@ -6157,7 +6157,31 @@ blockquote .icon {
     align-items: center !important;
     margin-top: -274px;
 } */
+.banner-inner .title {
+            font-size: 74px !important;
+            line-height: 1.2 !important;
+            font-weight: 900 !important;
+            margin-bottom: 24px !important;
+        }
 
+        @media (max-width: 991px) {
+            .banner-inner .title {
+                font-size: 32px !important;
+            }
+        }
 
+        @media (max-width: 575px) {
+            .banner-inner .title {
+                font-size: 26px !important;
+            }
+        }
+        /*wcu-area start*/
+        .icon-label {
+            color: #fff;
+            font-size: 18px;
+            font-weight: 500;
+            text-transform: uppercase;
+            margin: 0;
+        }
 
 
