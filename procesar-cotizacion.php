@@ -144,7 +144,7 @@ if (strlen($nombre) < 3) {
         $mail->Host = 'smtp.zoho.com';
         $mail->SMTPAuth = true;
         $mail->Username = $from_email;
-        $mail->Password = 'Tikendo2024$';   // ⚠️ Cambiar por contraseña real
+        $mail->Password = 'Tikendo2024$';
         $mail->SMTPSecure = 'ssl';
         $mail->Port = 465;
 

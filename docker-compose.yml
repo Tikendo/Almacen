@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  app:
+    image: php:8.2-apache
+    ports:
+      - "3005:80"
+    volumes:
+      - .:/var/www/html
+    working_dir: /var/www/html
+    command: >
+      bash -c "docker-php-ext-install mysqli pdo pdo_mysql && 
+               a2enmod rewrite && 
+               apache2-foreground"
