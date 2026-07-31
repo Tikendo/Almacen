@@ -5,16 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Impresoras Etiquetas Zebra Honeywell México | TiKendo Almacén</title>
+    <title>Impresoras de Etiquetas Zebra y Térmicas Industriales | TiKendo México</title>
     <meta name="description"
-        content="Impresoras etiquetas Zebra ZT410/ZD421, Honeywell PX940/PC42t México. Escritorio, portátil, industrial. Cotización inmediata + soporte.">
-    <link rel="canonical" href="https://automatizaciondealmacen.com/impresoras-de-etiquetas.html">
+        content="Impresoras de etiquetas Zebra y térmicas industriales en México: escritorio, portátil e industrial. ZT410, ZD421, Honeywell PX940. Cotización inmediata + soporte.">
+    <link rel="canonical" href="https://automatizaciondealmacen.com/impresoras-de-etiquetas">
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-    <link rel="alternate" hreflang="es-MX" href="https://automatizaciondealmacen.com/impresoras-de-etiquetas.html">
-    <link rel="sitemap" type="application/xml" href="/sitemap.xml">
-    <meta property="og:title" content="Impresoras de Etiquetas para Almacén | TiKendo México">
+    <link rel="alternate" hreflang="es-MX" href="https://automatizaciondealmacen.com/impresoras-de-etiquetas">
+    <link rel="alternate" hreflang="es" href="https://automatizaciondealmacen.com/impresoras-de-etiquetas">
+    <link rel="alternate" hreflang="x-default" href="https://automatizaciondealmacen.com/impresoras-de-etiquetas">
+    <meta property="og:title" content="Impresoras de Etiquetas Zebra y Térmicas Industriales | TiKendo México">
     <meta property="og:description"
-        content="Impresoras térmicas de etiquetas Zebra y Honeywell para almacén, logística y manufactura en México.">
+        content="Impresoras térmicas de etiquetas industriales Zebra y Honeywell para almacén, logística y manufactura en México.">
     <meta property="og:url" content="https://automatizaciondealmacen.com/impresoras-de-etiquetas">
     <meta property="og:type" content="website">
     <meta property="og:image"
@@ -24,9 +25,9 @@
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@ti_kndo">
-    <meta name="twitter:title" content="Impresoras de Etiquetas para Almacén | TiKendo México">
+    <meta name="twitter:title" content="Impresoras de Etiquetas Zebra y Térmicas Industriales | TiKendo México">
     <meta name="twitter:description"
-        content="Impresoras térmicas de etiquetas Zebra y Honeywell para almacén, logística y manufactura en México.">
+        content="Impresoras térmicas de etiquetas industriales Zebra y Honeywell para almacén, logística y manufactura en México.">
     <meta name="twitter:image"
         content="https://automatizaciondealmacen.com/assets/img/banner/impresoras-de-etiquetas.webp">
 
@@ -57,13 +58,20 @@
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "itemListElement": [
-    {"@type": "ListItem", "position": 1, "name": "Productos", "item": "https://automatizaciondealmacen.com/productos.html"},
-    {"@type": "ListItem", "position": 2, "name": "Impresoras de Etiquetas", "item": "https://automatizaciondealmacen.com/impresoras-de-etiquetas.html"}
+    {"@type": "ListItem", "position": 1, "name": "Productos", "item": "https://automatizaciondealmacen.com/productos"},
+    {"@type": "ListItem", "position": 2, "name": "Impresoras de Etiquetas", "item": "https://automatizaciondealmacen.com/impresoras-de-etiquetas"}
   ]
 }
 </script>
 
     <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap"
+        rel="stylesheet">
     <link rel="preload" href="assets/css/vendor.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <link rel="preload" href="assets/css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <link rel="preload" href="assets/css/responsive.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
@@ -76,6 +84,19 @@
             --gris-claro: #f9f9f9;
             --texto: #333333;
             --texto-suave: #666666;
+        }
+
+        /* Scroll progress */
+        .scroll-progress {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 3px;
+            background: var(--naranja);
+            z-index: 9999;
+            transition: width 0.1s linear;
+            box-shadow: 0 0 10px rgba(250, 67, 24, 0.5);
+            width: 0%;
         }
 
         /* Hero */
@@ -505,6 +526,14 @@
             .specs-grid {
                 grid-template-columns: repeat(2, 1fr);
             }
+
+            .cta-banner h2 {
+                font-size: 26px;
+            }
+
+            .cta-deco {
+                font-size: 80px;
+            }
         }
 
         @media(max-width:575px) {
@@ -563,38 +592,89 @@
         /* ── CTA ── */
         .cta-banner {
             background: var(--naranja);
-            padding: 60px 0;
+            padding: 80px 0;
             text-align: center;
-            color: #fff;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-banner::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background-image:
+                linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+            background-size: 40px 40px;
+        }
+
+        .cta-deco {
+            position: absolute;
+            font-family: 'Syne', sans-serif;
+            font-size: 160px;
+            font-weight: 800;
+            color: rgba(255, 255, 255, 0.06);
+            line-height: 1;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            white-space: nowrap;
+            pointer-events: none;
+            letter-spacing: -0.04em;
+        }
+
+        .cta-banner .container {
+            position: relative;
+            z-index: 2;
         }
 
         .cta-banner h2 {
-            font-size: 30px;
+            font-size: 38px;
             font-weight: 800;
-            margin-bottom: 10px;
+            margin-bottom: 12px;
+            color: #fff;
+            letter-spacing: -0.02em;
+            line-height: 1.15;
         }
 
         .cta-banner p {
             font-size: 16px;
             opacity: .92;
-            margin-bottom: 28px;
+            margin-bottom: 34px;
+            color: #fff;
+            font-weight: 300;
+            max-width: 460px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.6;
         }
 
         .btn-blanco {
             background: #fff;
             color: var(--naranja);
-            padding: 13px 36px;
-            border-radius: 5px;
+            padding: 15px 40px;
+            border-radius: 8px;
             font-weight: 700;
             font-size: 15px;
             text-decoration: none;
-            display: inline-block;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
             transition: transform .2s, box-shadow .2s;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.15);
+            letter-spacing: 0.01em;
+        }
+
+        .btn-blanco svg {
+            width: 18px;
+            height: 18px;
+            fill: currentColor;
+            flex-shrink: 0;
         }
 
         .btn-blanco:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+            transform: translateY(-3px);
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25);
             color: var(--naranja);
             text-decoration: none;
         }
@@ -608,6 +688,9 @@
 </head>
 
 <body>
+
+    <!-- Scroll progress -->
+    <div class="scroll-progress" id="scrollProgress"></div>
 
     <!-- WhatsApp -->
     <div class="whatsapp-icon">
@@ -662,7 +745,7 @@
         <div class="hero-overlay"></div>
         <div class="container hero-content"><br><br><br>
             <span class="hero-tag">Productos</span>
-            <h1>Impresoras de <span>Etiquetas</span><br>para Almacén en México</h1>
+            <h1>Impresoras de <span>Etiquetas</span> Térmicas<br>Industriales Zebra y Honeywell en México</h1>
             <p>Soluciones de impresión térmica de códigos de barras, tickets y rótulos de las marcas líderes del
                 mercado: Zebra, Honeywell y más.</p>
             <div class="hero-btns">
@@ -726,7 +809,11 @@
                         eficiente para la identificación de productos, etiquetado de inventario, generación de guías de
                         envío, trazabilidad de lotes y control de activos. Con más de 186 proyectos implementados,
                         ayudamos a empresas de todos los tamaños a elegir e integrar la impresora correcta según su
-                        volumen de producción, entorno de trabajo y sistema de gestión de almacén (WMS).
+                        volumen de producción, entorno de trabajo y sistema de gestión de almacén (WMS). Combínalas con
+                        nuestros <a href="escaneres-codigo-barras.html" style="color:var(--naranja);font-weight:600;">escáneres de código de barras</a>,
+                        el <a href="sistemas-gestion-almacen-wms.html" style="color:var(--naranja);font-weight:600;">sistema WMS de gestión de almacenes</a>
+                        y las demás <a href="productos.html" style="color:var(--naranja);font-weight:600;">productos de automatización de almacenes</a>
+                        para una operación integral.
                     </p>
                     <p style="color:#666; font-size:15px; line-height:1.75;">
                         Contamos con impresoras compatibles con los principales lenguajes de programación: ZPL, EPL, DPL
@@ -775,9 +862,9 @@
         <div class="container">
             <div class="section-title-left">
                 <span class="subtitle">Catálogo</span>
-                <h2>Tipos de Impresoras de Etiquetas</h2>
-                <p>Contamos con tres líneas de impresoras para adaptarnos al volumen y las condiciones de trabajo de tu
-                    almacén.</p>
+                <h2>Tipos de Impresoras y Etiquetadoras de Etiquetas</h2>
+                <p>Contamos con tres líneas de impresoras térmicas de etiquetas —escritorio, portátil e industrial—
+                    para adaptarnos al volumen y las condiciones de trabajo de tu almacén.</p>
             </div>
             <div class="tipos-tabs">
                 <button class="tab-btn active" data-tab="escritorio">Escritorio</button>
@@ -1149,14 +1236,24 @@
     <section id="Contacto">
         <footer class="footer-area">
             <!-- CTA -->
-            <div class="cta-banner">
-                <div class="container">
-                    <h2>¿Listo para cotizar tu impresora?</h2>
-                    <p style="color: #fff;">Cuéntanos el volumen de impresión y el entorno de trabajo — te recomendamos
-                        el modelo ideal.</p>
-                    <a href="/#Formulario" class="btn-blanco">Solicitar cotización</a>
+            <section>
+                <div class="cta-banner">
+                    <div class="cta-deco">TIKENDO</div>
+                    <div class="container">
+                        <h2>¿Listo para cotizar tu impresora de etiquetas?</h2>
+                        <p>Cuéntanos el volumen de impresión y el entorno de trabajo — te recomendamos el modelo ideal de
+                            automatización de almacenes para tu operación en México.</p>
+                        <a href="https://wa.me/525549022481?text=Hola%2C%20quiero%20cotizar%20una%20impresora%20de%20etiquetas%20para%20mi%20almacén."
+                            class="btn-blanco">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                            </svg>
+                            Solicitar cotización ahora
+                        </a>
+                    </div>
                 </div>
-            </div>
+            </section>
             <div class="footer-top" style="background-image: url(assets/img/footer/bg.webp);">
                 <div class="container">
                     <div class="row justify-content-center">
@@ -1223,6 +1320,13 @@
                 btn.classList.add('active');
                 document.getElementById('tab-' + btn.dataset.tab).classList.add('active');
             });
+        });
+    </script>
+    <script>
+        // Scroll progress bar
+        window.addEventListener('scroll', () => {
+            const scrolled = (window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100;
+            document.getElementById('scrollProgress').style.width = scrolled + '%';
         });
     </script>
 </body>
