@@ -1,3 +1,6 @@
+<!DOCTYPE html>
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,6 +22,14 @@
     <meta property="og:url" content="https://automatizaciondealmacen.com/contacto">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://automatizaciondealmacen.com/assets/img/banner/contacto1.jpg">
+    <meta property="og:locale" content="es_MX">
+    <meta property="og:site_name" content="TiKendo">
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Contacto TiKendo | Cotización y Asesoría en Automatización de Almacenes">
+    <meta name="twitter:description"
+        content="Cotización personalizada para automatización de almacenes en México: WMS, RFID, Zebra y Honeywell.">
+    <meta name="twitter:image" content="https://automatizaciondealmacen.com/assets/img/banner/contacto1.jpg">
 
     <!-- Preload CSS -->
     <link rel="preload" href="assets/css/vendor.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
@@ -34,6 +45,13 @@
     <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
     <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap"
+        rel="stylesheet">
 
     <!-- Schema para página de contacto -->
     <script type="application/ld+json">
@@ -59,14 +77,17 @@
         },
         "openingHours": "Mo-Fr 09:00-18:00",
         "areaServed": "México"
-      },
-      "breadcrumb": {
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-          {"@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://automatizaciondealmacen.com/"},
-          {"@type": "ListItem", "position": 2, "name": "Contacto", "item": "https://automatizaciondealmacen.com/contacto"}
-        ]
       }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://automatizaciondealmacen.com/"},
+        {"@type": "ListItem", "position": 2, "name": "Contacto", "item": "https://automatizaciondealmacen.com/contacto"}
+      ]
     }
     </script>
 
@@ -95,7 +116,7 @@
         body {
             color: var(--texto);
             background: #fff;
-
+            font-family: 'DM Sans', sans-serif;
         }
 
         /* ─── WHATSAPP FLOAT ─── */
@@ -741,6 +762,7 @@
 
         .cta-deco {
             position: absolute;
+            font-family: 'Syne', sans-serif;
             font-size: 160px;
             font-weight: 800;
             color: rgba(255, 255, 255, 0.06);
@@ -991,7 +1013,7 @@
         <div class="container">
             <div class="srv-hero-content"><br>
                 <div class="srv-hero-badge">¡Estamos listos para ayudarte!</div>
-                <h1>Contáctanos</h1>
+                <h1>Contacto de <span>Automatización de Almacenes</span> en México</h1>
                 <p>Ponte en contacto para recibir asesoría personalizada sobre automatización de almacenes,
                     mantenimiento o cualquier duda sobre nuestros servicios y productos.</p>
             </div>
