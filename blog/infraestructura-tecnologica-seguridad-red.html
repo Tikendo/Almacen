@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Infraestructura tecnológica en el almacén: Cómo garantizar la seguridad de red y evitar paros en la operación | TiKendo</title>
-    <meta name="description" content="La importancia de contar con conectividad industrial robusta (AP industriales, redes seguras) para que los sistemas automatizados no se caigan.">
+    <title>Infraestructura tecnológica en el almacén: Cómo garantizar la seguridad de red y evitar paros en la operación
+        | TiKendo</title>
+    <meta name="description"
+        content="La importancia de contar con conectividad industrial robusta (AP industriales, redes seguras) para que los sistemas automatizados no se caigan.">
     <link rel="canonical" href="https://automatizaciondealmacen.com/blog/infraestructura-tecnologica-seguridad-red">
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 
@@ -26,6 +29,15 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap"
         rel="stylesheet">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5PMNCYQHY5"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-5PMNCYQHY5');
+    </script>
 </head>
 
 <body>
@@ -79,12 +91,14 @@
 
     <main class="main-content">
         <header class="post-header banner-5">
-                <div class="post-meta">
-                    <span class="post-category">Thought Leadership</span>
-                    <time datetime="2026-08-04">04 de Agosto, 2026</time>
-                </div>
-                <h1>Infraestructura tecnológica en el almacén: Cómo garantizar la seguridad de red y evitar paros en la operación</h1>
-                <p class="post-excerpt">La importancia de contar con conectividad industrial robusta (AP industriales, redes seguras) para que los sistemas automatizados no se caigan.</p>
+            <div class="post-meta">
+                <span class="post-category">Thought Leadership</span>
+                <time datetime="2026-08-04">04 de Agosto, 2026</time>
+            </div>
+            <h1>Infraestructura tecnológica en el almacén: Cómo garantizar la seguridad de red y evitar paros en la
+                operación</h1>
+            <p class="post-excerpt">La importancia de contar con conectividad industrial robusta (AP industriales, redes
+                seguras) para que los sistemas automatizados no se caigan.</p>
         </header>
 
         <article class="blog-post">
@@ -92,13 +106,17 @@
             <div class="post-content">
                 <section>
                     <h2>El talón de Aquiles invisible de la automatización</h2>
-                    <p>Inviertes en AMRs, shuttles, pick-to-light, RFID. Todo conectado al WMS, al ERP, a la nube. Pero si la red falla 5 minutos: los robots se detienen, los operarios no reciben tareas, los camiones no se despachan. El costo de un paro no planificado en un CD automatizado supera los <strong>$50,000 - $200,000 USD/hora</strong> según Gartner.</p>
-                    <p>La red no es "plomería de TI". Es infraestructura crítica de producción, igual que la electricidad o el aire comprimido.</p>
+                    <p>Inviertes en AMRs, shuttles, pick-to-light, RFID. Todo conectado al WMS, al ERP, a la nube. Pero
+                        si la red falla 5 minutos: los robots se detienen, los operarios no reciben tareas, los camiones
+                        no se despachan. El costo de un paro no planificado en un CD automatizado supera los
+                        <strong>$50,000 - $200,000 USD/hora</strong> según Gartner.</p>
+                    <p>La red no es "plomería de TI". Es infraestructura crítica de producción, igual que la
+                        electricidad o el aire comprimido.</p>
                 </section>
 
                 <section>
                     <h2>1. Arquitectura de red OT/IT: Separación con convergencia controlada</h2>
-                    
+
                     <h3>Modelo Purdue adaptado para almacén</h3>
                     <table class="evaluation-table">
                         <thead>
@@ -142,18 +160,22 @@
                             </tr>
                         </tbody>
                     </table>
-                    
-                    <p><strong>Regla de oro:</strong> El tráfico OT nunca cruza directo a IT. Paso obligado por DMZ / Data Diode / Industrial Firewall.</p>
+
+                    <p><strong>Regla de oro:</strong> El tráfico OT nunca cruza directo a IT. Paso obligado por DMZ /
+                        Data Diode / Industrial Firewall.</p>
                 </section>
 
                 <section>
                     <h2>2. Wireless Industrial: No es Wi-Fi de oficina</h2>
-                    
+
                     <h3>Requisitos no negociables</h3>
                     <ul>
-                        <li><strong>Roaming < 50ms (802.11r/k/v):</strong> AMRs moviéndose entre APs sin perder paquete</li>
-                        <li><strong>Cobertura 100% sin huecos:</strong> Incluyendo pasillos estrechos, entre estanterías, muelles, cámara fría</li>
-                        <li><strong>QoS estricto:</strong> Tráfico control (AMR, safety) prioridad máxima sobre video/voz/datos</li>
+                        <li><strong>Roaming < 50ms (802.11r/k/v):</strong> AMRs moviéndose entre APs sin perder paquete
+                        </li>
+                        <li><strong>Cobertura 100% sin huecos:</strong> Incluyendo pasillos estrechos, entre
+                            estanterías, muelles, cámara fría</li>
+                        <li><strong>QoS estricto:</strong> Tráfico control (AMR, safety) prioridad máxima sobre
+                            video/voz/datos</li>
                         <li><strong>Redundancia de controlador:</strong> Clúster activo-activo, failover < 1s</li>
                     </ul>
 
@@ -162,7 +184,8 @@
                         <li><strong>Cisco Catalyst / Meraki MR (industrial):</strong> IP67, temp -40 a 65°C, PoE+</li>
                         <li><strong>Aruba (HPE) AP-5xx series:</strong> AI-powered RF, roaming ultra-rápido</li>
                         <li><strong>Ruckus (CommScope) T7xx / R7xx:</strong> Beamflex+, alta densidad</li>
-                        <li><strong>Belden / Hirschmann / Moxa:</strong> Switches/APs puramente industriales, certificaciones IEC 61850, EN 50121</li>
+                        <li><strong>Belden / Hirschmann / Moxa:</strong> Switches/APs puramente industriales,
+                            certificaciones IEC 61850, EN 50121</li>
                     </ul>
 
                     <h3>Diseño de celdas</h3>
@@ -179,14 +202,15 @@
                     <ul>
                         <li><strong>Cat 6A mínimo:</strong> 10 Gbps a 100m, PoE++ (90W) para APs, cámaras, displays</li>
                         <li><strong>Fibra OM4/OM5 backbone:</strong> 100/400 Gbps entre MDF/IDFs, inmunidad EMI/RFI</li>
-                        <li><strong>Ruteo separado:</strong> Bandejas OT separadas de IT, distancia > 30cm de potencia</li>
+                        <li><strong>Ruteo separado:</strong> Bandejas OT separadas de IT, distancia > 30cm de potencia
+                        </li>
                         <li><strong>Redundancia física:</strong> Dos caminos físicos distintos a cada IDF (anillo)</li>
                     </ul>
                 </section>
 
                 <section>
                     <h2>4. Ciberseguridad OT: Más que un firewall</h2>
-                    
+
                     <h3>Controles esenciales (IEC 62443 / NIST CSF)</h3>
                     <table class="evaluation-table">
                         <thead>
@@ -206,7 +230,8 @@
                             </tr>
                             <tr>
                                 <td>Gestión de vulnerabilidades</td>
-                                <td>Inventario OT activo (pasivo), parcheo en ventanas de mantenimiento, virtual patching</td>
+                                <td>Inventario OT activo (pasivo), parcheo en ventanas de mantenimiento, virtual
+                                    patching</td>
                             </tr>
                             <tr>
                                 <td>Detección de anomalías</td>
@@ -231,7 +256,8 @@
                         <li><strong>Controladores Wi-Fi: </strong>Clúster activo-activo, licencias compartidas</li>
                         <li><strong>Gateways Edge: </strong>Pares en hot-standby (VRRP/HSRP), stateful</li>
                         <li><strong>Power: </strong>UPS online doble conversión + generador, PDUs monitorizadas</li>
-                        <li><strong>MTTR objetivo:</strong> < 15 min para red, < 4 hrs para dispositivo crítico</li>
+                        <li><strong>MTTR objetivo:</strong>
+                            < 15 min para red, < 4 hrs para dispositivo crítico</li>
                     </ul>
                 </section>
 
@@ -260,8 +286,12 @@
 
                 <section>
                     <h2>Conclusión: La red es el sistema nervioso</h2>
-                    <p>No automatices sobre cimientos de arena. Una infraestructura de red industrial bien diseñada, segmentada, monitorizada y probada es la diferencia entre una operación que escala y una que se cae cada vez que "se traba el Wi-Fi".</p>
-                    <p><strong>¿Necesitas validar tu infraestructura antes de automatizar?</strong> En TiKendo hacemos assessment de red industrial (wireless + cableado + seguridad) con mediciones reales y plan de remediación priorizado. <a href="/contacto">Solicita tu assessment</a>.</p>
+                    <p>No automatices sobre cimientos de arena. Una infraestructura de red industrial bien diseñada,
+                        segmentada, monitorizada y probada es la diferencia entre una operación que escala y una que se
+                        cae cada vez que "se traba el Wi-Fi".</p>
+                    <p><strong>¿Necesitas validar tu infraestructura antes de automatizar?</strong> En TiKendo hacemos
+                        assessment de red industrial (wireless + cableado + seguridad) con mediciones reales y plan de
+                        remediación priorizado. <a href="/contacto">Solicita tu assessment</a>.</p>
                 </section>
             </div>
 
@@ -381,4 +411,5 @@
         });
     </script>
 </body>
+
 </html>
