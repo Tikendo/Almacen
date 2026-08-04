@@ -6,6 +6,15 @@
 # Activar motor de reescritura
 RewriteEngine On
 
+# Evitar que mod_dir redirija /blog (directorio) a /blog/ y genere un bucle con el rewrite
+DirectorySlash Off
+
+# Redirigir /blog/ a /blog para que las rutas relativas (assets/) apunten a la raíz
+RewriteRule ^blog/$ /blog [L,R=301]
+
+# Servir blog.html cuando se solicita /blog (el directorio /blog solo contiene los posts)
+RewriteRule ^blog$ blog.html [L]
+
 # Redirigir URLs con .html a la versión sin extensión (301 permanente)
 # Evita contenido duplicado en Google
 RewriteCond %{THE_REQUEST} /([^.]+)\.html [NC]

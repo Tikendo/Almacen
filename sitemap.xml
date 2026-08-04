@@ -50,6 +50,44 @@
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
+  <!-- Blog -->
+  <url>
+    <loc>https://automatizaciondealmacen.com/blog</loc>
+    <lastmod>2026-08-03T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <!-- Artículos del blog -->
+  <url>
+    <loc>https://automatizaciondealmacen.com/blog/guia-seleccion-wms</loc>
+    <lastmod>2026-08-04T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://automatizaciondealmacen.com/blog/rfid-captura-datos</loc>
+    <lastmod>2026-08-04T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://automatizaciondealmacen.com/blog/tendencias-automatizacion-almacenes</loc>
+    <lastmod>2026-08-04T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://automatizaciondealmacen.com/blog/matriz-evaluacion-automatizar</loc>
+    <lastmod>2026-08-04T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://automatizaciondealmacen.com/blog/infraestructura-tecnologica-seguridad-red</loc>
+    <lastmod>2026-08-04T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
   <!-- Páginas individuales de producto -->
   <url>
     <loc>https://automatizaciondealmacen.com/impresoras-de-etiquetas</loc>
