@@ -791,9 +791,9 @@
                     </button>
                 </div>
                 <div class="logo">
-                    <a href="/" class="logo-1"><img src="assets/img/logos/logo_1.webp"
+                    <a href="/" class="logo-1" aria-label="TiKendo - Ir al inicio"><img src="assets/img/logos/logo_1.webp"
                             alt="TiKendo - Soluciones para automatización de almacén" width="469" height="347"></a>
-                    <a href="/" class="logo-2"><img src="assets/img/logos/logo-2.webp" alt="TiKendo logo" width="235" height="103" loading="lazy" decoding="async"></a>
+                    <a href="/" class="logo-2" aria-label="TiKendo - Ir al inicio"><img src="assets/img/logos/logo-2.webp" alt="TiKendo logo" width="235" height="103" loading="lazy" decoding="async"></a>
                 </div>
                 <div class="nav-right-part nav-right-part-mobile">
                     <a class="btn btn-base" href="/contacto">Solicita una cotización</a>
@@ -814,6 +814,10 @@
             </div>
         </nav>
     </header>
+
+    <!-- main content landmark start -->
+    <main id="main-content" role="main">
+
 
     <!-- Hero -->
     <div class="hero-productos">
@@ -1094,7 +1098,7 @@
 
                 <div class="spec-card">
                     <div class="spec-icon"><img src="assets/img/icon/Handheld.webp" alt="Tecnología de Automatización TiKendo" width="64" height="64" loading="lazy" decoding="async"></div>
-                    <h4>Handheld — Especificaciones generales</h4>
+                    <h3>Handheld — Especificaciones generales</h3>
                     <table class="spec-table">
                         <tr>
                             <td>Pantalla</td>
@@ -1145,7 +1149,7 @@
                         </svg>
                     </div>
 
-                    <h4>Vestible — Especificaciones generales</h4>
+                    <h3>Vestible — Especificaciones generales</h3>
                     <table class="spec-table">
                         <tr>
                             <td>Pantalla</td>
@@ -1197,7 +1201,7 @@
                         </svg>
                     </div>
 
-                    <h4>Vehicular — Especificaciones generales</h4>
+                    <h3>Vehicular — Especificaciones generales</h3>
 
                     <table class="spec-table">
                         <tr>
@@ -1233,7 +1237,7 @@
 
                 <div class="spec-card">
                     <div class="spec-icon"><img src="assets/img/icon/wifi.webp" alt="Tecnología de Automatización TiKendo" width="64" height="64" loading="lazy" decoding="async"></div>
-                    <h4>Conectividad</h4>
+                    <h3>Conectividad</h3>
                     <table class="spec-table">
                         <tr>
                             <td>Wi-Fi</td>
@@ -1264,7 +1268,7 @@
 
                 <div class="spec-card">
                     <div class="spec-icon"><img src="assets/img/icon/captura-de-datos.webp" alt="Tecnología de Automatización TiKendo" width="64" height="64" loading="lazy" decoding="async"></div>
-                    <h4>Captura de datos integrada</h4>
+                    <h3>Captura de datos integrada</h3>
                     <table class="spec-table">
                         <tr>
                             <td>Escáner 1D</td>
@@ -1295,7 +1299,7 @@
 
                 <div class="spec-card">
                     <div class="spec-icon"><img src="assets/img/icon/gestion-empresarial.webp" alt="Tecnología de Automatización TiKendo" width="64" height="64" loading="lazy" decoding="async"></div>
-                    <h4>Gestión empresarial</h4>
+                    <h3>Gestión empresarial</h3>
                     <table class="spec-table">
                         <tr>
                             <td>MDM compatible</td>
@@ -1426,7 +1430,11 @@
 
     <!-- Footer -->
     <section id="Contacto">
-        <footer class="footer-area">
+        
+    </main>
+    <!-- main content landmark end -->
+
+<footer class="footer-area">
             <!-- CTA -->
             <section>
                 <div class="cta-banner">
@@ -1454,7 +1462,7 @@
                                 <div class="icon"><img src="assets/img/icon/map-marker.webp"
                                         alt="Dirección TiKendo - San Mateo Atenco, Estado de México" width="33" height="45" loading="lazy" decoding="async"></div>
                                 <div class="details">
-                                    <h6>DIRECCIÓN:</h6>
+                                    <h3 class="widget-h6-title">DIRECCIÓN:</h3>
                                     <p>Blvd. Solidaridad las Torres,</p>
                                     <p>Álvaro Obregón, 52100 San Mateo Atenco, Méx.</p>
                                 </div>
@@ -1465,7 +1473,7 @@
                                 <div class="icon"><img src="assets/img/icon/phone.webp"
                                         alt="Teléfonos de contacto TiKendo" width="28" height="45" loading="lazy" decoding="async"></div>
                                 <div class="details">
-                                    <h6>CONTÁCTANOS</h6>
+                                    <h3 class="widget-h6-title">CONTÁCTANOS</h3>
                                     <p>+52 55 1328 7995</p>
                                     <p>+52 722 326 0677</p>
                                     <p>automatizaciondealmacen@tikendo.mx</p>
@@ -1477,7 +1485,7 @@
                                 <div class="icon"><img src="assets/img/icon/clock.webp"
                                         alt="Horarios de atención TiKendo" width="44" height="43" loading="lazy" decoding="async"></div>
                                 <div class="details">
-                                    <h6>HORARIOS DE ATENCIÓN</h6>
+                                    <h3 class="widget-h6-title">HORARIOS DE ATENCIÓN</h3>
                                     <p>Lunes a Viernes</p>
                                     <p>9:00 hrs a 18:00 hrs.</p>
                                 </div>

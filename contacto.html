@@ -20,7 +20,7 @@
         content="Solicita tu cotización personalizada para soluciones de almacén: Zebra, Honeywell, RFID y WMS. Respuesta rápida y soporte local en México.">
     <meta property="og:url" content="https://automatizaciondealmacen.com/contacto">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="https://automatizaciondealmacen.com/assets/img/banner/contacto1.jpg">
+    <meta property="og:image" content="https://automatizaciondealmacen.com/assets/img/banner/contacto1.webp">
     <meta property="og:locale" content="es_MX">
     <meta property="og:site_name" content="TiKendo">
     <!-- Twitter Card -->
@@ -28,7 +28,7 @@
     <meta name="twitter:title" content="Contacto TiKendo | Cotización y Asesoría en Automatización de Almacenes">
     <meta name="twitter:description"
         content="Cotización personalizada para automatización de almacenes en México: WMS, RFID, Zebra y Honeywell.">
-    <meta name="twitter:image" content="https://automatizaciondealmacen.com/assets/img/banner/contacto1.jpg">
+    <meta name="twitter:image" content="https://automatizaciondealmacen.com/assets/img/banner/contacto1.webp">
 
     <!-- Preload CSS -->
     <link rel="preload" href="assets/css/vendor.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
@@ -170,7 +170,7 @@
             overflow: hidden;
             background:
                 linear-gradient(to bottom right, rgba(17, 17, 17, 0.82) 0%, rgba(0, 0, 0, 0.38) 100%),
-                #111 url('assets/img/banner/contacto.jpg') center center / cover no-repeat;
+                #111 url('assets/img/banner/contacto.webp') center center / cover no-repeat;
             box-shadow: 0 10px 40px rgba(0, 0, 0, 0.28), 0 3px 8px rgba(0, 0, 0, 0.18);
         }
 
@@ -991,8 +991,8 @@
                     </button>
                 </div>
                 <div class="logo">
-                    <a href="/" class="logo-1"><img src="assets/img/logos/logo_1.webp" alt="TiKendo" width="469" height="347"></a>
-                    <a href="/" class="logo-2"><img src="assets/img/logos/logo-2.webp"
+                    <a href="/" class="logo-1" aria-label="TiKendo - Ir al inicio"><img src="assets/img/logos/logo_1.webp" alt="TiKendo" width="469" height="347"></a>
+                    <a href="/" class="logo-2" aria-label="TiKendo - Ir al inicio"><img src="assets/img/logos/logo-2.webp"
                             alt="TiKendo automatización de almacenes" width="235" height="103" loading="lazy" decoding="async"></a>
                 </div>
                 <div class="nav-right-part nav-right-part-mobile">
@@ -1015,11 +1015,15 @@
         </nav>
     </header>
 
+    <!-- main content landmark start -->
+    <main id="main-content" role="main">
+
+
     <!-- ═══════════════════════════════════════
          HERO CONTACTO
     ═══════════════════════════════════════ -->
     <section class="srv-hero"
-        style="background: linear-gradient(to bottom right, rgba(17,17,17,0.82) 0%, rgba(0,0,0,0.38) 100%), #111 url('assets/img/banner/contacto1.jpg') center center / cover no-repeat;">
+        style="background: linear-gradient(to bottom right, rgba(17,17,17,0.82) 0%, rgba(0,0,0,0.38) 100%), #111 url('assets/img/banner/contacto1.webp') center center / cover no-repeat;">
         <div class="container">
             <div class="srv-hero-content"><br>
                 <div class="srv-hero-badge">¡Estamos listos para ayudarte!</div>
@@ -1170,7 +1174,11 @@
          CTA / FOOTER CONTACTO
     ═══════════════════════════════════════ -->
     <section id="Contacto">
-        <footer class="footer-area">
+        
+    </main>
+    <!-- main content landmark end -->
+
+<footer class="footer-area">
             <section>
                 <div class="cta-banner">
                     <div class="cta-deco">TIKENDO</div>
@@ -1198,7 +1206,7 @@
                                 <div class="icon"><img src="assets/img/icon/map-marker.webp" alt="Dirección TiKendo" width="33" height="45" loading="lazy" decoding="async">
                                 </div>
                                 <div class="details">
-                                    <h6>DIRECCIÓN:</h6>
+                                    <h3 class="widget-h6-title">DIRECCIÓN:</h3>
                                     <p>Blvd. Solidaridad las Torres,</p>
                                     <p>Álvaro Obregón, 52100 San Mateo Atenco, Méx.</p>
                                 </div>
@@ -1209,7 +1217,7 @@
                                 <div class="icon"><img src="assets/img/icon/phone.webp"
                                         alt="Teléfonos de contacto TiKendo" width="28" height="45" loading="lazy" decoding="async"></div>
                                 <div class="details">
-                                    <h6>CONTÁCTANOS</h6>
+                                    <h3 class="widget-h6-title">CONTÁCTANOS</h3>
                                     <p>+52 55 1328 7995</p>
                                     <p>+52 722 326 0677</p>
                                     <p>+52 55 4864 3532</p>
@@ -1222,7 +1230,7 @@
                                 <div class="icon"><img src="assets/img/icon/clock.webp"
                                         alt="Horarios de atención TiKendo" width="44" height="43" loading="lazy" decoding="async"></div>
                                 <div class="details">
-                                    <h6>HORARIOS DE ATENCIÓN</h6>
+                                    <h3 class="widget-h6-title">HORARIOS DE ATENCIÓN</h3>
                                     <p>Lunes a Viernes</p>
                                     <p>9:00 hrs a 18:00 hrs.</p>
                                 </div>

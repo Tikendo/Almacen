@@ -885,9 +885,9 @@
                     </button>
                 </div>
                 <div class="logo">
-                    <a href="/" class="logo-1"><img src="assets/img/logos/logo_1.webp"
+                    <a href="/" class="logo-1" aria-label="TiKendo - Ir al inicio"><img src="assets/img/logos/logo_1.webp"
                             alt="TiKendo - Soluciones para automatización de almacén" width="469" height="347"></a>
-                    <a href="/" class="logo-2"><img src="assets/img/logos/logo-2.webp" alt="TiKendo logo" width="235" height="103" loading="lazy" decoding="async"></a>
+                    <a href="/" class="logo-2" aria-label="TiKendo - Ir al inicio"><img src="assets/img/logos/logo-2.webp" alt="TiKendo logo" width="235" height="103" loading="lazy" decoding="async"></a>
                 </div>
                 <div class="nav-right-part nav-right-part-mobile">
                     <a class="btn btn-base" href="/contacto">Solicita una cotización</a>
@@ -908,6 +908,10 @@
             </div>
         </nav>
     </header>
+
+    <!-- main content landmark start -->
+    <main id="main-content" role="main">
+
 
     <!-- Hero -->
     <div class="hero-productos">
@@ -1204,7 +1208,7 @@
 
                 <div class="spec-card">
                     <div class="spec-icon"><img src="assets/img/icon/Ribbons.webp" alt="Ribbons para Impresoras Zebra" width="64" height="64" loading="lazy" decoding="async"></div>
-                    <h4>Ribbons — Especificaciones</h4>
+                    <h3>Ribbons — Especificaciones</h3>
                     <table class="spec-table">
                         <tr>
                             <td>Anchos disponibles</td>
@@ -1235,7 +1239,7 @@
 
                 <div class="spec-card">
                     <div class="spec-icon"><img src="assets/img/icon/etiquetas.webp" alt="Etiquetas y Tags RFID" width="64" height="64" loading="lazy" decoding="async"></div>
-                    <h4>Etiquetas — Especificaciones</h4>
+                    <h3>Etiquetas — Especificaciones</h3>
                     <table class="spec-table">
                         <tr>
                             <td>Anchos</td>
@@ -1266,7 +1270,7 @@
 
                 <div class="spec-card">
                     <div class="spec-icon"><img src="assets/img/icon/protegido.webp" alt="Protección Industrial IP67" width="64" height="64" loading="lazy" decoding="async"></div>
-                    <h4>Papel térmico POS — Especificaciones</h4>
+                    <h3>Papel térmico POS — Especificaciones</h3>
                     <table class="spec-table">
                         <tr>
                             <td>Anchos estándar</td>
@@ -1297,7 +1301,7 @@
 
                 <div class="spec-card">
                     <div class="spec-icon"><img src="assets/img/icon/caliente.webp" alt="Resistencia a Altas Temperaturas" width="64" height="64" loading="lazy" decoding="async"></div>
-                    <h4>Resistencia de etiquetas por material</h4>
+                    <h3>Resistencia de etiquetas por material</h3>
                     <table class="spec-table">
                         <tr>
                             <td>Papel (TD)</td>
@@ -1328,7 +1332,7 @@
 
                 <div class="spec-card">
                     <div class="spec-icon"><img src="assets/img/icon/cabezal.webp" alt="Cabezales de Impresión Térmica" width="64" height="64" loading="lazy" decoding="async"></div>
-                    <h4>Cabezales de impresión</h4>
+                    <h3>Cabezales de impresión</h3>
                     <table class="spec-table">
                         <tr>
                             <td>Resolución</td>
@@ -1359,7 +1363,7 @@
 
                 <div class="spec-card">
                     <div class="spec-icon"><img src="assets/img/icon/calcular.webp" alt="Cálculo de Consumo de Etiquetas" width="64" height="64" loading="lazy" decoding="async"></div>
-                    <h4>Cómo calcular tu consumo</h4>
+                    <h3>Cómo calcular tu consumo</h3>
                     <table class="spec-table">
                         <tr>
                             <td>Etiquetas/día</td>
@@ -1487,7 +1491,11 @@
 
     <!-- Footer -->
     <section id="Contacto">
-        <footer class="footer-area">
+        
+    </main>
+    <!-- main content landmark end -->
+
+<footer class="footer-area">
             <!-- CTA -->
             <section>
                 <div class="cta-banner">
@@ -1516,7 +1524,7 @@
                                 <div class="icon"><img src="assets/img/icon/map-marker.webp"
                                         alt="Dirección TiKendo - San Mateo Atenco, Estado de México" width="33" height="45" loading="lazy" decoding="async"></div>
                                 <div class="details">
-                                    <h6>DIRECCIÓN:</h6>
+                                    <h3 class="widget-h6-title">DIRECCIÓN:</h3>
                                     <p>Blvd. Solidaridad las Torres,</p>
                                     <p>Álvaro Obregón, 52100 San Mateo Atenco, Méx.</p>
                                 </div>
@@ -1527,7 +1535,7 @@
                                 <div class="icon"><img src="assets/img/icon/phone.webp"
                                         alt="Teléfonos de contacto TiKendo" width="28" height="45" loading="lazy" decoding="async"></div>
                                 <div class="details">
-                                    <h6>CONTÁCTANOS</h6>
+                                    <h3 class="widget-h6-title">CONTÁCTANOS</h3>
                                     <p>+52 55 1328 7995</p>
                                     <p>+52 722 326 0677</p>
                                     <p>automatizaciondealmacen@tikendo.mx</p>
@@ -1539,7 +1547,7 @@
                                 <div class="icon"><img src="assets/img/icon/clock.webp"
                                         alt="Horarios de atención TiKendo" width="44" height="43" loading="lazy" decoding="async"></div>
                                 <div class="details">
-                                    <h6>HORARIOS DE ATENCIÓN</h6>
+                                    <h3 class="widget-h6-title">HORARIOS DE ATENCIÓN</h3>
                                     <p>Lunes a Viernes</p>
                                     <p>9:00 hrs a 18:00 hrs.</p>
                                 </div>

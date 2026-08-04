@@ -17,7 +17,7 @@
         content="Soluciones de automatización de almacenes en México: WMS, RFID, picking por voz, recepción, inventario y logística inversa. +500 proyectos.">
     <meta property="og:url" content="https://automatizaciondealmacen.com/soluciones">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="https://automatizaciondealmacen.com/assets/img/banner/banner-soluciones.jpg">
+    <meta property="og:image" content="https://automatizaciondealmacen.com/assets/img/banner/banner-soluciones.webp">
     <meta property="og:locale" content="es_MX">
     <meta property="og:site_name" content="TiKendo">
     <!-- Twitter Card -->
@@ -25,7 +25,7 @@
     <meta name="twitter:title" content="Soluciones de Automatización de Almacenes en México | TiKendo">
     <meta name="twitter:description"
         content="WMS, RFID, picking por voz, recepción, inventario y logística inversa para almacenes en México. +500 proyectos.">
-    <meta name="twitter:image" content="https://automatizaciondealmacen.com/assets/img/banner/banner-soluciones.jpg">
+    <meta name="twitter:image" content="https://automatizaciondealmacen.com/assets/img/banner/banner-soluciones.webp">
 
     <!-- Stylesheets -->
     <link rel="preload" href="assets/css/vendor.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
@@ -155,7 +155,7 @@
             overflow: hidden;
             background:
                 linear-gradient(to bottom right, rgba(17, 17, 17, 0.82) 0%, rgba(0, 0, 0, 0.38) 100%),
-                #111 url('assets/img/banner/banner-soluciones.jpg') center center / cover no-repeat;
+                #111 url('assets/img/banner/banner-soluciones.webp') center center / cover no-repeat;
             box-shadow: 0 10px 40px rgba(0, 0, 0, 0.28), 0 3px 8px rgba(0, 0, 0, 0.18);
         }
 
@@ -953,8 +953,8 @@
                     </button>
                 </div>
                 <div class="logo">
-                    <a href="/" class="logo-1"><img src="assets/img/logos/logo_1.webp" alt="TiKendo" width="469" height="347"></a>
-                    <a href="/" class="logo-2"><img src="assets/img/logos/logo-2.webp"
+                    <a href="/" class="logo-1" aria-label="TiKendo - Ir al inicio"><img src="assets/img/logos/logo_1.webp" alt="TiKendo" width="469" height="347"></a>
+                    <a href="/" class="logo-2" aria-label="TiKendo - Ir al inicio"><img src="assets/img/logos/logo-2.webp"
                             alt="TiKendo automatización de almacenes" width="235" height="103" loading="lazy" decoding="async"></a>
                 </div>
                 <div class="nav-right-part nav-right-part-mobile">
@@ -976,6 +976,10 @@
             </div>
         </nav>
     </header>
+
+    <!-- main content landmark start -->
+    <main id="main-content" role="main">
+
 
     <!-- ═══════════════════════════════════════
          HERO
@@ -1016,7 +1020,7 @@
                 <div class="intro-visual">
                     <div class="intro-deco-line"></div>
                     <div class="intro-box">
-                        <img src="assets/img/banner/soluciones.jpg" alt="Soluciones TiKendo"
+                        <img src="assets/img/banner/soluciones.webp" alt="Soluciones TiKendo"
                             onerror="this.style.display='none'" width="5283" height="3523" loading="lazy" decoding="async">
                     </div>
                     <div class="intro-badge-float">
@@ -1320,23 +1324,23 @@
             <div class="process-steps">
                 <div class="process-step">
                     <div class="step-num">01</div>
-                    <h4>Diagnóstico</h4>
+                    <h3>Diagnóstico</h3>
                     <p>Detectamos retos, necesidades y oportunidades en tus procesos o inventario. Relevamos datos con
                         tecnología.</p>
                 </div>
                 <div class="process-step">
                     <div class="step-num">02</div>
-                    <h4>Propuesta técnica</h4>
+                    <h3>Propuesta técnica</h3>
                     <p>Diseñamos la solución adecuada para tus flujos (hardware, software, integración y servicios).</p>
                 </div>
                 <div class="process-step">
                     <div class="step-num">03</div>
-                    <h4>Implementación</h4>
+                    <h3>Implementación</h3>
                     <p>Instalación, capacitación y pruebas. Validamos que funcione 100% en tu día a día.</p>
                 </div>
                 <div class="process-step">
                     <div class="step-num">04</div>
-                    <h4>Soporte y evolución</h4>
+                    <h3>Soporte y evolución</h3>
                     <p>Acompañamiento, soporte y mejoras para que tu operación esté siempre optimizada con nuevas
                         funciones.</p>
                 </div>
@@ -1398,7 +1402,11 @@
          FOOTER / CTA
     ═══════════════════════════════════════ -->
     <section id="Contacto">
-        <footer class="footer-area">
+        
+    </main>
+    <!-- main content landmark end -->
+
+<footer class="footer-area">
             <section>
                 <div class="cta-banner">
                     <div class="cta-deco">TIKENDO</div>
@@ -1426,7 +1434,7 @@
                                 <div class="icon"><img src="assets/img/icon/map-marker.webp" alt="Dirección TiKendo" width="33" height="45" loading="lazy" decoding="async">
                                 </div>
                                 <div class="details">
-                                    <h6>DIRECCIÓN:</h6>
+                                    <h3 class="widget-h6-title">DIRECCIÓN:</h3>
                                     <p>Blvd. Solidaridad las Torres,</p>
                                     <p>Álvaro Obregón, 52100 San Mateo Atenco, Méx.</p>
                                 </div>
@@ -1437,7 +1445,7 @@
                                 <div class="icon"><img src="assets/img/icon/phone.webp"
                                         alt="Teléfonos de contacto TiKendo" width="28" height="45" loading="lazy" decoding="async"></div>
                                 <div class="details">
-                                    <h6>CONTÁCTANOS</h6>
+                                    <h3 class="widget-h6-title">CONTÁCTANOS</h3>
                                     <p>+52 55 1328 7995</p>
                                     <p>+52 722 326 0677</p>
                                     <p>automatizaciondealmacen@tikendo.mx</p>
@@ -1449,7 +1457,7 @@
                                 <div class="icon"><img src="assets/img/icon/clock.webp"
                                         alt="Horarios de atención TiKendo" width="44" height="43" loading="lazy" decoding="async"></div>
                                 <div class="details">
-                                    <h6>HORARIOS DE ATENCIÓN</h6>
+                                    <h3 class="widget-h6-title">HORARIOS DE ATENCIÓN</h3>
                                     <p>Lunes a Viernes</p>
                                     <p>9:00 hrs a 18:00 hrs.</p>
                                 </div>

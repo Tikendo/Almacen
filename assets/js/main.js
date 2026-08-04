@@ -3,6 +3,19 @@
 
     $(document).ready(function () {
 
+        /*--------------------------------------------------
+            Owl Carousel ARIA & Accessibility Fix
+        ---------------------------------------------------*/
+        function fixCarouselAria() {
+            $('.owl-nav button.owl-prev').attr({'role': 'button', 'aria-label': 'Anterior'}).find('span').text('Anterior');
+            $('.owl-nav button.owl-next').attr({'role': 'button', 'aria-label': 'Siguiente'}).find('span').text('Siguiente');
+            $('.owl-nav button').removeAttr('role').attr('role', 'button');
+        }
+        fixCarouselAria();
+        setTimeout(fixCarouselAria, 500);
+        setTimeout(fixCarouselAria, 1500);
+
+
         /**-----------------------------
          *  Navbar fix
          * ---------------------------*/
@@ -122,8 +135,8 @@
         /* -----------------------------------------------------
             Variables
         ----------------------------------------------------- */
-        var leftArrow = '<img src="assets/img/icon/left-arrow.png">';
-        var rightArrow = '<img src="assets/img/icon/right-arrow.png">';
+        var leftArrow = '<img src="assets/img/icon/left-arrow.png" alt="Anterior" width="24" height="24">';
+        var rightArrow = '<img src="assets/img/icon/right-arrow.png" alt="Siguiente" width="24" height="24">';
 
         /*------------------------------------------------
             banner-slider
@@ -138,7 +151,7 @@
             dots: false,
             items: 1,
             smartSpeed: 1800,
-            navText: ['<img src="assets/img/icon/left-arrow.png"/>','<img src="assets/img/icon/right-arrow.png"/>'],           
+            navText: ['<img src="assets/img/icon/left-arrow.png" alt="Anterior" width="24" height="24"/>','<img src="assets/img/icon/right-arrow.png" alt="Siguiente" width="24" height="24"/>'],           
         });
 
         
@@ -154,7 +167,7 @@
             items: 3,
             loop: true,
             autoplay:true,
-            navText: ['<img src="assets/img/icon/left-arrow.png"/>','<img src="assets/img/icon/right-arrow.png"/>'],           
+            navText: ['<img src="assets/img/icon/left-arrow.png" alt="Anterior" width="24" height="24"/>','<img src="assets/img/icon/right-arrow.png" alt="Siguiente" width="24" height="24"/>'],           
             responsive : {                
                 769 : {
                     items: 3,
@@ -179,7 +192,7 @@
             items: 3,
             loop: true,
             autoplay:true,
-            navText: ['<img src="assets/img/icon/left-arrow.png"/>','<img src="assets/img/icon/right-arrow.png"/>'],           
+            navText: ['<img src="assets/img/icon/left-arrow.png" alt="Anterior" width="24" height="24"/>','<img src="assets/img/icon/right-arrow.png" alt="Siguiente" width="24" height="24"/>'],           
             responsive : {                
                 769 : {
                     items: 3,
@@ -204,7 +217,7 @@
             items: 3,
             loop: true,
             autoplay:true,
-            navText: ['<img src="assets/img/icon/left-arrow.png"/>','<img src="assets/img/icon/right-arrow.png"/>'],           
+            navText: ['<img src="assets/img/icon/left-arrow.png" alt="Anterior" width="24" height="24"/>','<img src="assets/img/icon/right-arrow.png" alt="Siguiente" width="24" height="24"/>'],           
             responsive : {                
                 769 : {
                     items: 3,
@@ -256,7 +269,7 @@
             items: 3,
             loop: true,
             autoplay:true,
-            navText: ['<img src="assets/img/icon/left-arrow.png"/>','<img src="assets/img/icon/right-arrow.png"/>'],           
+            navText: ['<img src="assets/img/icon/left-arrow.png" alt="Anterior" width="24" height="24"/>','<img src="assets/img/icon/right-arrow.png" alt="Siguiente" width="24" height="24"/>'],           
             responsive : {                
                 769 : {
                     items: 3,

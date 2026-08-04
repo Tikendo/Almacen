@@ -17,7 +17,7 @@
         content="TiKendo es una empresa mexicana de automatización de almacenes en México con +300 proyectos exitosos. Soluciones WMS, RFID, Zebra y Honeywell.">
     <meta property="og:url" content="https://automatizaciondealmacen.com/nosotros">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="https://automatizaciondealmacen.com/assets/img/banner/about.jpg">
+    <meta property="og:image" content="https://automatizaciondealmacen.com/assets/img/banner/about.webp">
     <meta property="og:locale" content="es_MX">
     <meta property="og:site_name" content="TiKendo">
 
@@ -27,7 +27,7 @@
     <meta name="twitter:title" content="Empresa de Automatización de Almacenes en México | Nosotros — TiKendo">
     <meta name="twitter:description"
         content="Empresa mexicana de automatización de almacenes en México: WMS, RFID, Zebra y Honeywell. +12 años de experiencia y +300 proyectos.">
-    <meta name="twitter:image" content="https://automatizaciondealmacen.com/assets/img/banner/about.jpg">
+    <meta name="twitter:image" content="https://automatizaciondealmacen.com/assets/img/banner/about.webp">
 
     <!-- Preload CSS -->
     <link rel="preload" href="assets/css/vendor.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
@@ -179,7 +179,7 @@
             /* Degradado sobre la imagen de fondo */
             background:
                 linear-gradient(to bottom right, rgba(17, 17, 17, 0.78) 0%, rgba(0, 0, 0, 0.33) 100%),
-                #111 url('assets/img/banner/about.jpg') center center / cover no-repeat;
+                #111 url('assets/img/banner/about.webp') center center / cover no-repeat;
             box-shadow: 0 10px 40px rgba(0, 0, 0, 0.28), 0 3px 8px rgba(0, 0, 0, 0.18);
         }
 
@@ -1062,8 +1062,8 @@
                     </button>
                 </div>
                 <div class="logo">
-                    <a href="/" class="logo-1"><img src="assets/img/logos/logo_1.webp" alt="TiKendo" width="469" height="347"></a>
-                    <a href="/" class="logo-2"><img src="assets/img/logos/logo-2.webp"
+                    <a href="/" class="logo-1" aria-label="TiKendo - Ir al inicio"><img src="assets/img/logos/logo_1.webp" alt="TiKendo" width="469" height="347"></a>
+                    <a href="/" class="logo-2" aria-label="TiKendo - Ir al inicio"><img src="assets/img/logos/logo-2.webp"
                             alt="TiKendo automatización de almacenes" width="235" height="103" loading="lazy" decoding="async"></a>
                 </div>
                 <div class="nav-right-part nav-right-part-mobile">
@@ -1085,6 +1085,10 @@
             </div>
         </nav>
     </header>
+
+    <!-- main content landmark start -->
+    <main id="main-content" role="main">
+
 
     <!-- ═══════════════════════════════════════
          HERO
@@ -1130,7 +1134,7 @@
                 <div class="about-img-wrap">
                     <div class="about-deco-line"></div>
                     <div class="about-img-box">
-                        <img src="assets/img/banner/almacen.jpg"
+                        <img src="assets/img/banner/almacen.webp"
                             alt="Empresa de automatización de almacenes en México - TiKendo, +300 proyectos" width="600"
                             height="400" loading="lazy" decoding="async">
                     </div>
@@ -1189,7 +1193,7 @@
                         </svg>
                     </div>
                     <span class="value-num">01</span>
-                    <h4>Confianza</h4>
+                    <h3>Confianza</h3>
                     <p>Construimos relaciones de largo plazo basadas en transparencia y cumplimiento. Tu confianza es
                         nuestro activo más valioso.</p>
                 </div>
@@ -1201,7 +1205,7 @@
                         </svg>
                     </div>
                     <span class="value-num">02</span>
-                    <h4>Innovación</h4>
+                    <h3>Innovación</h3>
                     <p>Adoptamos y adaptamos las tecnologías más avanzadas para ofrecer soluciones que marcan la
                         diferencia en la operación de cada cliente.</p>
                 </div>
@@ -1214,7 +1218,7 @@
                         </svg>
                     </div>
                     <span class="value-num">03</span>
-                    <h4>Eficiencia</h4>
+                    <h3>Eficiencia</h3>
                     <p>Optimizamos tiempo y recursos en cada proyecto, entregando resultados medibles desde el primer
                         día de operación.</p>
                 </div>
@@ -1228,7 +1232,7 @@
                         </svg>
                     </div>
                     <span class="value-num">04</span>
-                    <h4>Trabajo en equipo</h4>
+                    <h3>Trabajo en equipo</h3>
                     <p>Integramos nuestro equipo con el tuyo para garantizar implementaciones fluidas y soporte continuo
                         en cada etapa del proceso.</p>
                 </div>
@@ -1240,7 +1244,7 @@
                         </svg>
                     </div>
                     <span class="value-num">05</span>
-                    <h4>Compromiso</h4>
+                    <h3>Compromiso</h3>
                     <p>Nos involucramos a fondo en cada proyecto, asumiendo los objetivos de nuestros clientes como
                         propios hasta alcanzar los resultados esperados.</p>
                 </div>
@@ -1254,7 +1258,7 @@
                         </svg>
                     </div>
                     <span class="value-num">06</span>
-                    <h4>Responsabilidad</h4>
+                    <h3>Responsabilidad</h3>
                     <p>Cumplimos con nuestros compromisos en tiempo y forma, respondiendo siempre por la calidad y el
                         funcionamiento de cada solución que implementamos.</p>
                 </div>
@@ -1277,7 +1281,7 @@
                 <div class="timeline-item">
                     <div class="timeline-dot">1</div>
                     <div class="timeline-content">
-                        <h4>Diagnóstico y análisis de tu operación actual</h4>
+                        <h3>Diagnóstico y análisis de tu operación actual</h3>
                         <p>Nos reunimos contigo para entender a fondo tus procesos, necesidades y objetivos. Realizamos
                             un levantamiento exhaustivo en sitio y analizamos oportunidades de mejora.</p>
                     </div>
@@ -1286,7 +1290,7 @@
                 <div class="timeline-item">
                     <div class="timeline-dot">2</div>
                     <div class="timeline-content">
-                        <h4>Diseño de solución personalizada</h4>
+                        <h3>Diseño de solución personalizada</h3>
                         <p>Proponemos la solución tecnológica que mejor se adapta a tu operación, integrando software,
                             hardware y automatización para maximizar resultados.</p>
                     </div>
@@ -1295,7 +1299,7 @@
                 <div class="timeline-item">
                     <div class="timeline-dot">3</div>
                     <div class="timeline-content">
-                        <h4>Implementación y capacitación</h4>
+                        <h3>Implementación y capacitación</h3>
                         <p>Instalamos y configuramos cada componente, asegurando la integración sin fricciones.
                             Preparamos y capacitamos a tu equipo para aprovechar todo el potencial de la solución.</p>
                     </div>
@@ -1304,7 +1308,7 @@
                 <div class="timeline-item">
                     <div class="timeline-dot">4</div>
                     <div class="timeline-content">
-                        <h4>Puesta en marcha y acompañamiento</h4>
+                        <h3>Puesta en marcha y acompañamiento</h3>
                         <p>Supervisamos el arranque y acompañamos a tu equipo durante la adopción, resolviendo dudas y
                             garantizando que cada función opere correctamente desde el primer día.</p>
                     </div>
@@ -1313,7 +1317,7 @@
                 <div class="timeline-item">
                     <div class="timeline-dot">5</div>
                     <div class="timeline-content">
-                        <h4>Soporte técnico y mejora continua post-implementación</h4>
+                        <h3>Soporte técnico y mejora continua post-implementación</h3>
                         <p>Establecemos un canal directo de soporte, monitoreamos resultados y te ayudamos a ajustar la
                             solución conforme evolucionen tus retos logísticos y de negocio.</p>
                     </div>
@@ -1328,7 +1332,11 @@
          FOOTER / CTA
     ═══════════════════════════════════════ -->
     <section id="Contacto">
-        <footer class="footer-area">
+        
+    </main>
+    <!-- main content landmark end -->
+
+<footer class="footer-area">
             <section>
                 <div class="cta-banner">
                     <div class="cta-deco">TIKENDO</div>
@@ -1356,7 +1364,7 @@
                                 <div class="icon"><img src="assets/img/icon/map-marker.webp" alt="Dirección TiKendo" width="33" height="45" loading="lazy" decoding="async">
                                 </div>
                                 <div class="details">
-                                    <h6>DIRECCIÓN:</h6>
+                                    <h3 class="widget-h6-title">DIRECCIÓN:</h3>
                                     <p>Blvd. Solidaridad las Torres,</p>
                                     <p>Álvaro Obregón, 52100 San Mateo Atenco, Méx.</p>
                                 </div>
@@ -1367,7 +1375,7 @@
                                 <div class="icon"><img src="assets/img/icon/phone.webp"
                                         alt="Teléfonos de contacto TiKendo" width="28" height="45" loading="lazy" decoding="async"></div>
                                 <div class="details">
-                                    <h6>CONTÁCTANOS</h6>
+                                    <h3 class="widget-h6-title">CONTÁCTANOS</h3>
                                     <p>+52 55 1328 7995</p>
                                     <p>+52 722 326 0677</p>
                                     <p>automatizaciondealmacen@tikendo.mx</p>
@@ -1379,7 +1387,7 @@
                                 <div class="icon"><img src="assets/img/icon/clock.webp"
                                         alt="Horarios de atención TiKendo" width="44" height="43" loading="lazy" decoding="async"></div>
                                 <div class="details">
-                                    <h6>HORARIOS DE ATENCIÓN</h6>
+                                    <h3 class="widget-h6-title">HORARIOS DE ATENCIÓN</h3>
                                     <p>Lunes a Viernes</p>
                                     <p>9:00 hrs a 18:00 hrs.</p>
                                 </div>
