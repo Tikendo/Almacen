@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Automatización de Almacenes en México | WMS y RFID — TiKendo</title>
-    <meta name="description" content="Proveedor de automatización de almacenes en México: sistemas WMS, RFID, escáneres e impresoras Zebra y Honeywell. +200 proyectos. Cotización gratis.">
+    <meta name="description"
+        content="Proveedor de automatización de almacenes en México: sistemas WMS, RFID, escáneres e impresoras Zebra y Honeywell. +200 proyectos. Cotización gratis.">
     <!-- Canonical -->
     <link rel="canonical" href="https://automatizaciondealmacen.com/">
     <link rel="sitemap" type="application/xml" href="/sitemap.xml">
@@ -47,8 +48,8 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
     <!-- LCP preload hero banner -->
-    <link rel="preload" as="image" href="assets/img/banner/Banner-principal-1.webp" fetchpriority="high">
-    
+    <link rel="preload" as="image" href="assets/img/index/banner/Banner-principal-1.webp" fetchpriority="high">
+
     <!-- Schema: Organization -->
     <script type="application/ld+json">
         {
@@ -459,9 +460,26 @@
             y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
         })(window, document, "clarity", "script", "w9mecuwz4a");
     </script>
+    <style>
+        /* Scroll progress */
+        .scroll-progress {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 3px;
+            background: #FA4318;
+            z-index: 9999;
+            transition: width 0.1s linear;
+            box-shadow: 0 0 10px rgba(250, 67, 24, 0.5);
+            width: 0%;
+        }
+    </style>
 </head>
 
 <body>
+    <!-- Scroll progress -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
     <!-- WhatsApp -->
     <div class="whatsapp-icon">
         <a href="https://wa.me/525549022481?text=Hola%20me%20gustaría%20saber%20más%20sobre%20los%20servicios%20de%20almacen.%20"
@@ -499,7 +517,8 @@
                             alt="TiKendo - Soluciones para automatización de almacén" width="469" height="347">
                     </a>
                     <a class="logo-2" href="/" aria-label="TiKendo - Ir al inicio">
-                        <img src="assets/img/logos/logo-2.webp" alt="TiKendo - Almacen logo" width="235" height="103" loading="lazy" decoding="async">
+                        <img src="assets/img/logos/logo-2.webp" alt="TiKendo - Almacen logo" width="235" height="90"
+                            loading="lazy" decoding="async">
                     </a>
                 </div>
                 <div class="nav-right-part nav-right-part-mobile">
@@ -529,210 +548,226 @@
     <!-- main content landmark start -->
     <main id="main-content" role="main">
 
-    <!-- navbar end -->
+        <!-- navbar end -->
 
-    <div class="banner-area banner-area-2">
-        <div class="banner-slider owl-carousel">
-            <!-- ============================================================
+        <div class="banner-area banner-area-2">
+            <div class="banner-slider owl-carousel">
+                <!-- ============================================================
                  BANNER 1 — Slide principal
                  ============================================================ -->
-            <div class="item"
-                style="background: url(assets/img/banner/Banner-principal-1.webp); background-size: cover; background-position: center;">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8">
-                            <div class="banner-inner style-white">
-                                <h1 class="b-animate-2 title">
-                                    Automatización de almacenes en México con sistemas WMS, RFID y tecnología Zebra
-                                </h1>
-                                <p class="b-animate-3 content">Mejora la Identificación Automática y Captura de Datos
-                                    (AIDC) en tu cadena de suministro, con las mejores <br>soluciones de mercado en
-                                    México.</p>
-                                <div class="btn-wrap">
-                                    <a class="btn btn-base b-animate-4" href="/productos">Conocer más</a>
-                                    <a class="btn btn-white b-animate-4" href="/contacto">Contáctanos</a>
+                <div class="item"
+                    style="background: url(assets/img/index/banner/Banner-principal-1.webp); background-size: cover; background-position: center;">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-8">
+                                <div class="banner-inner style-white">
+                                    <h1 class="b-animate-2 title">
+                                        Automatización de almacenes en México con sistemas WMS, RFID y tecnología Zebra
+                                    </h1>
+                                    <p class="b-animate-3 content">Mejora la Identificación Automática y Captura de
+                                        Datos
+                                        (AIDC) en tu cadena de suministro, con las mejores <br>soluciones de mercado en
+                                        México.</p>
+                                    <div class="btn-wrap">
+                                        <a class="btn btn-base b-animate-4" href="/productos">Conocer más</a>
+                                        <a class="btn btn-white b-animate-4" href="/contacto">Contáctanos</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- ============================================================
+                <!-- ============================================================
                  BANNER 2 
                  ============================================================ -->
-            <div class="item" aria-hidden="true"
-                style="background: url(assets/img/banner/Banner-principal-2.webp); background-size: cover; background-position: center;">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8">
-                            <div class="banner-inner style-white">
-                                <p class="b-animate-2 title" aria-hidden="true">Identificación y Captura de Datos
-                                    Automática (AIDC)</p>
-                                <p class="b-animate-3 content">Optimiza tu cadena de suministro con cómputo móvil:
-                                    terminales, handhelds, lectores de código de barras, escáneres, tablets e impresoras
-                                    de etiquetas.</p>
-                                <div class="btn-wrap">
-                                    <a class="btn btn-base b-animate-4" href="/productos" tabindex="-1">Conocer más</a>
-                                    <a class="btn btn-white b-animate-4" href="/contacto" tabindex="-1">Contáctanos</a>
+                <div class="item" aria-hidden="true"
+                    style="background: url(assets/img/index/banner/Banner-principal-2.webp); background-size: cover; background-position: center;">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-8">
+                                <div class="banner-inner style-white">
+                                    <p class="b-animate-2 title" aria-hidden="true">Identificación y Captura de Datos
+                                        Automática (AIDC)</p>
+                                    <p class="b-animate-3 content">Optimiza tu cadena de suministro con cómputo móvil:
+                                        terminales, handhelds, lectores de código de barras, escáneres, tablets e
+                                        impresoras
+                                        de etiquetas.</p>
+                                    <div class="btn-wrap">
+                                        <a class="btn btn-base b-animate-4" href="/productos" tabindex="-1">Conocer
+                                            más</a>
+                                        <a class="btn btn-white b-animate-4" href="/contacto"
+                                            tabindex="-1">Contáctanos</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- ============================================================
+                <!-- ============================================================
                  BANNER 3 
                  ============================================================ -->
-            <div class="item" aria-hidden="true"
-                style="background: url(assets/img/banner/Banner-principal-3.webp); background-size: cover; background-position: center;">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8">
-                            <div class="banner-inner style-white">
-                                <p class="b-animate-2 title" aria-hidden="true">Soluciones Tecnológicas para tu Almacén
-                                </p>
-                                <p class="b-animate-3 content">Actualiza la tecnología de tu almacén o centro de
-                                    distribución y mejora el control de inventario con soluciones a la medida de tu
-                                    negocio.</p>
-                                <div class="btn-wrap">
-                                    <a class="btn btn-base b-animate-4" href="/productos" tabindex="-1">Conocer más</a>
-                                    <a class="btn btn-white b-animate-4" href="/contacto" tabindex="-1">Contáctanos</a>
+                <div class="item" aria-hidden="true"
+                    style="background: url(assets/img/index/banner/Banner-principal-3.webp); background-size: cover; background-position: center;">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-8">
+                                <div class="banner-inner style-white">
+                                    <p class="b-animate-2 title" aria-hidden="true">Soluciones Tecnológicas para tu
+                                        Almacén
+                                    </p>
+                                    <p class="b-animate-3 content">Actualiza la tecnología de tu almacén o centro de
+                                        distribución y mejora el control de inventario con soluciones a la medida de tu
+                                        negocio.</p>
+                                    <div class="btn-wrap">
+                                        <a class="btn btn-base b-animate-4" href="/productos" tabindex="-1">Conocer
+                                            más</a>
+                                        <a class="btn btn-white b-animate-4" href="/contacto"
+                                            tabindex="-1">Contáctanos</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-        </div>
-    </div>
-    <!-- banner end -->
-
-    <!--partner-area start-->
-    <div class="partner-area partner-area-2 pd-top-45 pd-bottom-45"
-        style="background: url(assets/img/partner/bg.webp);">
-        <div class="container">
-            <div class="partner-slider owl-carousel">
-                <div class="item">
-                    <div class="thumb">
-                        <img src="assets/img/partner/zebra.webp"
-                            alt="Zebra Technologies - Distribuidor autorizado en México" width="90px" height="110px"
-                            loading="lazy" decoding="async">
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="thumb">
-                        <img src="assets/img/partner/Honeywell.webp" alt="Honeywell - Soluciones AIDC para almacén"
-                            width="90px" height="110px" loading="lazy" decoding="async">
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="thumb">
-                        <img src="assets/img/partner/Datalogic.webp" alt="Datalogic - Escáneres de código de barras"
-                            width="90px" height="110px" loading="lazy" decoding="async">
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="thumb">
-                        <img src="assets/img/partner/Metapace.webp" alt="Metapace - Impresoras de etiquetas"
-                            width="90px" height="110px" loading="lazy" decoding="async">
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="thumb">
-                        <img src="assets/img/partner/Odoo.webp"
-                            alt="Odoo - Software de gestión de almacenes WMS para México" width="70px" height="90px"
-                            loading="lazy" decoding="async">
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="thumb">
-                        <img src="assets/img/partner/Elo.webp" alt="Elo - Pantallas táctiles para punto de venta"
-                            width="90px" height="110px" loading="lazy" decoding="async">
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="thumb">
-                        <img src="assets/img/partner/Toshiba.webp" alt="Toshiba - Tecnología para almacén" width="90px"
-                            height="110px" loading="lazy" decoding="async">
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="thumb">
-                        <img src="assets/img/partner/Nec.webp" alt="NEC - Soluciones tecnológicas para almacén"
-                            width="90px" height="110px" loading="lazy" decoding="async">
-                    </div>
-                </div>
             </div>
         </div>
-    </div>
-    <!--partner-area end-->
+        <!-- banner end -->
 
-    <!--wcu-area start-->
-    <div class="wcu-area bg-overlay" id="nosotros" style="background: url(assets/img/banner/nosotros-almacen-2.webp);">
-        <div class="container">
-            <div class="row align-items-center pd-top-15 pd-bottom-20">
-                <!-- Columna izquierda: texto -->
-                <div class="col-xl-6 col-lg-6">
-                    <div class="section-title style-white mb-0">
-                        <span class="subtitle style-2">NOSOTROS</span>
-                        <h2 class="title">Proveedor en México de soluciones tecnológicas para almacén</h2>
-                        <p class="content">Somos un proveedor de soluciones tecnológicas para la <a
-                                href="/productos">automatización de almacenes en México</a>, construyendo soluciones de
-                            digitalización en el almacén con el propósito de mejorar la eficiencia de la cadena de
-                            suministros de tu organización. Ofrecemos <a href="/impresoras-de-etiquetas">impresoras de
-                                etiquetas Zebra y Honeywell</a>, <a href="/computadoras-para-almacen">computadoras
-                                móviles industriales</a>, <a href="/tecnologia-rfid">tecnología RFID</a> y <a
-                                href="/sistemas-gestion-almacen-wms">sistemas WMS con Odoo</a>.</p>
-                        <p class="content">La automatización de almacenes en México es clave para optimizar tu cadena
-                            de suministro. Como proveedor autorizado de sistemas de gestión de almacenes (WMS),
-                            tecnología RFID, escáneres de código de barras y equipos Zebra y Honeywell, en TiKendo
-                            ayudamos a empresas mexicanas a transformar sus centros de distribución con soluciones de
-                            identificación automática y captura de datos (AIDC) que reducen errores, aceleran el
-                            picking y mejoran el control de inventario en tiempo real.</p>
-                    </div>
-                    <div class="single-wcu-wrap">
-                        <div class="icon">
-                            <img src="assets/img/about/servicios-profesionales.webp"
-                                alt="Servicios profesionales de automatización de almacén - TiKendo" loading="lazy" width="50" height="50" decoding="async">
-                        </div>
-                        <div class="details">
-                            <p class="icon-label"><strong>Servicios profesionales</strong></p>
+        <!--partner-area start-->
+        <div class="partner-area partner-area-2 pd-top-45 pd-bottom-45"
+            style="background: url(assets/img/partner/bg.webp);">
+            <div class="container">
+                <div class="partner-slider owl-carousel">
+                    <div class="item">
+                        <div class="thumb">
+                            <img src="assets/img/partner/zebra.webp"
+                                alt="Zebra Technologies - Distribuidor autorizado en México" width="90px" height="110px"
+                                loading="lazy" decoding="async">
                         </div>
                     </div>
-                    <div class="single-wcu-wrap">
-                        <div class="icon">
-                            <img src="assets/img/about/solucion-productividad.webp"
-                                alt="Soluciones para la productividad en almacén - TiKendo" loading="lazy" width="50" height="50" decoding="async">
-                        </div>
-                        <div class="details">
-                            <p class="icon-label"><strong>Soluciones para la productividad en almacén</strong></p>
+                    <div class="item">
+                        <div class="thumb">
+                            <img src="assets/img/partner/Honeywell.webp" alt="Honeywell - Soluciones AIDC para almacén"
+                                width="90px" height="110px" loading="lazy" decoding="async">
                         </div>
                     </div>
-                    <div class="single-wcu-wrap">
-                        <div class="icon">
-                            <img src="assets/img/about/soporte-solucion.webp"
-                                alt="Soporte técnico para soluciones de almacén - TiKendo" loading="lazy" width="50" height="50" decoding="async">
+                    <div class="item">
+                        <div class="thumb">
+                            <img src="assets/img/partner/Datalogic.webp" alt="Datalogic - Escáneres de código de barras"
+                                width="90px" height="110px" loading="lazy" decoding="async">
                         </div>
-                        <div class="details">
-                            <p class="icon-label"><strong>Soporte de soluciones</strong></p>
+                    </div>
+                    <div class="item">
+                        <div class="thumb">
+                            <img src="assets/img/partner/Metapace.webp" alt="Metapace - Impresoras de etiquetas"
+                                width="90px" height="110px" loading="lazy" decoding="async">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="thumb">
+                            <img src="assets/img/partner/Odoo.webp"
+                                alt="Odoo - Software de gestión de almacenes WMS para México" width="70px" height="90px"
+                                loading="lazy" decoding="async">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="thumb">
+                            <img src="assets/img/partner/Elo.webp" alt="Elo - Pantallas táctiles para punto de venta"
+                                width="90px" height="110px" loading="lazy" decoding="async">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="thumb">
+                            <img src="assets/img/partner/Toshiba.webp" alt="Toshiba - Tecnología para almacén"
+                                width="90px" height="110px" loading="lazy" decoding="async">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="thumb">
+                            <img src="assets/img/partner/Nec.webp" alt="NEC - Soluciones tecnológicas para almacén"
+                                width="90px" height="110px" loading="lazy" decoding="async">
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+        <!--partner-area end-->
 
-                <!-- Columna derecha: video -->
-                <div class="col-xl-6 col-lg-6">
-                    <div class="container-video">
-                        <iframe src="https://www.youtube-nocookie.com/embed/GGlU4hvyK98?start=6&rel=0&modestbranding=1"
-                            title="Automatiza tu almacén — TiKendo" width="100%" height="400"
-                            style="border-radius: 8px; border: none;" loading="lazy"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen>
-                        </iframe>
-                        <!-- Schema VideoObject - Recomendado por Google -->
-                        <script type="application/ld+json">
+        <!--wcu-area start-->
+        <div class="wcu-area bg-overlay" id="nosotros"
+            style="background: url(assets/img/index/banner/nosotros-almacen-2.webp);">
+            <div class="container">
+                <div class="row align-items-center pd-top-15 pd-bottom-20">
+                    <!-- Columna izquierda: texto -->
+                    <div class="col-xl-6 col-lg-6">
+                        <div class="section-title style-white mb-0">
+                            <span class="subtitle style-2">NOSOTROS</span>
+                            <h2 class="title">Proveedor en México de soluciones tecnológicas para almacén</h2>
+                            <p class="content">Somos un proveedor de soluciones tecnológicas para la <a
+                                    href="/productos">automatización de almacenes en México</a>, construyendo soluciones
+                                de
+                                digitalización en el almacén con el propósito de mejorar la eficiencia de la cadena de
+                                suministros de tu organización. Ofrecemos <a href="/impresoras-de-etiquetas">impresoras
+                                    de
+                                    etiquetas Zebra y Honeywell</a>, <a href="/computadoras-para-almacen">computadoras
+                                    móviles industriales</a>, <a href="/tecnologia-rfid">tecnología RFID</a> y <a
+                                    href="/sistemas-gestion-almacen-wms">sistemas WMS con Odoo</a>.</p>
+                            <p class="content">La automatización de almacenes en México es clave para optimizar tu
+                                cadena
+                                de suministro. Como proveedor autorizado de sistemas de gestión de almacenes (WMS),
+                                tecnología RFID, escáneres de código de barras y equipos Zebra y Honeywell, en TiKendo
+                                ayudamos a empresas mexicanas a transformar sus centros de distribución con soluciones
+                                de
+                                identificación automática y captura de datos (AIDC) que reducen errores, aceleran el
+                                picking y mejoran el control de inventario en tiempo real.</p>
+                        </div>
+                        <div class="single-wcu-wrap">
+                            <div class="icon">
+                                <img src="assets/img/index/servicios-profesionales.webp"
+                                    alt="Servicios profesionales de automatización de almacén - TiKendo" loading="lazy"
+                                    width="50" height="50" decoding="async">
+                            </div>
+                            <div class="details">
+                                <p class="icon-label"><strong>Servicios profesionales</strong></p>
+                            </div>
+                        </div>
+                        <div class="single-wcu-wrap">
+                            <div class="icon">
+                                <img src="assets/img/index/solucion-productividad.webp"
+                                    alt="Soluciones para la productividad en almacén - TiKendo" loading="lazy"
+                                    width="50" height="50" decoding="async">
+                            </div>
+                            <div class="details">
+                                <p class="icon-label"><strong>Soluciones para la productividad en almacén</strong></p>
+                            </div>
+                        </div>
+                        <div class="single-wcu-wrap">
+                            <div class="icon">
+                                <img src="assets/img/index/soporte-solucion.webp"
+                                    alt="Soporte técnico para soluciones de almacén - TiKendo" loading="lazy" width="50"
+                                    height="50" decoding="async">
+                            </div>
+                            <div class="details">
+                                <p class="icon-label"><strong>Soporte de soluciones</strong></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Columna derecha: video -->
+                    <div class="col-xl-6 col-lg-6">
+                        <div class="container-video">
+                            <iframe
+                                src="https://www.youtube-nocookie.com/embed/GGlU4hvyK98?start=6&rel=0&modestbranding=1"
+                                title="Automatiza tu almacén — TiKendo" width="100%" height="400"
+                                style="border-radius: 8px; border: none;" loading="lazy"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen>
+                            </iframe>
+                            <!-- Schema VideoObject - Recomendado por Google -->
+                            <script type="application/ld+json">
                             {
                             "@context": "https://schema.org",
                             "@type": "VideoObject",
@@ -750,901 +785,950 @@
                             }
                             }
                         </script>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--wcu-area end-->
-
-    <!--fact-area start-->
-    <div class="fact-area">
-        <div class="container">
-            <div class="fact-counter-area" style="background: url(assets/img/background/bg.webp);">
-                <div class="row justify-content-center">
-                    <div class="col-lg-3 col-md-6">
-                        <div class="single-fact-wrap">
-                            <h2><span class="counter">200</span>+</h2>
-                            <h3 style="color: #fff; font-size:25px;">PROYECTOS PARA ALMACÉN</h3>
-                            <p>Participamos activamente en proyectos de automatización de almacén.</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="single-fact-wrap">
-                            <h2><span class="counter">32</span>+</h2>
-                            <h3 style="color: #fff; font-size:25px;">MARCAS LÍDERES</h3>
-                            <p>Somos distribuidores de las mejores marcas para AIDC en el mercado.</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="single-fact-wrap">
-                            <h2><span class="counter">124</span>+</h2>
-                            <h3 style="color: #fff; font-size:25px;">PROCESOS DE ALMACÉN AUTOMATIZADOS</h3>
-                            <p>Automatizamos tu proceso de identificación y captura de datos.</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="single-fact-wrap after-none">
-                            <h2><span class="counter">46</span>+</h2>
-                            <h3 style="color: #fff; font-size:25px;">CLIENTES SATISFECHOS</h3>
-                            <p>Apoyamos a nuestros clientes a identificar nuevos puntos de eficiencia.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!--fact-area end-->
+        <!--wcu-area end-->
 
-    <!-- SECCIÓN 5- PRODUCTOS -->
-    <section id="productos">
-        <div class="service-area style-2 pd-top-70 pd-bottom-80 ">
+        <!--fact-area start-->
+        <div class="fact-area">
             <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-7">
-                        <div class="section-title text-center">
-                            <span class="subtitle">PRODUCTOS</span>
-                            <h2 class="title">Tecnología para automatización de almacenes en México</h2>
-                            <p>
-                                Contamos con equipos Zebra, Honeywell y Datalogic para tu almacén o centro de
-                                distribución: impresoras de etiquetas, escáneres de código de barras, computadoras
-                                móviles, tecnología RFID, sistemas WMS y suministros. Todo lo que necesitas para
-                                automatizar tu cadena de suministro en México.
-                            </p>
+                <div class="fact-counter-area" style="background: url(assets/img/background/bg.webp);">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-3 col-md-6">
+                            <div class="single-fact-wrap">
+                                <h2><span class="counter">200</span>+</h2>
+                                <h3 style="color: #fff; font-size:25px;">PROYECTOS PARA ALMACÉN</h3>
+                                <p>Participamos activamente en proyectos de automatización de almacén.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="single-fact-wrap">
+                                <h2><span class="counter">32</span>+</h2>
+                                <h3 style="color: #fff; font-size:25px;">MARCAS LÍDERES</h3>
+                                <p>Somos distribuidores de las mejores marcas para AIDC en el mercado.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="single-fact-wrap">
+                                <h2><span class="counter">124</span>+</h2>
+                                <h3 style="color: #fff; font-size:25px;">PROCESOS DE ALMACÉN AUTOMATIZADOS</h3>
+                                <p>Automatizamos tu proceso de identificación y captura de datos.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="single-fact-wrap after-none">
+                                <h2><span class="counter">46</span>+</h2>
+                                <h3 style="color: #fff; font-size:25px;">CLIENTES SATISFECHOS</h3>
+                                <p>Apoyamos a nuestros clientes a identificar nuevos puntos de eficiencia.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="row justify-content-center">
-                    <div class="col-lg-4">
-                        <div class="single-service-wrap">
-                            <div class="thumb">
-                                <a href="/impresoras-de-etiquetas" aria-label="Ver impresoras de etiquetas"><img
-                                        src="assets/img/products/Impresora-de-etiquetas-Zebra.webp"
-                                        alt="Impresora de etiquetas Zebra para almacén - TiKendo" width="400"
-                                        height="250" loading="lazy" decoding="async"></a>
-                                <div class="icon">
-                                    <img src="assets/img/product-icons/Impresiones-de-etiquetas.webp"
-                                        alt="Soluciones de impresión de etiquetas de códigos de barras" loading="lazy" width="54" height="54" decoding="async">
-                                </div>
-                            </div>
-                            <div class="details">
-                                <h3>Impresoras de etiquetas</h3><br>
-                                <p>Ofrecemos <a href="/impresoras-de-etiquetas">impresoras de etiquetas térmicas</a> de
-                                    escritorio, portátiles e industriales de marcas líderes como <strong>Zebra</strong>
-                                    y <strong>Honeywell</strong>. Ideales para etiquetado de inventario, códigos de
-                                    barras y envíos en almacenes y centros de distribución en México.</p>
-                                <div class="btn-wrap">
-                                    <a class="read-more-text" href="/impresoras-de-etiquetas">Ver impresoras de
-                                        etiquetas <span><i class="fa fa-arrow-right"></i></span></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="single-service-wrap">
-                            <div class="thumb">
-                                <a href="/computadoras-para-almacen" aria-label="Ver computadoras para almacén"><img
-                                        src="assets/img/products/Computadoras-para-almacen.webp"
-                                        alt="Computadoras móviles para almacén - TiKendo" width="400" height="250"
-                                        loading="lazy" decoding="async"></a>
-                                <div class="icon">
-                                    <img src="assets/img/product-icons/Computadoras-para-almacen.webp"
-                                        alt="Computadoras de mano y tablets para almacén - TiKendo" loading="lazy" width="54" height="54" decoding="async">
-                                </div>
-                            </div>
-                            <div class="details">
-                                <h3>Computadoras para almacén</h3>
-                                <p><a href="/computadoras-para-almacen">Computadoras móviles para almacén</a> de mano,
-                                    vestibles y para montaje vehicular con Android y Windows. Diseñadas específicamente
-                                    para
-                                    su uso en entornos operativos altamente exigentes de logística, manufactura y
-                                    centros
-                                    de distribución en México.</p>
-                                <div class="btn-wrap">
-                                    <a class="read-more-text" href="/computadoras-para-almacen">Ver computadoras para
-                                        almacén <span><i class="fa fa-arrow-right"></i></span></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="single-service-wrap">
-                            <div class="thumb">
-                                <a href="/escaneres-codigo-barras" aria-label="Ver escáneres de código de barras"><img
-                                        src="assets/img/products/Escáner-de-código-de-barras.webp"
-                                        alt="Escáner de código de barras para almacén - TiKendo" width="400"
-                                        height="250" loading="lazy" decoding="async"></a>
-                                <div class="icon">
-                                    <img src="assets/img/product-icons/Escáner-de-código-de-barras.webp"
-                                        alt="Soluciones de escaneo de códigos de barras para almacén - TiKendo"
-                                        loading="lazy" width="54" height="54" decoding="async">
-                                </div>
-                            </div>
-                            <div class="details">
-                                <h3>Escáneres de código de barras</h3>
-                                <p><a href="/escaneres-codigo-barras">Escáneres de código de barras 1D y 2D</a> de
-                                    uso rudo industrial, inalámbricos y con cable. Distribuimos marcas líderes
-                                    mundiales como <strong>Zebra</strong>, <strong>Honeywell</strong> y
-                                    <strong>Datalogic</strong>
-                                    para garantizar un escaneo ágil, eficiente y totalmente preciso dentro de tu
-                                    almacén.
+            </div>
+        </div>
+        <!--fact-area end-->
+
+        <!-- SECCIÓN 5- PRODUCTOS -->
+        <section id="productos">
+            <div class="service-area style-2 pd-top-70 pd-bottom-80 ">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-7">
+                            <div class="section-title text-center">
+                                <span class="subtitle">PRODUCTOS</span>
+                                <h2 class="title">Tecnología para automatización de almacenes en México</h2>
+                                <p>
+                                    Contamos con equipos Zebra, Honeywell y Datalogic para tu almacén o centro de
+                                    distribución: impresoras de etiquetas, escáneres de código de barras, computadoras
+                                    móviles, tecnología RFID, sistemas WMS y suministros. Todo lo que necesitas para
+                                    automatizar tu cadena de suministro en México.
                                 </p>
-                                <div class="btn-wrap">
-                                    <a class="read-more-text" href="/escaneres-codigo-barras">Ver escáneres de código de
-                                        barras <span><i class="fa fa-arrow-right"></i></span></a>
-                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4">
-                        <div class="single-service-wrap">
-                            <div class="thumb">
-                                <a href="/tecnologia-rfid" aria-label="Ver tecnología RFID"><img src="assets/img/products/Tecnología-RFID.webp"
-                                        alt="Tecnología RFID para automatización de almacenes en México - TiKendo"
-                                        width="400" height="250" loading="lazy" decoding="async"></a>
-                                <div class="icon">
-                                    <img src="assets/img/product-icons/Tecnologia-RFID.webp"
-                                        alt="Soluciones RFID para logística y cadena de suministro - TiKendo"
-                                        loading="lazy" width="54" height="54" decoding="async">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-4">
+                            <div class="single-service-wrap">
+                                <div class="thumb">
+                                    <a href="/impresoras-de-etiquetas" aria-label="Ver impresoras de etiquetas"><img
+                                            src="assets/img/products/label-printer/Impresora-de-etiquetas-Zebra.webp"
+                                            alt="Impresora de etiquetas Zebra para almacén - TiKendo" width="400"
+                                            height="250" loading="lazy" decoding="async"></a>
+                                    <div class="icon">
+                                        <img src="assets/img/product-icons/Impresiones-de-etiquetas.webp"
+                                            alt="Soluciones de impresión de etiquetas de códigos de barras"
+                                            loading="lazy" width="54" height="54" decoding="async">
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="details">
-                                <h3>Tecnología RFID</h3><br>
-                                <p>Implementamos diversas soluciones de <a href="/tecnologia-rfid">tecnología RFID para
-                                        almacén</a>
-                                    que permiten un seguimiento constante y en tiempo real sin línea de visión,
-                                    reduciendo significativamente los errores de inventario y optimizando tus conteos
-                                    cíclicos operativos.</p>
-                                <div class="btn-wrap">
-                                    <a class="read-more-text" href="/tecnologia-rfid">Ver tecnología RFID <span><i
-                                                class="fa fa-arrow-right"></i></span></a>
+                                <div class="details">
+                                    <h3>Impresoras de etiquetas</h3><br>
+                                    <p>Ofrecemos <a href="/impresoras-de-etiquetas">impresoras de etiquetas térmicas</a>
+                                        de
+                                        escritorio, portátiles e industriales de marcas líderes como
+                                        <strong>Zebra</strong>
+                                        y <strong>Honeywell</strong>. Ideales para etiquetado de inventario, códigos de
+                                        barras y envíos en almacenes y centros de distribución en México.
+                                    </p>
+                                    <div class="btn-wrap">
+                                        <a class="read-more-text" href="/impresoras-de-etiquetas">Ver impresoras de
+                                            etiquetas <span><i class="fa fa-arrow-right"></i></span></a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="single-service-wrap">
-                            <div class="thumb">
-                                <a href="/suministros-y-refacciones" aria-label="Ver suministros y refacciones"><img src="assets/img/products/Suministros.webp"
-                                        alt="Suministros y refacciones para impresoras y escáneres - TiKendo"
-                                        width="400" height="250" loading="lazy" decoding="async"></a>
-                                <div class="icon">
-                                    <img src="assets/img/product-icons/Suministros-y-refacciones.webp"
-                                        alt="Suministros para soluciones de etiquetas e impresoras de almacén - TiKendo"
-                                        loading="lazy" width="54" height="54" decoding="async">
+                        <div class="col-lg-4">
+                            <div class="single-service-wrap">
+                                <div class="thumb">
+                                    <a href="/computadoras-para-almacen" aria-label="Ver computadoras para almacén"><img
+                                            src="assets/img/products/warehouse-computers/Computadoras-para-almacen.webp"
+                                            alt="Computadoras móviles para almacén - TiKendo" width="400" height="250"
+                                            loading="lazy" decoding="async"></a>
+                                    <div class="icon">
+                                        <img src="assets/img/product-icons/Computadoras-para-almacen.webp"
+                                            alt="Computadoras de mano y tablets para almacén - TiKendo" loading="lazy"
+                                            width="54" height="54" decoding="async">
+                                    </div>
+                                </div>
+                                <div class="details">
+                                    <h3>Computadoras para almacén</h3>
+                                    <p><a href="/computadoras-para-almacen">Computadoras móviles para almacén</a> de
+                                        mano,
+                                        vestibles y para montaje vehicular con Android y Windows. Diseñadas
+                                        específicamente
+                                        para
+                                        su uso en entornos operativos altamente exigentes de logística, manufactura y
+                                        centros
+                                        de distribución en México.</p>
+                                    <div class="btn-wrap">
+                                        <a class="read-more-text" href="/computadoras-para-almacen">Ver computadoras
+                                            para
+                                            almacén <span><i class="fa fa-arrow-right"></i></span></a>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="details">
-                                <h3>Suministros y refacciones</h3>
-                                <p>Contamos con una amplia variedad de <a href="/suministros-y-refacciones">suministros
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="single-service-wrap">
+                                <div class="thumb">
+                                    <a href="/escaneres-codigo-barras"
+                                        aria-label="Ver escáneres de código de barras"><img
+                                            src="assets/img/products/scanners/Escáner-de-código-de-barras.webp"
+                                            alt="Escáner de código de barras para almacén - TiKendo" width="400"
+                                            height="250" loading="lazy" decoding="async"></a>
+                                    <div class="icon">
+                                        <img src="assets/img/product-icons/Escáner-de-código-de-barras.webp"
+                                            alt="Soluciones de escaneo de códigos de barras para almacén - TiKendo"
+                                            loading="lazy" width="54" height="54" decoding="async">
+                                    </div>
+                                </div>
+                                <div class="details">
+                                    <h3>Escáneres de código de barras</h3>
+                                    <p><a href="/escaneres-codigo-barras">Escáneres de código de barras 1D y 2D</a> de
+                                        uso rudo industrial, inalámbricos y con cable. Distribuimos marcas líderes
+                                        mundiales como <strong>Zebra</strong>, <strong>Honeywell</strong> y
+                                        <strong>Datalogic</strong>
+                                        para garantizar un escaneo ágil, eficiente y totalmente preciso dentro de tu
+                                        almacén.
+                                    </p>
+                                    <div class="btn-wrap">
+                                        <a class="read-more-text" href="/escaneres-codigo-barras">Ver escáneres de
+                                            código de
+                                            barras <span><i class="fa fa-arrow-right"></i></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="single-service-wrap">
+                                <div class="thumb">
+                                    <a href="/tecnologia-rfid" aria-label="Ver tecnología RFID"><img
+                                            src="assets/img/products/RFID-technology/Tecnología-RFID.webp"
+                                            alt="Tecnología RFID para automatización de almacenes en México - TiKendo"
+                                            width="400" height="250" loading="lazy" decoding="async"></a>
+                                    <div class="icon">
+                                        <img src="assets/img/product-icons/Tecnologia-RFID.webp"
+                                            alt="Soluciones RFID para logística y cadena de suministro - TiKendo"
+                                            loading="lazy" width="54" height="54" decoding="async">
+                                    </div>
+                                </div>
+                                <div class="details">
+                                    <h3>Tecnología RFID</h3><br>
+                                    <p>Implementamos diversas soluciones de <a href="/tecnologia-rfid">tecnología RFID
+                                            para
+                                            almacén</a>
+                                        que permiten un seguimiento constante y en tiempo real sin línea de visión,
+                                        reduciendo significativamente los errores de inventario y optimizando tus
+                                        conteos
+                                        cíclicos operativos.</p>
+                                    <div class="btn-wrap">
+                                        <a class="read-more-text" href="/tecnologia-rfid">Ver tecnología RFID <span><i
+                                                    class="fa fa-arrow-right"></i></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="single-service-wrap">
+                                <div class="thumb">
+                                    <a href="/suministros-y-refacciones" aria-label="Ver suministros y refacciones"><img
+                                            src="assets/img/products/refactions/Suministros.webp"
+                                            alt="Suministros y refacciones para impresoras y escáneres - TiKendo"
+                                            width="400" height="250" loading="lazy" decoding="async"></a>
+                                    <div class="icon">
+                                        <img src="assets/img/product-icons/Suministros-y-refacciones.webp"
+                                            alt="Suministros para soluciones de etiquetas e impresoras de almacén - TiKendo"
+                                            loading="lazy" width="54" height="54" decoding="async">
+                                    </div>
+                                </div>
+                                <div class="details">
+                                    <h3>Suministros y refacciones</h3>
+                                    <p>Contamos con una amplia variedad de <a
+                                            href="/suministros-y-refacciones">suministros
+                                            y
+                                            refacciones originales</a> tales como ribbons, etiquetas térmicas, cabezales
                                         y
-                                        refacciones originales</a> tales como ribbons, etiquetas térmicas, cabezales y
-                                    baterías
-                                    para equipos <strong>Zebra</strong> y <strong>Honeywell</strong>, con tiempos de
-                                    entrega
-                                    sumamente ágiles a lo largo de toda la República Mexicana.</p>
-                                <div class="btn-wrap">
-                                    <a class="read-more-text" href="/suministros-y-refacciones">Ver suministros y
-                                        refacciones<span><i class="fa fa-arrow-right"></i></span></a>
+                                        baterías
+                                        para equipos <strong>Zebra</strong> y <strong>Honeywell</strong>, con tiempos de
+                                        entrega
+                                        sumamente ágiles a lo largo de toda la República Mexicana.</p>
+                                    <div class="btn-wrap">
+                                        <a class="read-more-text" href="/suministros-y-refacciones">Ver suministros y
+                                            refacciones<span><i class="fa fa-arrow-right"></i></span></a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="single-service-wrap">
-                            <div class="thumb">
-                                <a href="/sistemas-gestion-almacen-wms" aria-label="Ver sistemas de gestión de almacén WMS"><img
-                                        src="assets/img/products/Sistema de-gestión-de-Almacén.webp"
-                                        alt="Sistema de gestión de almacenes WMS en México - TiKendo" width="400"
-                                        height="250" loading="lazy" decoding="async"></a>
-                                <div class="icon">
-                                    <img src="assets/img/product-icons/Sistemas-de-gestión-de-almacén.webp"
-                                        alt="Soluciones WMS para cadena de suministro en México - TiKendo"
-                                        loading="lazy" width="54" height="54" decoding="async">
+                        <div class="col-lg-4">
+                            <div class="single-service-wrap">
+                                <div class="thumb">
+                                    <a href="/sistemas-gestion-almacen-wms"
+                                        aria-label="Ver sistemas de gestión de almacén WMS"><img
+                                            src="assets/img/products/system-wms/Software-de-gestion-de-almacenes.webp"
+                                            alt="Sistema de gestión de almacenes WMS en México - TiKendo" width="400"
+                                            height="250" loading="lazy" decoding="async"></a>
+                                    <div class="icon">
+                                        <img src="assets/img/product-icons/Sistemas-de-gestión-de-almacén.webp"
+                                            alt="Soluciones WMS para cadena de suministro en México - TiKendo"
+                                            loading="lazy" width="54" height="54" decoding="async">
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="details">
-                                <h3>Sistemas de gestión de almacenes WMS en México</h3>
-                                <p>Optimiza los tiempos de tus procesos con nuestro robusto <a
-                                        href="/sistemas-gestion-almacen-wms">sistema de gestión de almacenes WMS en
-                                        México</a>,
-                                    ideal para un control de inventario, recepción, picking y envío altamente efectivo.
-                                    Implementamos estas soluciones con <strong>Odoo</strong> o con desarrollos a la
-                                    medida, 100% integrados a tu ERP.</p>
-                                <div class="btn-wrap">
-                                    <a class="read-more-text" href="/sistemas-gestion-almacen-wms">Ver sistemas de
-                                        gestión WMS<span><i class="fa fa-arrow-right"></i></span></a>
+                                <div class="details">
+                                    <h3>Sistemas de gestión de almacenes WMS en México</h3>
+                                    <p>Optimiza los tiempos de tus procesos con nuestro robusto <a
+                                            href="/sistemas-gestion-almacen-wms">sistema de gestión de almacenes WMS en
+                                            México</a>,
+                                        ideal para un control de inventario, recepción, picking y envío altamente
+                                        efectivo.
+                                        Implementamos estas soluciones con <strong>Odoo</strong> o con desarrollos a la
+                                        medida, 100% integrados a tu ERP.</p>
+                                    <div class="btn-wrap">
+                                        <a class="read-more-text" href="/sistemas-gestion-almacen-wms">Ver sistemas de
+                                            gestión WMS<span><i class="fa fa-arrow-right"></i></span></a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- FIN DE SECCIÓN 5 (PRODUCTOS) -->
+        </section>
+        <!-- FIN DE SECCIÓN 5 (PRODUCTOS) -->
 
-    <!-- SECCIÓN 6--- SEPARACIÓN (INDUSTRIA) -->
-    <div class="item banner-background"
-        style="background: url(assets/img/industria/separador-industria.webp); opacity: 0.9" id="section-1">
-        <div class="container">
-            <div class="row">
-                <!-- Contenedor de rombos -->
-                <div class="col-lg-6 col-md-12">
-                    <div class="features-wrapper">
-                        <div class="single-features-item"
-                            data-text="Nos centramos en apoyarle en su enfoque centrado en el paciente proporcionando herramientas de movilidad y productividad para médicos, y motores de escaneo y sensores para dispositivos médicos.">
-                            <div class="icon"><img src="assets/img/industria-iconos/Hospital.webp"
-                                    alt="Soluciones AIDC para atención médica" id="icono-salud" width="64" height="64"
-                                    loading="lazy" decoding="async"></div>
-                            <h3>ATENCIÓN MÉDICA</h3>
-                        </div>
-                        <div class="single-features-item"
-                            data-text="Solución completa de hardware, software y servicios especializados de Honeywell puede ayudarle a transformar sus operaciones, aumentando la precisión, la productividad y la eficiencia.">
-                            <div class="icon"><img src="assets/img/industria-iconos/Logistica.webp"
-                                    alt="Tecnología para logística y cadena de suministro" id="icono-logistica"
-                                    width="64" height="64" loading="lazy" decoding="async"></div>
-                            <h3>LOGÍSTICA</h3>
-                        </div>
-                        <div class="single-features-item"
-                            data-text="Ofrecemos soluciones hechas a la medida para mejorar la identicación y recopilación de datos dentro de tus procesos de fabricación, apoyados de los mejores fabricantes.">
-                            <div class="icon"><img src="assets/img/industria-iconos/manofactura.webp"
-                                    alt="Soluciones de automatización para manufactura" id="icono-manufactura"
-                                    width="64" height="64" loading="lazy" decoding="async"></div>
-                            <h3>MANUFACTURA</h3>
-                        </div>
-                        <div class="single-features-item"
-                            data-text="Nuestras soluciones como la movilidad, los escáneres y las impresoras, combinadas con software de gestión de activos y guiado por voz, proporcionan análisis y aumento de productividad en tus centros de distribución.">
-                            <div class="icon"><img src="assets/img/industria-iconos/Distribución.webp"
-                                    alt="Tecnología para centros de distribución" id="icono-distribucion" width="64"
-                                    height="64" loading="lazy" decoding="async"></div>
-                            <h3>CENTROS DE DISTRIBUCIÓN</h3>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Texto dinámico -->
-                <div class="col-lg-6 col-md-12 d-flex align-items-center">
-                    <div class="section-title_2 white text-left m-auto">
-                        <span class="subtitle">INDUSTRIA</span>
-                        <h2 id="dynamic-title-1">SOLUCIONES DE CADENA DE SUMINISTRO POR INDUSTRIA.</h2>
-                        <p id="dynamic-text-1">Ofrecemos las mejores soluciones para las todas las industrias.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- FIN SECCIÓN 6 -->
-
-    <!-- INICIO SECCIÓN 7 (SOLUCIONES) -->
-    <section id="soluciones">
-        <div class="service-area pd-top-15 pd-bottom-70" style="background: #f9f9f9;">
+        <!-- SECCIÓN 6--- SEPARACIÓN (INDUSTRIA) -->
+        <div class="item banner-background"
+            style="background: url(assets/img/index/separador-industria.webp); opacity: 0.9" id="section-1">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-6">
-                        <div class="section-title">
-                            <span class="subtitle style-2">SOLUCIONES</span>
-                            <h2 class="title">Tecnología para almacenes en México</h2>
-                            <p>Transforme su cadena de suministro con las soluciones de almacén y mejore la
-                                visibilidad y la productividad de sus procesos. Implementamos tecnología para
-                                almacenes en México con sistemas de gestión WMS, RFID y equipos AIDC en centros de
-                                distribución, retail y manufactura.</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 text-lg-end align-self-center">
-                        <div class="btn-wrap mb-5 mb-lg-0">
-                            <a class="btn btn-base" href="/soluciones">Ver Soluciones</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="service-slider owl-carousel">
-                    <div class="item">
-                        <div class="single-service-wrap-2"
-                            style=" background-image: url(assets/img/soluciones/soluciones-hover.webp);">
-                            <div class="thumb">
-                                <div class="icon">
-                                    <img src="assets/img/soluciones-iconos/Recepción.webp"
-                                        alt="Solución de recepción de mercancía en almacén - TiKendo" loading="lazy"
-                                        width="64" height="64" decoding="async">
-                                </div>
+                    <!-- Contenedor de rombos -->
+                    <div class="col-lg-6 col-md-12">
+                        <div class="features-wrapper">
+                            <div class="single-features-item"
+                                data-text="Nos centramos en apoyarle en su enfoque centrado en el paciente proporcionando herramientas de movilidad y productividad para médicos, y motores de escaneo y sensores para dispositivos médicos.">
+                                <div class="icon"><img src="assets/img/index/industria-iconos/Hospital.webp"
+                                        alt="Soluciones AIDC para atención médica" id="icono-salud" width="64"
+                                        height="64" loading="lazy" decoding="async"></div>
+                                <h3>ATENCIÓN MÉDICA</h3>
                             </div>
-                            <div class="details">
-                                <h3>Soluciones de recepción de almacén</h3><br><br>
-                                <p>Incremente la visibilidad sobre los productos concilie los comprobantes de empaque y
-                                    clasifique los materiales entrantes rápidamente para su almacenamiento.</p>
+                            <div class="single-features-item"
+                                data-text="Solución completa de hardware, software y servicios especializados de Honeywell puede ayudarle a transformar sus operaciones, aumentando la precisión, la productividad y la eficiencia.">
+                                <div class="icon"><img src="assets/img/index/industria-iconos/Logistica.webp"
+                                        alt="Tecnología para logística y cadena de suministro" id="icono-logistica"
+                                        width="64" height="64" loading="lazy" decoding="async"></div>
+                                <h3>LOGÍSTICA</h3>
                             </div>
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <div class="single-service-wrap-2"
-                            style="background-image: url(assets/img/soluciones/soluciones-hover.webp);">
-                            <div class="thumb">
-                                <div class="icon">
-                                    <img src="assets/img/soluciones-iconos/Almacenamiento-y-reabastecimiento.webp"
-                                        alt="Solución de almacenamiento y reabastecimiento de inventario en almacén - TiKendo"
-                                        loading="lazy" width="64" height="64" decoding="async">
-                                </div>
+                            <div class="single-features-item"
+                                data-text="Ofrecemos soluciones hechas a la medida para mejorar la identicación y recopilación de datos dentro de tus procesos de fabricación, apoyados de los mejores fabricantes.">
+                                <div class="icon"><img src="assets/img/index/industria-iconos/manofactura.webp"
+                                        alt="Soluciones de automatización para manufactura" id="icono-manufactura"
+                                        width="64" height="64" loading="lazy" decoding="async"></div>
+                                <h3>MANUFACTURA</h3>
                             </div>
-                            <div class="details">
-                                <h3>Solución de almacenamiento y reabastecimiento</h3>
-                                <p>
-                                    Asegúrese de que las cuentas por cobrar estén en la ubicación correcta para preparar
-                                    los pedidos eficientemente, realizar un análisis de la rotación de inventario y
-                                    eliminar las ventas perdidas.
-                                </p>
+                            <div class="single-features-item"
+                                data-text="Nuestras soluciones como la movilidad, los escáneres y las impresoras, combinadas con software de gestión de activos y guiado por voz, proporcionan análisis y aumento de productividad en tus centros de distribución.">
+                                <div class="icon"><img src="assets/img/index/industria-iconos/Distribución.webp"
+                                        alt="Tecnología para centros de distribución" id="icono-distribucion" width="64"
+                                        height="64" loading="lazy" decoding="async"></div>
+                                <h3>CENTROS DE DISTRIBUCIÓN</h3>
                             </div>
                         </div>
                     </div>
 
-                    <div class="item">
-                        <div class="single-service-wrap-2"
-                            style="background-image: url(assets/img/soluciones/soluciones-hover.webp);">
-                            <div class="thumb">
-                                <div class="icon">
-                                    <img src="assets/img/soluciones-iconos/Administración-de-inventarios-y-materiales.webp"
-                                        alt="Administración de inventarios y materiales en almacén - TiKendo"
-                                        loading="lazy" width="64" height="64" decoding="async">
-                                </div>
-                            </div>
-                            <div class="details">
-                                <h3>Solución para administración de inventarios y materiales</h3><br>
-                                <p>
-                                    Conozca el estado actual y la ubicación de todos los activos para obtener mayor
-                                    productividad y mejor eficiencia de los recuentos de ciclos.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <div class="single-service-wrap-2"
-                            style="background-image: url(assets/img/soluciones/soluciones-hover.webp);">
-                            <div class="thumb">
-                                <div class="icon">
-                                    <img src="assets/img/soluciones-iconos/Preparación-de-pedidos-multimodal-y-dirigida-por-voz.webp"
-                                        alt="Preparación de pedidos multimodal y dirigida por voz" loading="lazy"
-                                        width="64" height="64" decoding="async">
-                                </div>
-                            </div>
-                            <div class="details">
-                                <h3>Preparación de pedidos multimodal y dirigida por voz</h3><br>
-                                <p>
-                                    La tecnología multimodal y dirigida por voz simplifica el proceso de selección de
-                                    productos para incrementar la precisión y la productividad.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <div class="single-service-wrap-2"
-                            style="background-image: url(assets/img/soluciones/soluciones-hover.webp);">
-                            <div class="thumb">
-                                <div class="icon">
-                                    <img src="assets/img/soluciones-iconos/Empaque-y-preparación.webp"
-                                        alt="Soluciones de empaque y preparación de pedidos" loading="lazy" width="64"
-                                        height="64" decoding="async">
-                                </div>
-                            </div>
-                            <div class="details"><br>
-                                <h3>Soluciones para empaque y preparación</h3><br>
-                                <p>Ofrezca a sus trabajadores un entorno manos libres para mantener la vista en sus
-                                    tareas y en la línea en movimiento. </p><br>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <div class="single-service-wrap-2"
-                            style="background-image: url(assets/img/soluciones/soluciones-hover.webp);">
-                            <div class="thumb">
-                                <div class="icon">
-                                    <img src="assets/img/soluciones-iconos/Despacho-directo.webp"
-                                        alt="Soluciones de despacho directo para almacén " loading="lazy" width="64"
-                                        height="64" decoding="async">
-                                </div>
-                            </div>
-                            <div class="details">
-                                <h3>Soluciones de despacho directo</h3><br>
-                                <p>Garantice que los paquetes y los palés estén en el camión indicado y en el orden
-                                    correcto para que las entregas sean eficientes y rápidas.</p><br>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="single-service-wrap-2"
-                            style="background-image: url(assets/img/soluciones/soluciones-hover.webp);">
-                            <div class="thumb">
-                                <div class="icon">
-                                    <img src="assets/img/soluciones-iconos/Envió.webp"
-                                        alt="Soluciones de envío y verificación de carga en almacén - TiKendo"
-                                        loading="lazy" width="64" height="64" decoding="async">
-                                </div>
-                            </div>
-                            <div class="details">
-                                <h3>Soluciones de envío</h3><br>
-                                <p>
-                                    Optimice sus operaciones de envío eliminando por completo los procesos de
-                                    verificación de carga manuales y reduciendo la probabilidad de errores humanos.
-                                </p><br><br>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <div class="single-service-wrap-2"
-                            style="background-image: url(assets/img/soluciones/soluciones-hover.webp);">
-                            <div class="thumb">
-                                <div class="icon">
-                                    <img src="assets/img/soluciones-iconos/Logística-inversa.webp"
-                                        alt="Soluciones de logística inversa para cadena de suministro" loading="lazy"
-                                        width="64" height="64" decoding="async">
-                                </div>
-                            </div>
-                            <div class="details">
-                                <h3>Soluciones de logística inversa</h3><br>
-                                <p>Rastree los activos permanentemente a lo largo de toda la cadena de suministro
-                                    inversa para recibir, asignar una resolución y reabastecer el inventario lo más
-                                    rápido posible.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="item">
-                        <div class="single-service-wrap-2"
-                            style="background-image: url(assets/img/soluciones/soluciones-hover.webp);">
-                            <div class="thumb">
-                                <div class="icon">
-                                    <img src="assets/img/soluciones-iconos/Soluciones-Wifi.webp"
-                                        alt="Soluciones WiFi para almacén y lectura de datos en tiempo real"
-                                        loading="lazy" width="64" height="64" decoding="async">
-                                </div>
-                            </div>
-                            <div class="details">
-                                <h3>Soluciones WiFi para almacén</h3><br>
-                                <p>Las soluciones wifi en almacenes posibilitan la correcta lectura, recolección y envío
-                                    de datos instantáneamente, evitando problemas de perdida de cobertura de señal</p>
-                                <br>
-                            </div>
+                    <!-- Texto dinámico -->
+                    <div class="col-lg-6 col-md-12 d-flex align-items-center">
+                        <div class="section-title_2 white text-left m-auto">
+                            <span class="subtitle">INDUSTRIA</span>
+                            <h2 id="dynamic-title-1">SOLUCIONES DE CADENA DE SUMINISTRO POR INDUSTRIA.</h2>
+                            <p id="dynamic-text-1">Ofrecemos las mejores soluciones para las todas las industrias.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-    <!-- FIN SECCIÓN 7 -->
+        <!-- FIN SECCIÓN 6 -->
 
-    <!-- SECCIÓN 8--- SEPARACIÓN (INDUSTRIA) -->
-    <div class="item banner-background"
-        style="background: url(assets/img/industria/industrias-banner.webp); opacity: 0.9;" id="section-2">
-        <div class="container">
-            <div class="row">
-                <!-- Contenedor de rombos -->
-                <div class="col-lg-6 col-md-12">
-                    <div class="features-wrapper">
-                        <div class="single-features-item texto" data-text="Desde el escaparate hasta el centro de distribución y en toda la cadena de
+        <!-- INICIO SECCIÓN 7 (SOLUCIONES) -->
+        <section id="soluciones">
+            <div class="service-area pd-top-15 pd-bottom-70" style="background: #f9f9f9;">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="section-title">
+                                <span class="subtitle style-2">SOLUCIONES</span>
+                                <h2 class="title">Tecnología para almacenes en México</h2>
+                                <p>Transforme su cadena de suministro con las soluciones de almacén y mejore la
+                                    visibilidad y la productividad de sus procesos. Implementamos tecnología para
+                                    almacenes en México con sistemas de gestión WMS, RFID y equipos AIDC en centros de
+                                    distribución, retail y manufactura.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 text-lg-end align-self-center">
+                            <div class="btn-wrap mb-5 mb-lg-0">
+                                <a class="btn btn-base" href="/soluciones">Ver Soluciones</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service-slider owl-carousel">
+                        <div class="item">
+                            <div class="single-service-wrap-2"
+                                style=" background-image: url(assets/img/index/soluciones-hover.webp);">
+                                <div class="thumb">
+                                    <div class="icon">
+                                        <img src="assets/img/index/soluciones-iconos/Recepción.webp"
+                                            alt="Solución de recepción de mercancía en almacén - TiKendo" loading="lazy"
+                                            width="64" height="64" decoding="async">
+                                    </div>
+                                </div>
+                                <div class="details">
+                                    <h3>Soluciones de recepción de almacén</h3><br><br>
+                                    <p>Incremente la visibilidad sobre los productos concilie los comprobantes de
+                                        empaque y
+                                        clasifique los materiales entrantes rápidamente para su almacenamiento.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="single-service-wrap-2"
+                                style="background-image: url(assets/img/index/soluciones-hover.webp);">
+                                <div class="thumb">
+                                    <div class="icon">
+                                        <img src="assets/img/index/soluciones-iconos//Almacenamiento-y-reabastecimiento.webp"
+                                            alt="Solución de almacenamiento y reabastecimiento de inventario en almacén - TiKendo"
+                                            loading="lazy" width="64" height="64" decoding="async">
+                                    </div>
+                                </div>
+                                <div class="details">
+                                    <h3>Solución de almacenamiento y reabastecimiento</h3>
+                                    <p>
+                                        Asegúrese de que las cuentas por cobrar estén en la ubicación correcta para
+                                        preparar
+                                        los pedidos eficientemente, realizar un análisis de la rotación de inventario y
+                                        eliminar las ventas perdidas.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="single-service-wrap-2"
+                                style="background-image: url(assets/img/index/soluciones-hover.webp);">
+                                <div class="thumb">
+                                    <div class="icon">
+                                        <img src="assets/img/index/soluciones-iconos//Administración-de-inventarios-y-materiales.webp"
+                                            alt="Administración de inventarios y materiales en almacén - TiKendo"
+                                            loading="lazy" width="64" height="64" decoding="async">
+                                    </div>
+                                </div>
+                                <div class="details">
+                                    <h3>Solución para administración de inventarios y materiales</h3><br>
+                                    <p>
+                                        Conozca el estado actual y la ubicación de todos los activos para obtener mayor
+                                        productividad y mejor eficiencia de los recuentos de ciclos.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="single-service-wrap-2"
+                                style="background-image: url(assets/img/index/soluciones-hover.webp);">
+                                <div class="thumb">
+                                    <div class="icon">
+                                        <img src="assets/img/index/soluciones-iconos//Preparación-de-pedidos-multimodal-y-dirigida-por-voz.webp"
+                                            alt="Preparación de pedidos multimodal y dirigida por voz" loading="lazy"
+                                            width="64" height="64" decoding="async">
+                                    </div>
+                                </div>
+                                <div class="details">
+                                    <h3>Preparación de pedidos multimodal y dirigida por voz</h3><br>
+                                    <p>
+                                        La tecnología multimodal y dirigida por voz simplifica el proceso de selección
+                                        de
+                                        productos para incrementar la precisión y la productividad.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="single-service-wrap-2"
+                                style="background-image: url(assets/img/index/soluciones-hover.webp);">
+                                <div class="thumb">
+                                    <div class="icon">
+                                        <img src="assets/img/index/soluciones-iconos//Empaque-y-preparación.webp"
+                                            alt="Soluciones de empaque y preparación de pedidos" loading="lazy"
+                                            width="64" height="64" decoding="async">
+                                    </div>
+                                </div>
+                                <div class="details"><br>
+                                    <h3>Soluciones para empaque y preparación</h3><br>
+                                    <p>Ofrezca a sus trabajadores un entorno manos libres para mantener la vista en sus
+                                        tareas y en la línea en movimiento. </p><br>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="single-service-wrap-2"
+                                style="background-image: url(assets/img/index/soluciones-hover.webp);">
+                                <div class="thumb">
+                                    <div class="icon">
+                                        <img src="assets/img/index/soluciones-iconos//Despacho-directo.webp"
+                                            alt="Soluciones de despacho directo para almacén " loading="lazy" width="64"
+                                            height="64" decoding="async">
+                                    </div>
+                                </div>
+                                <div class="details">
+                                    <h3>Soluciones de despacho directo</h3><br>
+                                    <p>Garantice que los paquetes y los palés estén en el camión indicado y en el orden
+                                        correcto para que las entregas sean eficientes y rápidas.</p><br>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="single-service-wrap-2"
+                                style="background-image: url(assets/img/index/soluciones-hover.webp);">
+                                <div class="thumb">
+                                    <div class="icon">
+                                        <img src="assets/img/index/soluciones-iconos//Envió.webp"
+                                            alt="Soluciones de envío y verificación de carga en almacén - TiKendo"
+                                            loading="lazy" width="64" height="64" decoding="async">
+                                    </div>
+                                </div>
+                                <div class="details">
+                                    <h3>Soluciones de envío</h3><br>
+                                    <p>
+                                        Optimice sus operaciones de envío eliminando por completo los procesos de
+                                        verificación de carga manuales y reduciendo la probabilidad de errores humanos.
+                                    </p><br><br>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="single-service-wrap-2"
+                                style="background-image: url(assets/img/index/soluciones-hover.webp);">
+                                <div class="thumb">
+                                    <div class="icon">
+                                        <img src="assets/img/index/soluciones-iconos//Logística-inversa.webp"
+                                            alt="Soluciones de logística inversa para cadena de suministro"
+                                            loading="lazy" width="64" height="64" decoding="async">
+                                    </div>
+                                </div>
+                                <div class="details">
+                                    <h3>Soluciones de logística inversa</h3><br>
+                                    <p>Rastree los activos permanentemente a lo largo de toda la cadena de suministro
+                                        inversa para recibir, asignar una resolución y reabastecer el inventario lo más
+                                        rápido posible.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="single-service-wrap-2"
+                                style="background-image: url(assets/img/index/soluciones-hover.webp);">
+                                <div class="thumb">
+                                    <div class="icon">
+                                        <img src="assets/img/index/soluciones-iconos//Soluciones-Wifi.webp"
+                                            alt="Soluciones WiFi para almacén y lectura de datos en tiempo real"
+                                            loading="lazy" width="64" height="64" decoding="async">
+                                    </div>
+                                </div>
+                                <div class="details">
+                                    <h3>Soluciones WiFi para almacén</h3><br>
+                                    <p>Las soluciones wifi en almacenes posibilitan la correcta lectura, recolección y
+                                        envío
+                                        de datos instantáneamente, evitando problemas de perdida de cobertura de señal
+                                    </p>
+                                    <br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- FIN SECCIÓN 7 -->
+
+        <!-- SECCIÓN 8--- SEPARACIÓN (INDUSTRIA) -->
+        <div class="item banner-background"
+            style="background: url(assets/img/index/industrias-banner.webp); opacity: 0.9;" id="section-2">
+            <div class="container">
+                <div class="row">
+                    <!-- Contenedor de rombos -->
+                    <div class="col-lg-6 col-md-12">
+                        <div class="features-wrapper">
+                            <div class="single-features-item texto" data-text="Desde el escaparate hasta el centro de distribución y en toda la cadena de
                         suministro, las soluciones para retail reúnen a personas, activos y mercancías de formas
                         potentes y nuevas">
-                            <div class="icon"><img src="assets/img/industria-iconos/Retail.webp"
-                                    alt="Soluciones tecnológicas para retail" id="icono-retail" width="64" height="64"
-                                    loading="lazy" decoding="async"></div>
-                            <h3>RETAIL</h3>
-                        </div>
-                        <div class="single-features-item" data-text="Ofrecemos sistemas escalables y automatizados que combinan equipos
+                                <div class="icon"><img src="assets/img/index/industria-iconos/Retail.webp"
+                                        alt="Soluciones tecnológicas para retail" id="icono-retail" width="64"
+                                        height="64" loading="lazy" decoding="async"></div>
+                                <h3>RETAIL</h3>
+                            </div>
+                            <div class="single-features-item" data-text="Ofrecemos sistemas escalables y automatizados que combinan equipos
                         avanzados de manipulación de materiales y software innovador, tecnologías de selección de
                         pedidos, informática móvil, escaneo, impresión y mucho más.">
-                            <div class="icon"><img src="assets/img/industria-iconos/ecomerce.webp"
-                                    alt="Automatización de almacén para e-commerce" id="icono-ecommerce" width="64"
-                                    height="64" loading="lazy" decoding="async"></div>
-                            <h3>E-COMMERCE</h3>
-                        </div>
-                        <div class="single-features-item" data-text="Equipe sus operaciones con la funcionalidad de pagos y pedidos móviles,
+                                <div class="icon"><img src="assets/img/index/industria-iconos/ecomerce.webp"
+                                        alt="Automatización de almacén para e-commerce" id="icono-ecommerce" width="64"
+                                        height="64" loading="lazy" decoding="async"></div>
+                                <h3>E-COMMERCE</h3>
+                            </div>
+                            <div class="single-features-item" data-text="Equipe sus operaciones con la funcionalidad de pagos y pedidos móviles,
                         seguimiento de la seguridad de los alimentos, administración de inventario y tecnologías de
                         comunicación del personal para ofrecer un servicio superior y personalizado.">
-                            <div class="icon"><img src="assets/img/industria-iconos/Turismo.webp"
-                                    alt="Tecnología para sector turismo y hospitalidad" id="icono-turismo" width="64"
-                                    height="64" loading="lazy" decoding="async"></div>
-                            <h3>TURISMO</h3>
-                        </div>
-                        <div class="single-features-item" data-text="Cualquiera sea la misión del sector público, los productos, las soluciones de
+                                <div class="icon"><img src="assets/img/index/industria-iconos/Turismo.webp"
+                                        alt="Tecnología para sector turismo y hospitalidad" id="icono-turismo"
+                                        width="64" height="64" loading="lazy" decoding="async"></div>
+                                <h3>TURISMO</h3>
+                            </div>
+                            <div class="single-features-item" data-text="Cualquiera sea la misión del sector público, los productos, las soluciones de
                         tecnología para el gobierno integran tecnología de vanguardia que permite capturar datos
                         de campo en tiempo real lograr una toma de decisiones más inteligentes.">
-                            <div class="icon"><img src="assets/img/industria-iconos/Gobierno.webp"
-                                    alt="Soluciones tecnológicas para sector gobierno" id="icono-gobierno" width="64"
-                                    height="64" loading="lazy" decoding="async"></div>
-                            <h3>GOBIERNO</h3>
+                                <div class="icon"><img src="assets/img/index/industria-iconos/Gobierno.webp"
+                                        alt="Soluciones tecnológicas para sector gobierno" id="icono-gobierno"
+                                        width="64" height="64" loading="lazy" decoding="async"></div>
+                                <h3>GOBIERNO</h3>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <!-- Texto dinámico para la segunda sección -->
-                <div class="col-lg-6 col-md-12 d-flex align-items-center">
-                    <div class="section-title_2 white text-left m-auto">
-                        <span class="subtitle">INDUSTRIA</span>
-                        <h2 id="dynamic-title-2">SOLUCIONES A LA MEDIDA DE TU NEGOCIO</h2>
-                        <p id="dynamic-text-2">Ofrecemos las mejores soluciones para todas las industrias.</p>
+                    <!-- Texto dinámico para la segunda sección -->
+                    <div class="col-lg-6 col-md-12 d-flex align-items-center">
+                        <div class="section-title_2 white text-left m-auto">
+                            <span class="subtitle">INDUSTRIA</span>
+                            <h2 id="dynamic-title-2">SOLUCIONES A LA MEDIDA DE TU NEGOCIO</h2>
+                            <p id="dynamic-text-2">Ofrecemos las mejores soluciones para todas las industrias.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- FIN DE SECCIÓN 8 -->
+        <!-- FIN DE SECCIÓN 8 -->
 
-    <!-- SECCIÓN 9 (SERVICIOS) -->
-    <section id="servicios">
+        <!-- SECCIÓN 9 (SERVICIOS) -->
+        <section id="servicios">
 
-        <div class="service-area pd-top-15" style="background: #f9f9f9;">
+            <div class="service-area pd-top-15" style="background: #f9f9f9;">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="section-title mb-0">
+                                <span class="subtitle">SERVICIOS</span>
+                                <h2 class="title">Servicios de automatización de almacenes en México</h2>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 align-self-center">
+                            <div class="section-title">
+                                <p class="content left-line">Nuestra empresa de tecnología ofrece soluciones innovadoras
+                                    para optimizar tu cadena de suministro y la gestión de almacenes. Desde la
+                                    automatización de procesos hasta el soporte técnico especializado, brindamos
+                                    herramientas y servicios que mejoran la eficiencia operativa y prolongan la vida
+                                    útil de
+                                    tus equipos.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feature-slider owl-carousel">
+                        <div class="item">
+                            <div class="feature-wrap bg-pink">
+                                <div class="icon">
+                                    <img src="assets/img/servicios-iconos/Gestión-de-almacen.webp"
+                                        alt="Servicios de gestión de almacén AIDC - TiKendo" width="50" height="50"
+                                        loading="lazy" decoding="async">
+                                </div>
+                                <h3>Servicios de gestión de almacén</h3>
+                                <p>Nuestros servicios para la Identificación Automática y Captura de Datos AIDC podrás
+                                    lograr una
+                                    automatización en tu cadena de suministro, almacén y gestión de centros de
+                                    distribución.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="feature-wrap bg-ash">
+                                <div class="icon">
+                                    <img src="assets/img/servicios-iconos/Soporte.webp"
+                                        alt="Soporte y mantenimiento de equipos para almacén - TiKendo" width="50"
+                                        height="50" loading="lazy" decoding="async">
+                                </div>
+                                <h3>Soporte y mantenimiento</h3>
+                                <p>El mantenimiento de tus equipos agiliza tu productividad y alarga la vida útil de tus
+                                    impresoras
+                                    térmicas, hand helds y lectores de códigos de barras. Contáctanos para agendar tu
+                                    mantenimiento en sitio.</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="feature-wrap bg-sky">
+                                <div class="icon">
+                                    <img src="assets/img/servicios-iconos/WMS.webp"
+                                        alt="Desarrollo e implementación de WMS para almacén - TiKendo" width="50"
+                                        height="50" loading="lazy" decoding="async">
+                                </div>
+                                <h3>Desarrollo e implementación de WMS</h3><br>
+                                <p>
+                                    Desarrollamos soluciones para la gestión de almacén, desde los WMS más robustos del
+                                    mercado
+                                    hasta desarrollos a la medida para tu almacén.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="feature-wrap bg-pink">
+                                <div class="icon">
+                                    <img src="assets/img/servicios-iconos/Consultoria.webp"
+                                        alt="Consultoría y asesoramiento en automatización de almacén - TiKendo"
+                                        width="50" height="50" loading="lazy" decoding="async">
+                                </div>
+                                <h3>Consultoría y asesoramiento</h3>
+                                <p>Te ayudamos a automatizar tu proceso de cadena de suministro sugiriendo soluciones
+                                    tecnológicas que permitan resolver tus problemáticas actuales dentro de tu
+                                    organización.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="feature-wrap bg-ash">
+                                <div class="icon">
+                                    <img src="assets/img/servicios-iconos/Demostración.webp"
+                                        alt="Demostraciones de tecnología AIDC para almacén - TiKendo" width="50"
+                                        height="50" loading="lazy" decoding="async">
+                                </div>
+                                <h3>Demostraciones de tecnología AIDC</h3><br>
+                                <p>Agenda una demostración de las soluciones y equipos, con el propósito que puedas
+                                    evaluar
+                                    una
+                                    solución integral y puedas ver las ventajas de estas tecnologías.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- FIN DE SERVICIOS -->
+
+        <!-- INICIO DE SECCIÓN 10--- FORMULARIO -->
+        <section id="Formulario" class="light">
             <div class="container">
-                <div class="row">
-                    <div class="col-lg-4">
-                        <div class="section-title mb-0">
-                            <span class="subtitle">SERVICIOS</span>
-                            <h2 class="title">Servicios de automatización de almacenes en México</h2>
+                <div class="section-title text-center mb-5">
+                    <div class="section-title">
+                        <span class="subtitle">FORMULARIO DE COTIZACIÓN</span>
+                        <h2 class="title">Encuentra la solución perfecta para tu almacén</h2>
+                    </div>
+                    <p class="section-lead" style="text-align: center;">Responde unas pocas preguntas y te preparamos
+                        una
+                        cotización personalizada.</p>
+                </div>
+
+                <!-- Wizard Container -->
+                <div class="question-box shadow-lg mx-auto" id="questionBox"
+                    style="max-width: 820px; background: #fff; border-radius: var(--radius); overflow: hidden; border: 1px solid #eee;">
+
+                    <!-- Barra de progreso -->
+                    <div class="progress-bar-wrapper" style="height: 6px; background: #f1f1f1;">
+                        <div id="progressBar"
+                            style="height: 100%; width: 8%; background: var(--naranja); transition: width 0.4s ease;">
                         </div>
                     </div>
-                    <div class="col-lg-6 align-self-center">
-                        <div class="section-title">
-                            <p class="content left-line">Nuestra empresa de tecnología ofrece soluciones innovadoras
-                                para optimizar tu cadena de suministro y la gestión de almacenes. Desde la
-                                automatización de procesos hasta el soporte técnico especializado, brindamos
-                                herramientas y servicios que mejoran la eficiencia operativa y prolongan la vida útil de
-                                tus equipos.</p>
+
+                    <!-- Cabecera de pregunta -->
+                    <div class="p-4 px-5" style="background: #FA4318; color: white;">
+                        <span id="questionNum"
+                            style="font-size: 1.1rem; font-weight: 700; opacity: 0.9; display: block; margin-bottom: 8px;"></span>
+                        <span id="questionText" style="font-size: 1.35rem; font-weight: 700; line-height: 1.3;"></span>
+                    </div>
+
+                    <!-- Opciones -->
+                    <div class="p-5">
+                        <div id="optionsContainer" class="options-container"
+                            style="font-size: 1.15rem; line-height: 1.6;">
                         </div>
+                    </div>
+
+                    <!-- Botones -->
+                    <div class="p-4 px-5 border-top bg-light d-flex justify-content-between align-items-center">
+                        <button id="prevButton" class="btn btn-outline-secondary"
+                            style="display: none; padding: 12px 28px; font-weight: 600;">
+                            ← Anterior
+                        </button>
+                        <button class="btn btn-primary" id="nextButton" disabled
+                            style="padding: 12px 32px; font-weight: 700; font-size: 1.1rem;">
+                            Siguiente →
+                        </button>
                     </div>
                 </div>
-                <div class="feature-slider owl-carousel">
-                    <div class="item">
-                        <div class="feature-wrap bg-pink">
-                            <div class="icon">
-                                <img src="assets/img/servicios-iconos/Gestión-de-almacen.webp"
-                                    alt="Servicios de gestión de almacén AIDC - TiKendo" width="50" height="50"
-                                    loading="lazy" decoding="async">
-                            </div>
-                            <h3>Servicios de gestión de almacén</h3>
-                            <p>Nuestros servicios para la Identificación Automática y Captura de Datos AIDC podrás
-                                lograr una
-                                automatización en tu cadena de suministro, almacén y gestión de centros de distribución.
-                            </p>
+
+                <!-- Sección de Datos de Contacto -->
+                <div id="contact-info" class="container mt-5" style="max-width: 820px; display: none;">
+                    <div class="card shadow-sm border-0" style="border-radius: var(--radius);">
+                        <div class="card-header bg-white py-4" style="border-bottom: 1px solid #eee;">
+                            <h3 style="margin: 0; color: var(--texto);">Datos de Contacto</h3>
+                            <p class="text-muted mb-0">Para enviarte la cotización y dar seguimiento.</p>
                         </div>
-                    </div>
-                    <div class="item">
-                        <div class="feature-wrap bg-ash">
-                            <div class="icon">
-                                <img src="assets/img/servicios-iconos/Soporte.webp"
-                                    alt="Soporte y mantenimiento de equipos para almacén - TiKendo" width="50"
-                                    height="50" loading="lazy" decoding="async">
+                        <div class="card-body p-5">
+                            <div class="row g-4">
+                                <div class="col-md-6">
+                                    <label for="nombre" class="form-label fw-semibold">Nombre completo <span
+                                            class="text-danger">*</span></label>
+                                    <input type="text" id="nombre" class="form-control form-control-lg" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="email" class="form-label fw-semibold">Correo electrónico <span
+                                            class="text-danger">*</span></label>
+                                    <input type="email" id="email" class="form-control form-control-lg" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="telefono" class="form-label fw-semibold">Teléfono (10 dígitos) <span
+                                            class="text-danger">*</span></label>
+                                    <input type="tel" id="telefono" class="form-control form-control-lg" maxlength="10"
+                                        required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="empresa" class="form-label fw-semibold">Empresa (opcional)</label>
+                                    <input type="text" id="empresa" class="form-control form-control-lg">
+                                </div>
+                                <div class="col-12">
+                                    <label for="comentarios" class="form-label fw-semibold">Comentarios adicionales
+                                        (opcional)</label>
+                                    <textarea id="comentarios" class="form-control form-control-lg" rows="4"></textarea>
+                                </div>
                             </div>
-                            <h3>Soporte y mantenimiento</h3>
-                            <p>El mantenimiento de tus equipos agiliza tu productividad y alarga la vida útil de tus
-                                impresoras
-                                térmicas, hand helds y lectores de códigos de barras. Contáctanos para agendar tu
-                                mantenimiento en sitio.</p>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="feature-wrap bg-sky">
-                            <div class="icon">
-                                <img src="assets/img/servicios-iconos/WMS.webp"
-                                    alt="Desarrollo e implementación de WMS para almacén - TiKendo" width="50"
-                                    height="50" loading="lazy" decoding="async">
+
+                            <div class="mt-5 text-end">
+                                <button onclick="submitForm()" class="btn1 btn-success btn-lg px-5"
+                                    style="background: var(--main-color); border: none; font-weight: 700;">
+                                    Enviar Cotización
+                                </button>
                             </div>
-                            <h3>Desarrollo e implementación de WMS</h3><br>
-                            <p>
-                                Desarrollamos soluciones para la gestión de almacén, desde los WMS más robustos del
-                                mercado
-                                hasta desarrollos a la medida para tu almacén.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="feature-wrap bg-pink">
-                            <div class="icon">
-                                <img src="assets/img/servicios-iconos/Consultoria.webp"
-                                    alt="Consultoría y asesoramiento en automatización de almacén - TiKendo" width="50"
-                                    height="50" loading="lazy" decoding="async">
-                            </div>
-                            <h3>Consultoría y asesoramiento</h3>
-                            <p>Te ayudamos a automatizar tu proceso de cadena de suministro sugiriendo soluciones
-                                tecnológicas que permitan resolver tus problemáticas actuales dentro de tu organización.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="feature-wrap bg-ash">
-                            <div class="icon">
-                                <img src="assets/img/servicios-iconos/Demostración.webp"
-                                    alt="Demostraciones de tecnología AIDC para almacén - TiKendo" width="50"
-                                    height="50" loading="lazy" decoding="async">
-                            </div>
-                            <h3>Demostraciones de tecnología AIDC</h3><br>
-                            <p>Agenda una demostración de las soluciones y equipos, con el propósito que puedas evaluar
-                                una
-                                solución integral y puedas ver las ventajas de estas tecnologías.</p>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- FIN DE SERVICIOS -->
+        </section>
+        <!-- FIN DE SECCIÓN 10 -->
 
-    <!-- INICIO DE SECCIÓN 10--- FORMULARIO -->
-    <section id="Formulario" class="light">
-        <div class="container">
-            <div class="section-title text-center mb-5">
-                <div class="section-title">
-                    <span class="subtitle">FORMULARIO DE COTIZACIÓN</span>
-                    <h2 class="title">Encuentra la solución perfecta para tu almacén</h2>
-                </div>
-                <p class="section-lead" style="text-align: center;">Responde unas pocas preguntas y te preparamos una
-                    cotización personalizada.</p>
-            </div>
-
-            <!-- Wizard Container -->
-            <div class="question-box shadow-lg mx-auto" id="questionBox"
-                style="max-width: 820px; background: #fff; border-radius: var(--radius); overflow: hidden; border: 1px solid #eee;">
-
-                <!-- Barra de progreso -->
-                <div class="progress-bar-wrapper" style="height: 6px; background: #f1f1f1;">
-                    <div id="progressBar"
-                        style="height: 100%; width: 8%; background: var(--naranja); transition: width 0.4s ease;"></div>
-                </div>
-
-                <!-- Cabecera de pregunta -->
-                <div class="p-4 px-5" style="background: #FA4318; color: white;">
-                    <span id="questionNum"
-                        style="font-size: 1.1rem; font-weight: 700; opacity: 0.9; display: block; margin-bottom: 8px;"></span>
-                    <span id="questionText" style="font-size: 1.35rem; font-weight: 700; line-height: 1.3;"></span>
-                </div>
-
-                <!-- Opciones -->
-                <div class="p-5">
-                    <div id="optionsContainer" class="options-container" style="font-size: 1.15rem; line-height: 1.6;">
-                    </div>
-                </div>
-
-                <!-- Botones -->
-                <div class="p-4 px-5 border-top bg-light d-flex justify-content-between align-items-center">
-                    <button id="prevButton" class="btn btn-outline-secondary"
-                        style="display: none; padding: 12px 28px; font-weight: 600;">
-                        ← Anterior
-                    </button>
-                    <button class="btn btn-primary" id="nextButton" disabled
-                        style="padding: 12px 32px; font-weight: 700; font-size: 1.1rem;">
-                        Siguiente →
-                    </button>
-                </div>
-            </div>
-
-            <!-- Sección de Datos de Contacto -->
-            <div id="contact-info" class="container mt-5" style="max-width: 820px; display: none;">
-                <div class="card shadow-sm border-0" style="border-radius: var(--radius);">
-                    <div class="card-header bg-white py-4" style="border-bottom: 1px solid #eee;">
-                        <h3 style="margin: 0; color: var(--texto);">Datos de Contacto</h3>
-                        <p class="text-muted mb-0">Para enviarte la cotización y dar seguimiento.</p>
-                    </div>
-                    <div class="card-body p-5">
-                        <div class="row g-4">
-                            <div class="col-md-6">
-                                <label for="nombre" class="form-label fw-semibold">Nombre completo <span
-                                        class="text-danger">*</span></label>
-                                <input type="text" id="nombre" class="form-control form-control-lg" required>
-                            </div>
-                            <div class="col-md-6">
-                                <label for="email" class="form-label fw-semibold">Correo electrónico <span
-                                        class="text-danger">*</span></label>
-                                <input type="email" id="email" class="form-control form-control-lg" required>
-                            </div>
-                            <div class="col-md-6">
-                                <label for="telefono" class="form-label fw-semibold">Teléfono (10 dígitos) <span
-                                        class="text-danger">*</span></label>
-                                <input type="tel" id="telefono" class="form-control form-control-lg" maxlength="10"
-                                    required>
-                            </div>
-                            <div class="col-md-6">
-                                <label for="empresa" class="form-label fw-semibold">Empresa (opcional)</label>
-                                <input type="text" id="empresa" class="form-control form-control-lg">
-                            </div>
-                            <div class="col-12">
-                                <label for="comentarios" class="form-label fw-semibold">Comentarios adicionales
-                                    (opcional)</label>
-                                <textarea id="comentarios" class="form-control form-control-lg" rows="4"></textarea>
+        <!-- INICIO SECCIÓN 11-- PREGUNTAS FRECUENTES -->
+        <!--faq-area start-->
+        <section id="FAQ">
+            <div class="faq-area pd-top-50">
+                <div class="container p-sm-0">
+                    <div class="row">
+                        <div class="col-xl-6 col-lg-5 order-lg-2 faq-2">
+                            <div class="thumb text-center mb-4 mb-lg-0">
+                                <img src="assets/img/index/Banner-faq-inicio.webp"
+                                    alt="Preguntas frecuentes sobre automatización de almacén - TiKendo" width="650"
+                                    height="800" loading="lazy" decoding="async">
                             </div>
                         </div>
-
-                        <div class="mt-5 text-end">
-                            <button onclick="submitForm()" class="btn1 btn-success btn-lg px-5"
-                                style="background: var(--main-color); border: none; font-weight: 700;">
-                                Enviar Cotización
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- FIN DE SECCIÓN 10 -->
-
-    <!-- INICIO SECCIÓN 11-- PREGUNTAS FRECUENTES -->
-    <!--faq-area start-->
-    <section id="FAQ">
-        <div class="faq-area pd-top-50">
-            <div class="container p-sm-0">
-                <div class="row">
-                    <div class="col-xl-6 col-lg-5 order-lg-2 faq-2">
-                        <div class="thumb text-center mb-4 mb-lg-0">
-                            <img src="assets/img/faq/Banner-faq-inicio.webp"
-                                alt="Preguntas frecuentes sobre automatización de almacén - TiKendo" width="650"
-                                height="800" loading="lazy" decoding="async">
-                        </div>
-                    </div>
-                    <div class="col-xl-6 col-lg-7 order-lg-1">
-                        <div class="section-title">
-                            <span class="subtitle">FAQ</span>
-                            <h2 class="title">Preguntas frecuentes</h2>
-                        </div>
-                        <div class="accordion faq-accordion" id="accordionExample">
-                            <div class="accordion-item single-accordion-inner">
-                                <h3 class="accordion-header" id="headingOne">
-                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                        <span>1.</span> ¿Qué es un almacén inteligente?
-                                    </button>
-                                </h3>
-                                <div id="collapseOne" class="accordion-collapse collapse show"
-                                    aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        Un almacén inteligente es un espacio de almacenamiento que incorpora tecnologías
-                                        avanzadas, como Internet de las cosas (IoT), Inteligencia Artificial (IA) y
-                                        sistemas de automatización, para optimizar la gestión del inventario y mejorar
-                                        la eficiencia operativa. Estas tecnologías permiten recopilar y analizar datos
-                                        en tiempo real sobre la ubicación, el estado y el rendimiento de los productos
-                                        almacenados.
+                        <div class="col-xl-6 col-lg-7 order-lg-1">
+                            <div class="section-title">
+                                <span class="subtitle">FAQ</span>
+                                <h2 class="title">Preguntas frecuentes</h2>
+                            </div>
+                            <div class="accordion faq-accordion" id="accordionExample">
+                                <div class="accordion-item single-accordion-inner">
+                                    <h3 class="accordion-header" id="headingOne">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseOne" aria-expanded="true"
+                                            aria-controls="collapseOne">
+                                            <span>1.</span> ¿Qué es un almacén inteligente?
+                                        </button>
+                                    </h3>
+                                    <div id="collapseOne" class="accordion-collapse collapse show"
+                                        aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            Un almacén inteligente es un espacio de almacenamiento que incorpora
+                                            tecnologías
+                                            avanzadas, como Internet de las cosas (IoT), Inteligencia Artificial (IA) y
+                                            sistemas de automatización, para optimizar la gestión del inventario y
+                                            mejorar
+                                            la eficiencia operativa. Estas tecnologías permiten recopilar y analizar
+                                            datos
+                                            en tiempo real sobre la ubicación, el estado y el rendimiento de los
+                                            productos
+                                            almacenados.
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="accordion-item single-accordion-inner">
-                                <h3 class="accordion-header" id="headingTwo">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                        <span>2.</span> ¿Cuáles son los beneficios de automatizar un almacén?
-                                    </button>
-                                </h3>
-                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                                    data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        Automatizar un almacén puede transformar significativamente las operaciones
-                                        logísticas de una empresa. Los principales beneficios de la automatización
-                                        incluyen:
-                                        <br> -Eficiencia Operativa: La automatización permite procesos más rápidos y
-                                        precisos, reduciendo tiempos de ciclo y mejorando la productividad.
-                                        <br> -Reducción de Errores: Los sistemas automatizados minimizan los errores
-                                        humanos en la gestión del inventario y en el procesamiento de pedidos, lo que se
-                                        traduce en mayor precisión y menos devoluciones.
-                                        <br> -Optimización del Espacio: Las soluciones automatizadas pueden maximizar el
-                                        uso del espacio de almacenamiento, permitiendo un almacenamiento más denso y
-                                        eficiente.
-                                        <br> -Costos Operativos: A largo plazo, la automatización puede reducir los
-                                        costos operativos al disminuir la necesidad de mano de obra intensiva y mejorar
-                                        la eficiencia energética.
+                                <div class="accordion-item single-accordion-inner">
+                                    <h3 class="accordion-header" id="headingTwo">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                            aria-expanded="false" aria-controls="collapseTwo">
+                                            <span>2.</span> ¿Cuáles son los beneficios de automatizar un almacén?
+                                        </button>
+                                    </h3>
+                                    <div id="collapseTwo" class="accordion-collapse collapse"
+                                        aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            Automatizar un almacén puede transformar significativamente las operaciones
+                                            logísticas de una empresa. Los principales beneficios de la automatización
+                                            incluyen:
+                                            <br> -Eficiencia Operativa: La automatización permite procesos más rápidos y
+                                            precisos, reduciendo tiempos de ciclo y mejorando la productividad.
+                                            <br> -Reducción de Errores: Los sistemas automatizados minimizan los errores
+                                            humanos en la gestión del inventario y en el procesamiento de pedidos, lo
+                                            que se
+                                            traduce en mayor precisión y menos devoluciones.
+                                            <br> -Optimización del Espacio: Las soluciones automatizadas pueden
+                                            maximizar el
+                                            uso del espacio de almacenamiento, permitiendo un almacenamiento más denso y
+                                            eficiente.
+                                            <br> -Costos Operativos: A largo plazo, la automatización puede reducir los
+                                            costos operativos al disminuir la necesidad de mano de obra intensiva y
+                                            mejorar
+                                            la eficiencia energética.
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="accordion-item single-accordion-inner">
-                                <h3 class="accordion-header" id="headingTres">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapseTres" aria-expanded="false"
-                                        aria-controls="collapseTres">
-                                        <span>3.</span> ¿Como elegir la mejor solución de almacén para mi negocio?
-                                    </button>
-                                </h3>
-                                <div id="collapseTres" class="accordion-collapse collapse" aria-labelledby="headingTres"
-                                    data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        La elección de la mejor solución depende de varios factores, como el tipo de
-                                        productos o datos que se almacenarán, el tamaño y la estructura del negocio, el
-                                        presupuesto disponible y las necesidades específicas de almacenamiento y
-                                        seguridad.
+                                <div class="accordion-item single-accordion-inner">
+                                    <h3 class="accordion-header" id="headingTres">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseTres"
+                                            aria-expanded="false" aria-controls="collapseTres">
+                                            <span>3.</span> ¿Como elegir la mejor solución de almacén para mi negocio?
+                                        </button>
+                                    </h3>
+                                    <div id="collapseTres" class="accordion-collapse collapse"
+                                        aria-labelledby="headingTres" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            La elección de la mejor solución depende de varios factores, como el tipo de
+                                            productos o datos que se almacenarán, el tamaño y la estructura del negocio,
+                                            el
+                                            presupuesto disponible y las necesidades específicas de almacenamiento y
+                                            seguridad.
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
 
-                            <div class="accordion-item single-accordion-inner">
-                                <h3 class="accordion-header" id="headingCuatro">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapseCuatro" aria-expanded="false"
-                                        aria-controls="collapseCuatro">
-                                        <span>4.</span> ¿Cómo puede la tecnología RFID mejorar la automatización de un
-                                        almacén?
-                                    </button>
-                                </h3>
-                                <div id="collapseCuatro" class="accordion-collapse collapse"
-                                    aria-labelledby="headingCuatro" data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        La tecnología RFID (Identificación por Radiofrecuencia) es crucial para la
-                                        automatización moderna de almacenes, permitiendo un seguimiento en tiempo real
-                                        del inventario, lo que mejora significativamente la visibilidad y el control.
-                                        Con etiquetas RFID, puedes escanear y registrar información de productos sin
-                                        necesidad de contacto visual directo, lo que reduce errores humanos y acelera el
-                                        proceso de inventario.
+                                <div class="accordion-item single-accordion-inner">
+                                    <h3 class="accordion-header" id="headingCuatro">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseCuatro"
+                                            aria-expanded="false" aria-controls="collapseCuatro">
+                                            <span>4.</span> ¿Cómo puede la tecnología RFID mejorar la automatización de
+                                            un
+                                            almacén?
+                                        </button>
+                                    </h3>
+                                    <div id="collapseCuatro" class="accordion-collapse collapse"
+                                        aria-labelledby="headingCuatro" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            La tecnología RFID (Identificación por Radiofrecuencia) es crucial para la
+                                            automatización moderna de almacenes, permitiendo un seguimiento en tiempo
+                                            real
+                                            del inventario, lo que mejora significativamente la visibilidad y el
+                                            control.
+                                            Con etiquetas RFID, puedes escanear y registrar información de productos sin
+                                            necesidad de contacto visual directo, lo que reduce errores humanos y
+                                            acelera el
+                                            proceso de inventario.
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
 
-                            <div class="accordion-item single-accordion-inner">
-                                <h3 class="accordion-header" id="headingCinco">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapseCinco" aria-expanded="false"
-                                        aria-controls="collapseCinco">
-                                        <span>5.</span> ¿Cuáles son las funciones principales de un WMS?
-                                    </button>
-                                </h3>
-                                <div id="collapseCinco" class="accordion-collapse collapse"
-                                    aria-labelledby="headingCinco" data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        Las funciones principales de un WMS incluyen la gestión de inventario, la
-                                        planificación de la distribución, la optimización de rutas, la gestión de mano
-                                        de obra, el seguimiento de pedidos y la generación de informes.
+                                <div class="accordion-item single-accordion-inner">
+                                    <h3 class="accordion-header" id="headingCinco">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseCinco"
+                                            aria-expanded="false" aria-controls="collapseCinco">
+                                            <span>5.</span> ¿Cuáles son las funciones principales de un WMS?
+                                        </button>
+                                    </h3>
+                                    <div id="collapseCinco" class="accordion-collapse collapse"
+                                        aria-labelledby="headingCinco" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            Las funciones principales de un WMS incluyen la gestión de inventario, la
+                                            planificación de la distribución, la optimización de rutas, la gestión de
+                                            mano
+                                            de obra, el seguimiento de pedidos y la generación de informes.
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
 
-                            <div class="accordion-item single-accordion-inner">
-                                <h3 class="accordion-header" id="headingSeis">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapseSeis" aria-expanded="false"
-                                        aria-controls="collapseSeis">
-                                        <span>6.</span> ¿Cuáles son los beneficios de implementar un WMS?
-                                    </button>
-                                </h3>
-                                <div id="collapseSeis" class="accordion-collapse collapse"
-                                    aria-labelledby="headingSiete" data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        Los beneficios incluyen una mayor eficiencia operativa, una mejor visibilidad
-                                        del inventario, una mayor precisión en los pedidos, una reducción de los costos
-                                        de almacenamiento y una mayor satisfacción del cliente debido a entregas más
-                                        rápidas y precisas.
+                                <div class="accordion-item single-accordion-inner">
+                                    <h3 class="accordion-header" id="headingSeis">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseSeis"
+                                            aria-expanded="false" aria-controls="collapseSeis">
+                                            <span>6.</span> ¿Cuáles son los beneficios de implementar un WMS?
+                                        </button>
+                                    </h3>
+                                    <div id="collapseSeis" class="accordion-collapse collapse"
+                                        aria-labelledby="headingSiete" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            Los beneficios incluyen una mayor eficiencia operativa, una mejor
+                                            visibilidad
+                                            del inventario, una mayor precisión en los pedidos, una reducción de los
+                                            costos
+                                            de almacenamiento y una mayor satisfacción del cliente debido a entregas más
+                                            rápidas y precisas.
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
 
-                            <div class="accordion-item single-accordion-inner mb-0">
-                                <h3 class="accordion-header" id="headingSiete">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapseSiete" aria-expanded="false"
-                                        aria-controls="collapseSiete">
-                                        <span>7.</span> ¿Qué es una WMS?
-                                    </button>
-                                </h3>
-                                <div id="collapseSiete" class="accordion-collapse collapse"
-                                    aria-labelledby="headingSiete" data-bs-parent="#accordionExample">
-                                    <div class="accordion-body">
-                                        Un WMS es una herramienta fundamental para la automatización del almacén.
-                                        Permite un seguimiento en tiempo real del inventario, asigna ubicaciones de
-                                        almacenamiento de manera eficiente y optimiza el flujo de productos a través del
-                                        almacén. Busca un sistema que se adapte a las necesidades específicas de tu
-                                        negocio y que pueda integrarse con otros sistemas que utilices.
+                                <div class="accordion-item single-accordion-inner mb-0">
+                                    <h3 class="accordion-header" id="headingSiete">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseSiete"
+                                            aria-expanded="false" aria-controls="collapseSiete">
+                                            <span>7.</span> ¿Qué es una WMS?
+                                        </button>
+                                    </h3>
+                                    <div id="collapseSiete" class="accordion-collapse collapse"
+                                        aria-labelledby="headingSiete" data-bs-parent="#accordionExample">
+                                        <div class="accordion-body">
+                                            Un WMS es una herramienta fundamental para la automatización del almacén.
+                                            Permite un seguimiento en tiempo real del inventario, asigna ubicaciones de
+                                            almacenamiento de manera eficiente y optimiza el flujo de productos a través
+                                            del
+                                            almacén. Busca un sistema que se adapte a las necesidades específicas de tu
+                                            negocio y que pueda integrarse con otros sistemas que utilices.
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -1652,16 +1736,15 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <!--faq-area end-->
-    <!-- FIN SECCIÓN 11 -->
+        </section>
+        <!--faq-area end-->
+        <!-- FIN SECCIÓN 11 -->
 
-    
+
     </main>
     <!-- main content landmark end -->
 
-<!-- footer area start -->
+    <!-- footer area start -->
     <footer class="footer-area">
         <div class="footer-top" style="background-image: url(assets/img/footer/bg.webp);">
             <div class="container">
@@ -1744,6 +1827,13 @@
 
     <!-- Formulario de cotización - Script externo -->
     <script src="assets/js/cotizacion-form.js" defer></script>
+    <script>
+        // Scroll progress bar
+        window.addEventListener('scroll', () => {
+            const scrolled = (window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100;
+            document.getElementById('scrollProgress').style.width = scrolled + '%';
+        });
+    </script>
 </body>
 
 </html>
