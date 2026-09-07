@@ -3689,7 +3689,8 @@ ul {
     background: var(--main-color)
 }
 
-.single-fact-wrap h2 {
+.single-fact-wrap h2,
+.single-fact-wrap .fact-number {
     color: var(--main-color);
     font-weight: 700;
     font-size: 44px;
