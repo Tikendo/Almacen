@@ -1,14 +1,12 @@
-version: '3.8'
-
 services:
-  app:
-    image: php:8.2-apache
+  web:
+    build: .
+    container_name: almacen-web
     ports:
       - "3005:80"
+    environment:
+      - APACHE_RUN_USER_ID=1000
+      - APACHE_RUN_GROUP_ID=1000
     volumes:
       - .:/var/www/html
-    working_dir: /var/www/html
-    command: >
-      bash -c "docker-php-ext-install mysqli pdo pdo_mysql && 
-               a2enmod rewrite && 
-               apache2-foreground"
+    restart: unless-stopped
