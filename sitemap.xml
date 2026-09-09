@@ -94,6 +94,12 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+  <url>
+    <loc>https://automatizaciondealmacen.com/blog/beneficios-implementar-wms</loc>
+    <lastmod>2026-09-08T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
   <!-- Páginas individuales de producto -->
   <url>
     <loc>https://automatizaciondealmacen.com/impresoras-de-etiquetas</loc>

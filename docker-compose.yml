@@ -1,12 +1,30 @@
 services:
-  web:
-    build: .
-    container_name: almacen-web
+  app:
+    image: php:8.2-apache
     ports:
       - "3005:80"
-    environment:
-      - APACHE_RUN_USER_ID=1000
-      - APACHE_RUN_GROUP_ID=1000
     volumes:
       - .:/var/www/html
-    restart: unless-stopped
+    working_dir: /var/www/html
+    command: >
+      bash -c "
+        usermod -u 1000 www-data &&
+        groupmod -g 1000 www-data &&
+        docker-php-ext-install mysqli pdo pdo_mysql &&
+        a2enmod rewrite &&
+        apache2-foreground"
+
+  almacen-old:
+    image: php:8.2-apache
+    ports:
+      - "3008:80"
+    volumes:
+      - .:/var/www/html
+    working_dir: /var/www/html
+    command: >
+      bash -c "
+        usermod -u 1000 www-data &&
+        groupmod -g 1000 www-data &&
+        docker-php-ext-install mysqli pdo pdo_mysql &&
+        a2enmod rewrite &&
+        apache2-foreground"
