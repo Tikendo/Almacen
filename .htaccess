@@ -6,26 +6,36 @@
 # 1. Activar motor de reescritura
 RewriteEngine On
 
-# Evitar que mod_dir redirija /blog (directorio) a /blog/ y genere un bucle con el rewrite
-DirectorySlash Off
+# -----------------------------------------------
+# 1.1 Redirecciones 301 - Modelo de Silos (Prioridad directa en mod_rewrite)
+# -----------------------------------------------
+# Silo de Productos (captura tanto con .html como sin extensión en un solo salto)
+RewriteRule ^computadoras-para-almacen(\.html)?$ /productos/computadoras-para-almacen [R=301,L]
+RewriteRule ^escaneres-codigo-barras(\.html)?$ /productos/escaneres-codigo-barras [R=301,L]
+RewriteRule ^impresoras-de-etiquetas(\.html)?$ /productos/impresoras-de-etiquetas [R=301,L]
+RewriteRule ^sistemas-gestion-almacen-wms(\.html)?$ /productos/sistemas-gestion-almacen-wms [R=301,L]
+RewriteRule ^suministros-y-refacciones(\.html)?$ /productos/suministros-y-refacciones [R=301,L]
+RewriteRule ^tecnologia-rfid(\.html)?$ /productos/tecnologia-rfid [R=301,L]
 
-# Redirigir /blog/ a /blog para que las rutas relativas (assets/) apunten a la raíz
-RewriteRule ^blog/$ /blog [L,R=301]
+# Consolidación del Blog y Productos index
+RewriteRule ^blog\.html$ /blog/ [R=301,L]
+RewriteRule ^productos\.html$ /productos/ [R=301,L]
 
-# Servir blog.html cuando se solicita /blog (el directorio /blog solo contiene los posts)
-RewriteRule ^blog$ blog.html [L]
+# Forzar trailing slash en directorios físicos (/blog/ y /productos/)
+DirectoryIndex index.html index.php
 
-# Redirigir URLs con .html a la versión sin extensión (301 permanente)
-# Evita contenido duplicado en Google
+# Redirigir URLs con .html a la versión sin extensión (301 permanente para el resto)
 RewriteCond %{THE_REQUEST} /([^.]+)\.html [NC]
+RewriteCond %{REQUEST_URI} !index\.html [NC]
 RewriteRule ^ /%1 [NC,L,R=301]
 
 # Servir archivos .html cuando se pida la URL sin extensión
+# (Funciona tanto para la raíz como para subdirectorios como /productos/ o /blog/)
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}.html -f
 RewriteRule ^([^\.]+)$ $1.html [NC,L]
 
-# Quitar barra final innecesaria
+# Quitar barra final innecesaria para archivos no-directorios
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^(.*)/$ /$1 [L,R=301]
 

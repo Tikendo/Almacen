@@ -6815,3 +6815,55 @@ p,
     transition: width 0.1s linear;
     box-shadow: 0 0 10px rgba(250, 67, 24, 0.5);
 }
+
+/* ----------------------------------------------------
+   Fix botón wizard cotización / nextButton y btn:after
+   Evita que el pseudo-elemento :after blanco oculte el texto
+   ---------------------------------------------------- */
+#nextButton,
+#prevButton,
+.question-box .btn,
+.question-box button {
+    position: relative;
+    z-index: 1;
+}
+
+#nextButton::after,
+#prevButton::after,
+.question-box .btn::after,
+.question-box button::after {
+    display: none !important;
+}
+
+#nextButton {
+    background-color: var(--naranja, #FA4318) !important;
+    border-color: var(--naranja, #FA4318) !important;
+    color: #ffffff !important;
+    transition: all 0.3s ease !important;
+}
+
+#nextButton:hover:not(:disabled) {
+    background-color: #d9350f !important;
+    border-color: #d9350f !important;
+    color: #ffffff !important;
+}
+
+#nextButton:disabled {
+    background-color: #cccccc !important;
+    border-color: #cccccc !important;
+    color: #666666 !important;
+    opacity: 0.7 !important;
+    cursor: not-allowed !important;
+}
+
+#prevButton {
+    color: #4b5563 !important;
+    border-color: #d1d5db !important;
+    background-color: transparent !important;
+    transition: all 0.3s ease !important;
+}
+
+#prevButton:hover {
+    background-color: #f3f4f6 !important;
+    color: #111827 !important;
+}
