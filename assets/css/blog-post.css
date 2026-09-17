@@ -64,11 +64,7 @@
 }
 
 .cta-banner::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
-    background-size: 40px 40px
+    display: none;
 }
 
 .cta-deco {
@@ -263,7 +259,7 @@
     position: relative;
     color: #fff;
     padding: 200px 0 130px;
-    background: linear-gradient(to bottom right, rgba(8, 12, 36, 0.88) 0%, rgba(8, 12, 36, 0.55) 100%), #080C24;
+    background-color: #080C24;
     overflow: hidden
 }
 
@@ -277,59 +273,42 @@
     background-repeat: no-repeat
 }
 
-.post-header.banner-1 {
-    background-image: linear-gradient(to bottom right, rgba(8, 12, 36, 0.88) 0%, rgba(8, 12, 36, 0.55) 100%), url('../img/blog/banner-blog1.webp')
-}
-
-.post-header.banner-2 {
-    background-image: linear-gradient(to bottom right, rgba(8, 12, 36, 0.88) 0%, rgba(8, 12, 36, 0.55) 100%), url('../img/blog/banner-blog2.webp')
-}
-
-.post-header.banner-3 {
-    background-image: linear-gradient(to bottom right, rgba(8, 12, 36, 0.88) 0%, rgba(8, 12, 36, 0.55) 100%), url('../img/blog/banner-blog3.webp')
-}
-
-.post-header.banner-4 {
-    background-image: linear-gradient(to bottom right, rgba(8, 12, 36, 0.88) 0%, rgba(8, 12, 36, 0.55) 100%), url('../img/blog/banner-blog4.webp')
-}
-
-.post-header.banner-5 {
-    background-image: linear-gradient(to bottom right, rgba(8, 12, 36, 0.88) 0%, rgba(8, 12, 36, 0.55) 100%), url('../img/blog/banner-blog5.webp')
-}
-
-.post-header.banner-6 {
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-image: linear-gradient(to bottom right, rgba(8, 12, 36, 0.88) 0%, rgba(8, 12, 36, 0.55) 100%), url('../img/blog/banner-blog6.webp')
-}
-
-.post-header.banner-7 {
+.post-header.banner-1,
+.post-header.banner-2,
+.post-header.banner-3,
+.post-header.banner-4,
+.post-header.banner-5,
+.post-header.banner-6,
+.post-header.banner-7,
+.post-header.banner-8,
+.post-header.banner-9 {
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    background-image: linear-gradient(to bottom right, rgba(8, 12, 36, 0.88) 0%, rgba(8, 12, 36, 0.55) 100%), url('../img/blog/banner-blog7.webp');
+    background-color: #080C24;
 }
+
+.post-header.banner-1 { background-image: url('../img/blog/banner-blog1.webp'); }
+.post-header.banner-2 { background-image: url('../img/blog/banner-blog2.webp'); }
+.post-header.banner-3 { background-image: url('../img/blog/banner-blog3.webp'); }
+.post-header.banner-4 { background-image: url('../img/blog/banner-blog4.webp'); }
+.post-header.banner-5 { background-image: url('../img/blog/banner-blog5.webp'); }
+.post-header.banner-6 { background-image: url('../img/blog/banner-blog6.webp'); }
+.post-header.banner-7 { background-image: url('../img/blog/banner-blog7.webp'); }
+.post-header.banner-8 { background-image: url('../img/blog/banner-blog8.webp'); }
+.post-header.banner-9 { background-image: url('../img/blog/banner-blog9.webp'); }
 
 .post-header::before {
     content: '';
     position: absolute;
     inset: 0;
-    background-image: linear-gradient(rgba(250, 67, 24, 0.09) 1px, transparent 1px), linear-gradient(90deg, rgba(250, 67, 24, 0.09) 1px, transparent 1px);
-    background-size: 56px 56px;
-    pointer-events: none
+    background-color: rgba(8, 12, 36, 0.82);
+    pointer-events: none;
+    z-index: 1;
 }
 
 .post-header::after {
-    content: '';
-    position: absolute;
-    width: 480px;
-    height: 480px;
-    top: 50%;
-    right: -140px;
-    transform: translateY(-50%);
-    background: radial-gradient(circle, rgba(250, 67, 24, 0.22) 0%, transparent 70%);
-    pointer-events: none
+    display: none;
 }
 
 .post-meta,
@@ -541,7 +520,7 @@
 }
 
 .post-content .highlight {
-    background: linear-gradient(135deg, rgba(250, 67, 24, 0.09), rgba(250, 67, 24, 0.04));
+    background: rgba(250, 67, 24, 0.08);
     border: 1px solid rgba(250, 67, 24, 0.25);
     border-left: 4px solid var(--main-color);
     border-radius: 12px;

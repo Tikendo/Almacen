@@ -227,35 +227,25 @@
             display: flex;
             align-items: center;
             overflow: hidden;
-            background:
-                linear-gradient(to bottom right, rgba(17, 17, 17, 0.82) 0%, rgba(0, 0, 0, 0.38) 100%),
-                #111 url('../assets/img/blog/banner-blog.webp') center center / cover no-repeat;
+            background-color: #080C24;
+            background-image: url('../assets/img/blog/banner-blog.webp');
+            background-position: center center;
+            background-size: cover;
+            background-repeat: no-repeat;
             box-shadow: 0 10px 40px rgba(0, 0, 0, 0.28), 0 3px 8px rgba(0, 0, 0, 0.18);
+            border-bottom: 3px solid var(--naranja);
         }
 
         .srv-hero::before {
             content: '';
             position: absolute;
             inset: 0;
-            background-image:
-                linear-gradient(rgba(250, 67, 24, 0.08) 1px, transparent 1px),
-                linear-gradient(90deg, rgba(250, 67, 24, 0.08) 1px, transparent 1px);
-            background-size: 60px 60px;
-            animation: gridShift 18s linear infinite;
+            background-color: rgba(8, 12, 36, 0.84);
             z-index: 0;
         }
 
         .srv-hero::after {
-            content: '';
-            position: absolute;
-            width: 500px;
-            height: 500px;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            background: radial-gradient(circle, rgba(250, 67, 24, 0.18) 0%, transparent 70%);
-            z-index: 1;
-            animation: pulse 5s ease-in-out infinite;
+            display: none;
         }
 
         @keyframes gridShift {
@@ -611,13 +601,7 @@
         }
 
         .cta-banner::before {
-            content: '';
-            position: absolute;
-            inset: 0;
-            background-image:
-                linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
-                linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
-            background-size: 40px 40px;
+            display: none;
         }
 
         .cta-deco {
@@ -1159,7 +1143,7 @@
                     <article class="blog-card">
                         <a href="/blog/guia-seleccion-tecnologia-rfid-almacenes" class="blog-card-thumb"
                             aria-label="Leer artículo: Guía para Elegir Chips, Tags y Lectores RFID en Almacenes">
-                            <img src="../assets/img/blog/banner-blog2.webp"
+                            <img src="../assets/img/blog/banner-blog8.webp"
                                 alt="Guía para Elegir Chips, Tags y Lectores RFID en Almacenes de México" width="400" height="225"
                                 loading="lazy" decoding="async">
                         </a>
@@ -1181,7 +1165,7 @@
                     <article class="blog-card">
                         <a href="/blog/mantenimiento-refacciones-impresoras-zebra" class="blog-card-thumb"
                             aria-label="Leer artículo: Mantenimiento Preventivo y Refacciones para Impresoras Zebra">
-                            <img src="../assets/img/blog/banner-blog1.webp"
+                            <img src="../assets/img/blog/banner-blog9.webp"
                                 alt="Mantenimiento Preventivo y Refacciones para Impresoras Zebra: Cabezales y Rodillos" width="400" height="225"
                                 loading="lazy" decoding="async">
                         </a>
