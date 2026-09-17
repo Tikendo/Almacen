@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Guía para Elegir Chips, Tags y Lectores RFID en Almacenes | TiKendo</title>
+    <meta name="description"
+        content="Aprende a elegir chips RFID, tags UHF, antenas y lectores para tu almacén en México. Frecuencias, resistencia a metales y casos de integración con WMS.">
+    <link rel="canonical" href="https://automatizaciondealmacen.com/blog/guia-seleccion-tecnologia-rfid-almacenes">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../assets/css/vendor.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+    <link rel="stylesheet" href="../assets/css/blog-post.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/apple-touch-icon.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap"
+        rel="stylesheet">
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5PMNCYQHY5"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-5PMNCYQHY5');
+    </script>
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://automatizaciondealmacen.com/blog/guia-seleccion-tecnologia-rfid-almacenes">
+    <meta property="og:title" content="Guía para Elegir Chips, Tags y Lectores RFID en Almacenes | TiKendo">
+    <meta property="og:description"
+        content="Aprende a elegir chips RFID, tags UHF, antenas y lectores para tu almacén en México. Frecuencias, resistencia a metales y casos de integración con WMS.">
+    <meta property="og:image" content="https://automatizaciondealmacen.com/assets/img/logos/logo_1.webp">
+    <meta property="og:locale" content="es_MX">
+    <meta property="og:site_name" content="TiKendo">
+
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@ti_kndo">
+    <meta name="twitter:title" content="Guía para Elegir Chips, Tags y Lectores RFID en Almacenes | TiKendo">
+    <meta name="twitter:description"
+        content="Cómo seleccionar chips, tags y lectores RFID en México para logística, inventario en tiempo real y manufactura.">
+    <meta name="twitter:image" content="https://automatizaciondealmacen.com/assets/img/logos/logo_1.webp">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Guía para Elegir Chips, Tags y Lectores RFID en Almacenes de México",
+      "description": "Aprende a seleccionar la tecnología RFID ideal: tags UHF pasivos, chips para metal o líquidos, lectores fijos y handhelds integrados a WMS.",
+      "image": "https://automatizaciondealmacen.com/assets/img/logos/logo_1.webp",
+      "author": {
+        "@type": "Organization",
+        "name": "TiKendo",
+        "url": "https://automatizaciondealmacen.com"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "TiKendo",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://automatizaciondealmacen.com/assets/img/logos/logo.webp"
+        }
+      },
+      "datePublished": "2026-09-17",
+      "dateModified": "2026-09-17",
+      "mainEntityOfPage": "https://automatizaciondealmacen.com/blog/guia-seleccion-tecnologia-rfid-almacenes"
+    }
+    </script>
+</head>
+
+<body>
+
+    <!-- Scroll progress -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- WhatsApp Float -->
+    <div class="whatsapp-icon">
+        <a href="https://wa.me/525549022481?text=Hola%20me%20gustaría%20saber%20más%20sobre%20soluciones%20RFID%20para%20almacenes."
+            target="_blank" aria-label="Contactar a TiKendo por WhatsApp">
+            <img src="../assets/img/icon/icono-whatsapp.png" alt="WhatsApp TiKendo" width="64" height="64"
+                loading="lazy" decoding="async">
+        </a>
+    </div>
+
+    <!-- Navbar -->
+    <header class="navbar-area">
+        <nav class="navbar navbar-area-2 navbar-area navbar-expand-lg">
+            <div class="container nav-container">
+                <div class="responsive-mobile-menu">
+                    <button class="menu toggle-btn d-block d-lg-none" data-target="#transpro_main_menu"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="icon-left"></span>
+                        <span class="icon-right"></span>
+                    </button>
+                </div>
+                <div class="logo">
+                    <a href="/" class="logo-1" aria-label="TiKendo - Ir al inicio"><img
+                            src="../assets/img/logos/logo_1.webp" alt="TiKendo" width="469" height="347"></a>
+                    <a href="/" class="logo-2" aria-label="TiKendo - Ir al inicio"><img
+                            src="../assets/img/logos/logo-2.webp" alt="TiKendo automatización de almacenes" width="300"
+                            height="80" loading="lazy" decoding="async"></a>
+                </div>
+                <div class="nav-right-part nav-right-part-mobile">
+                    <a class="btn btn-base" href="/contacto">Solicita una cotización</a>
+                </div>
+                <div class="collapse navbar-collapse" id="transpro_main_menu">
+                    <ul class="navbar-nav menu-open text-end">
+                        <li><a href="/nosotros">Nosotros</a></li>
+                        <li><a href="/servicios">Servicios</a></li>
+                        <li><a href="/productos/">Productos</a></li>
+                        <li><a href="/soluciones">Soluciones</a></li>
+                        <li><a href="/blog/" style="color:var(--naranja);font-weight:700;">Blog</a></li>
+                        <li><a href="/faq">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="nav-right-part nav-right-part-desktop">
+                    <a class="btn btn-base" href="/contacto">Solicita una cotización</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main-content" role="main" class="main-content">
+        <header class="post-header banner-2">
+            <div class="post-meta">
+                <span class="post-category">Tecnología RFID</span>
+                <time datetime="2026-09-17">17 de Septiembre, 2026</time>
+            </div>
+            <h1>Guía para Elegir Chips, Tags y Lectores RFID en Almacenes de México</h1>
+            <p class="post-excerpt">Cómo seleccionar la frecuencia adecuada, el tipo de etiqueta para metales o cartón y la infraestructura de hardware ideal para lectura masiva en tiempo real.</p>
+        </header>
+
+        <article class="blog-post">
+            <div class="post-content">
+                <section>
+                    <h2>La revolución del RFID en la cadena de suministro</h2>
+                    <p>La adopción de tecnología RFID (Identificación por Radiofrecuencia) ha dejado de ser un lujo de grandes multinacionales para convertirse en una necesidad operativa en México. Frente al código de barras tradicional, que requiere línea de visión directa y escaneo uno a uno, el RFID permite capturar cientos de artículos por segundo de manera automática y a distancia.</p>
+                    <p>Sin embargo, un error común al buscar <strong>proveedores de RFID en México</strong> es pensar que cualquier chip o lector funciona en cualquier entorno. La física de las ondas de radio exige una selección precisa según el material del producto, el alcance deseado y la velocidad operativa.</p>
+                </section>
+
+                <section>
+                    <h2>1. Frecuencias RFID: ¿Por qué UHF es el estándar en logística?</h2>
+                    <p>Aunque existen frecuencias de baja (LF) y alta frecuencia (HF/NFC), el estándar indiscutible para almacenes, centros de distribución y tarimas es <strong>UHF (Ultra High Frequency, 860-960 MHz)</strong> bajo el protocolo GS1 EPC Gen2.</p>
+                    <ul>
+                        <li><strong>Rango de lectura:</strong> De 3 hasta 12 metros según la antena y el lector.</li>
+                        <li><strong>Lectura en bloque:</strong> Capacidad para leer estibas completas al cruzar portales de muelle sin abrir cajas.</li>
+                        <li><strong>Costo por etiqueta:</strong> Altamente accesible para identificación masiva de cajas, activos y pallets.</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>2. Tipos de Tags y Chips RFID según la superficie</h2>
+                    <p>El principal desafío del RFID son las interferencias causadas por metales y líquidos:</p>
+                    <ul>
+                        <li><strong>Etiquetas adhesivas estándar (Inlays húmedos):</strong> Ideales para cajas de cartón, prendas textiles, plástico corrugado y paquetes secos.</li>
+                        <li><strong>Tags para Metal (On-Metal Tags):</strong> Incorporan una capa de aislamiento cerámico o espuma dieléctrica para montarse sobre racks metálicos, maquinaria, motores o contenedores de acero.</li>
+                        <li><strong>Tags de uso rudo (Hard Tags):</strong> Encapsulados en polímeros resistentes a caídas, lluvia, polvo (IP67/IP68) y procesos de lavado químico.</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>3. Lectores y Antenas: Fijos vs. Portátiles</h2>
+                    <p>Para construir una infraestructura confiable se combinan dos tipos principales de equipos:</p>
+                    <ul>
+                        <li><strong>Lectores fijos con antenas (ej. Zebra FX9600):</strong> Se instalan en arcos o portales de muelles de carga y bandas transportadoras para registrar automáticamente entradas y salidas masivas al momento en que entra o sale el montacargas.</li>
+                        <li><strong>Terminales móviles handhelds (ej. Zebra MC3300R):</strong> Permiten al operador realizar conteos cíclicos de pasillos completos simplemente caminando con la pistola lectora, completando inventarios que antes tomaban días en cuestión de minutos.</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>4. Integración con el Sistema WMS o ERP</h2>
+                    <p>El hardware RFID no trabaja aislado. Cada lectura de tag EPC genera un evento que debe transmitirse inmediatamente al <a href="/productos/sistemas-gestion-almacen-wms">software de gestión de almacén (WMS)</a> para conciliar órdenes de compra, validar remisiones de embarque y alertar discrepancias en tiempo real.</p>
+                </section>
+
+                <section>
+                    <h2>¿Buscas asesoría y equipos RFID en México?</h2>
+                    <p>Como <a href="/productos/tecnologia-rfid">proveedores de tecnología RFID en México</a>, en TiKendo te acompañamos desde la prueba de concepto (POC) y selección de tags hasta la instalación de lectores fijos, terminales móviles Zebra y middleware de conexión a tu WMS.</p>
+                    <p><a href="/contacto" class="btn btn-base" style="color:#fff;display:inline-block;margin-top:10px;">Solicita asesoría o cotización RFID →</a></p>
+                </section>
+            </div>
+
+            <footer class="post-footer">
+                <div class="post-tags">
+                    <span>RFID</span>
+                    <span>Chips RFID</span>
+                    <span>Lectores UHF</span>
+                    <span>Automatización de Almacén</span>
+                </div>
+                <div class="post-navigation">
+                    <a href="/blog/" class="btn-back">← Volver al Blog</a>
+                </div>
+            </footer>
+        </article>
+    </main>
+
+    <footer class="footer-area">
+        <div class="container">
+            <div class="footer-bottom text-center py-4">
+                <p style="color:#94a3b8;margin:0;">&copy; 2026 TiKendo. Automatización de Almacenes y Tecnología Logística en México.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="back-to-top"><span class="back-top"><i class="fa fa-angle-up"></i></span></div>
+
+    <script src="../assets/js/vendor.js"></script>
+    <script src="../assets/js/main.js"></script>
+</body>
+
+</html>
