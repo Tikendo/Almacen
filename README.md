@@ -17,19 +17,19 @@ Para maximizar el posicionamiento en Google y evitar la canibalización de palab
 La arquitectura de silos organiza los contenidos del sitio web en grupos semánticos aislados y altamente especializados. Cada sección tiene un tema central bien delimitado, lo que ayuda a los motores de búsqueda (como Googlebot) a entender exactamente cuál es la autoridad del dominio en cada nicho y a transferir PageRank de forma controlada hacia las páginas comerciales clave.
 
 ```
-                             [ HOME: / ]
-              (Automatización de Almacenes en México)
-                                 │
-     ┌───────────────────────────┼───────────────────────────┐
-     ▼                           ▼                           ▼
-[ SILO: PRODUCTOS ]     [ SILO: SERVICIOS ]          [ SILO: BLOG ]
- (/productos/*)           (/servicios)                 (/blog/*)
- - WMS                   - Consultoría               - Guías de Selección
- - RFID                  - Implementación            - Casos de Uso
- - Computadoras          - Soporte Postventa         - Picking y Errores
- - Escáneres             - Pólizas                   - Mantenimiento Zebra
- - Impresoras
- - Suministros
+                                         [ HOME: / ]
+                          (Automatización de Almacenes en México)
+                                             │
+         ┌───────────────────────┬───────────┴───────────┬───────────────────────┐
+         ▼                       ▼                       ▼                       ▼
+ [ SILO: PRODUCTOS ]    [ SILO: SOLUCIONES ]    [ SILO: SERVICIOS ]       [ SILO: BLOG ]
+   (/productos/*)         (/soluciones/*)          (/servicios)              (/blog/*)
+   - WMS                  - Picking y Surtido      - Consultoría            - Guías Selección
+   - RFID                 - Inventarios (Fase 2)   - Implementación         - Casos de Uso
+   - Computadoras         - Recepción (Fase 2)     - Soporte Postventa      - Picking y Errores
+   - Escáneres                                     - Pólizas                - Zebra Maintenance
+   - Impresoras
+   - Suministros
 ```
 
 ---
@@ -41,7 +41,7 @@ Toda carpeta dentro de la estructura del proyecto debe contener obligatoriamente
 ### Por que es indispensable
 1. **Evitar errores 403 Forbidden o Directory Listing:** Si un usuario o Googlebot accede a la raíz del directorio (por ejemplo `https://automatizaciondealmacen.com/blog/` o `https://automatizaciondealmacen.com/productos/`), el servidor web Apache cargará de inmediato la vista del silo en lugar de un error de permisos o exponer el árbol de archivos.
 2. **Página Hub o Pilar del Silo:** El archivo `index.html` actúa como directorio central que concentra la temática del cluster, enlazando hacia todas las páginas hijas y canalizando la autoridad hacia la home y el formulario de contacto.
-3. **Consistencia Canónica:** Las URLs canónicas de los hubs deben declararse terminando con barra (`https://automatizaciondealmacen.com/blog/` y `https://automatizaciondealmacen.com/productos/`).
+3. **Consistencia Canónica:** Las URLs canónicas de los hubs deben declararse terminando con barra (`https://automatizaciondealmacen.com/blog/`, `https://automatizaciondealmacen.com/productos/` y `https://automatizaciondealmacen.com/soluciones/`).
 
 ### Estructura de Carpetas del Proyecto
 ```

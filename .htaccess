@@ -20,6 +20,7 @@ RewriteRule ^tecnologia-rfid(\.html)?$ /productos/tecnologia-rfid [R=301,L]
 # Consolidación del Blog y Productos index
 RewriteRule ^blog\.html$ /blog/ [R=301,L]
 RewriteRule ^productos\.html$ /productos/ [R=301,L]
+RewriteRule ^soluciones\.html$ /soluciones/ [R=301,L]
 
 # Forzar trailing slash en directorios físicos (/blog/ y /productos/)
 DirectoryIndex index.html index.php
