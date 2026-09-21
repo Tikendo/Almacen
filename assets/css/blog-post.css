@@ -991,3 +991,5 @@ p,
 .post-content .container-video {
     margin-top: 20px !important;
 }
+
+.post-header.banner-10 { background-image: url('../img/blog/banner-blog2.webp'); }
