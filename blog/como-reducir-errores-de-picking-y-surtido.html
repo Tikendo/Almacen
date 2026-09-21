@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cómo Reducir Errores de Picking y Surtido en Almacén | TiKendo</title>
+    <meta name="description"
+        content="Estrategias comprobadas para eliminar errores en el surtido y preparación de pedidos: verificación por código de barras, WMS y tecnología AIDC.">
+    <link rel="canonical" href="https://automatizaciondealmacen.com/blog/como-reducir-errores-de-picking-y-surtido">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../assets/css/vendor.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+    <link rel="stylesheet" href="../assets/css/blog-post.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/apple-touch-icon.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap"
+        rel="stylesheet">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5PMNCYQHY5"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-5PMNCYQHY5');
+    </script>
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://automatizaciondealmacen.com/blog/como-reducir-errores-de-picking-y-surtido">
+    <meta property="og:title" content="Cómo Reducir Errores de Picking y Surtido en Almacén | TiKendo">
+    <meta property="og:description"
+        content="Guía práctica para eliminar errores de picking en el almacén: causas comunes, cálculo de costos ocultos y tecnologías clave de validación AIDC.">
+    <meta property="og:image" content="https://automatizaciondealmacen.com/assets/img/logos/logo_1.webp">
+    <meta property="og:locale" content="es_MX">
+    <meta property="og:site_name" content="TiKendo">
+
+    <!-- Twitter / X Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@ti_kndo">
+    <meta name="twitter:title" content="Cómo Reducir Errores de Picking y Surtido en Almacén | TiKendo">
+    <meta name="twitter:description"
+        content="Descubre cómo reducir los errores de surtido de pedidos hasta un 99.9% de precisión con códigos de barras, terminales móviles y WMS.">
+    <meta name="twitter:image" content="https://automatizaciondealmacen.com/assets/img/logos/logo_1.webp">
+
+    <!-- Schema: BlogPosting & BreadcrumbList & FAQPage -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BlogPosting",
+          "headline": "Cómo Reducir Errores de Picking y Surtido en Almacén: Guía Definitiva",
+          "description": "Estrategias comprobadas para eliminar errores en el surtido y preparación de pedidos: verificación por código de barras, WMS y tecnología AIDC.",
+          "url": "https://automatizaciondealmacen.com/blog/como-reducir-errores-de-picking-y-surtido",
+          "datePublished": "2026-09-21",
+          "dateModified": "2026-09-21",
+          "mainEntityOfPage": "https://automatizaciondealmacen.com/blog/como-reducir-errores-de-picking-y-surtido",
+          "author": {
+            "@type": "Organization",
+            "name": "TiKendo",
+            "url": "https://automatizaciondealmacen.com"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "TiKendo",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://automatizaciondealmacen.com/assets/img/logos/logo_1.webp"
+            }
+          },
+          "image": "https://automatizaciondealmacen.com/assets/img/logos/logo_1.webp"
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Inicio",
+              "item": "https://automatizaciondealmacen.com/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Blog",
+              "item": "https://automatizaciondealmacen.com/blog"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Cómo Reducir Errores de Picking y Surtido",
+              "item": "https://automatizaciondealmacen.com/blog/como-reducir-errores-de-picking-y-surtido"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "¿Cuál es la tasa promedio de error en picking manual?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "En almacenes con procesos basados en papel o memoria del operario, la tasa de error típica oscila entre el 1% y el 3%. Con tecnología de escaneo de código de barras y validación WMS, la precisión supera el 99.8%."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "¿Cuánto le cuesta a una empresa un pedido mal surtido en México?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "En promedio, corregir un pedido con error cuesta entre $400 y $1,200 MXN considerando fletes de retorno, reenvío, reetiquetado, mano de obra y penalizaciones de clientes B2B o plataformas de e-commerce."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "¿Qué tecnología reduce los errores de picking más rápido?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "El escaneo de código de barras con terminales móviles industriales (computadoras para almacén) combinado con verificación de ubicación y SKU en tiempo real mediante un WMS es la solución más rápida y con mayor retorno de inversión."
+              }
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+
+    <style>
+        .related-posts-section {
+            margin-top: 40px;
+            padding-top: 30px;
+            border-top: 1px solid var(--border-color, #e2e8f0);
+        }
+        .related-posts-section h3 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--text-primary, #0f172a);
+            margin-bottom: 20px;
+        }
+        .related-posts-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 16px;
+        }
+        .related-post-card {
+            display: block;
+            padding: 16px 20px;
+            background: var(--card-bg, #f8fafc);
+            border: 1px solid var(--border-color, #e2e8f0);
+            border-radius: 10px;
+            text-decoration: none;
+            transition: transform 0.2s, border-color 0.2s, box-shadow 0.2s;
+        }
+        .related-post-card:hover {
+            transform: translateY(-2px);
+            border-color: var(--primary, #0284c7);
+            box-shadow: 0 4px 12px rgba(2, 132, 199, 0.1);
+        }
+        .related-post-card .rel-tag {
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--primary, #0284c7);
+            display: block;
+            margin-bottom: 6px;
+        }
+        .related-post-card .rel-title {
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: var(--text-primary, #0f172a);
+            line-height: 1.4;
+            margin: 0;
+        }
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 24px 0;
+            font-size: 0.95rem;
+        }
+        .data-table th, .data-table td {
+            border: 1px solid #cbd5e1;
+            padding: 12px 14px;
+            text-align: left;
+        }
+        .data-table th {
+            background-color: #f1f5f9;
+            font-weight: 700;
+            color: #0f172a;
+        }
+        .callout-box {
+            background: #f0fdf4;
+            border-left: 4px solid #22c55e;
+            padding: 18px 20px;
+            border-radius: 6px;
+            margin: 24px 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Scroll progress -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- WhatsApp Float -->
+    <div class="whatsapp-icon">
+        <a href="https://wa.me/525549022481?text=Hola%20me%20gustaría%20saber%20más%20sobre%20soluciones%20para%20reducir%20errores%20de%20picking."
+            target="_blank" aria-label="Contactar a TiKendo por WhatsApp">
+            <img src="../assets/img/icon/icono-whatsapp.png" alt="WhatsApp TiKendo" width="64" height="64"
+                loading="lazy" decoding="async">
+        </a>
+    </div>
+
+    <!-- Navbar -->
+    <header class="navbar-area">
+        <nav class="navbar navbar-area-2 navbar-area navbar-expand-lg">
+            <div class="container nav-container">
+                <div class="responsive-mobile-menu">
+                    <button class="menu toggle-btn d-block d-lg-none" data-target="#transpro_main_menu"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="icon-left"></span>
+                        <span class="icon-right"></span>
+                    </button>
+                </div>
+                <div class="logo">
+                    <a href="/" class="logo-1" aria-label="TiKendo - Ir al inicio"><img decoding="async"
+                            src="../assets/img/logos/logo_1.webp" alt="TiKendo" width="469" height="347"></a>
+                    <a href="/" class="logo-2" aria-label="TiKendo - Ir al inicio"><img
+                            src="../assets/img/logos/logo-2.webp" alt="TiKendo automatización de almacenes" width="300"
+                            height="80" loading="lazy" decoding="async"></a>
+                </div>
+                <div class="nav-right-part nav-right-part-mobile">
+                    <a class="btn btn-base" href="/contacto">Solicita una cotización</a>
+                </div>
+                <div class="collapse navbar-collapse" id="transpro_main_menu">
+                    <ul class="navbar-nav menu-open text-end">
+                        <li><a href="/nosotros">Nosotros</a></li>
+                        <li><a href="/servicios">Servicios</a></li>
+                        <li><a href="/productos/">Productos</a></li>
+                        <li><a href="/soluciones">Soluciones</a></li>
+                        <li><a href="/blog/" style="color:var(--naranja);font-weight:700;">Blog</a></li>
+                        <li><a href="/faq">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="nav-right-part nav-right-part-desktop">
+                    <a class="btn btn-base" href="/contacto">Solicita una cotización</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main id="main-content" role="main" class="main-content">
+        <header class="post-header banner-1">
+            <div class="post-meta">
+                <span class="post-category">Operación & Productividad</span>
+                <span class="post-date">21 de Septiembre, 2026</span>
+                <span class="post-read-time">7 min de lectura</span>
+            </div>
+            <h1 class="post-title">Cómo Reducir Errores de Picking y Surtido en Almacén</h1>
+            <p class="post-subtitle">Descubre las causas detrás de las discrepancias en los pedidos, su impacto financiero real y las tecnologías clave para alcanzar más del 99.8% de precisión en tu operación.</p>
+        </header>
+
+        <article class="post-container">
+            <div class="post-content">
+                <section>
+                    <p class="lead">
+                        El proceso de <strong>picking o surtido de pedidos</strong> representa típicamente más del 50% de los costos operativos totales de un centro de distribución. Sin embargo, cuando este proceso se ejecuta manualmente con listas impresas o fiándose de la memoria del personal, los errores son inevitables y enormemente costosos.
+                    </p>
+                    <p>
+                        Un pedido mal preparado no solo genera fricción interna; desencadena gastos de logística inversa, penalizaciones comerciales en cadenas retail o marketplaces, reclamos de clientes y descontrol en los inventarios del ERP. En esta guía te mostramos cómo diagnosticar las causas raíz y cómo implementar una estrategia tecnológica para erradicar las discrepancias en el surtido.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>1. Los Costos Ocultos de un Error en el Surtido</h2>
+                    <p>
+                        Muchos gerentes de logística asumen que un error de picking se limita al costo de reenviar el producto correcto. La realidad es mucho más severa cuando se desglosan todos los factores involucrados:
+                    </p>
+                    <ul>
+                        <li><strong>Costo de flete doble:</strong> Absorber la recolección del producto equivocado más el nuevo envío express al cliente.</li>
+                        <li><strong>Mano de obra duplicada:</strong> Tiempo de atención a clientes, recepción en devoluciones, inspección de calidad y reubicación en rack.</li>
+                        <li><strong>Depreciación de mercancía:</strong> Empaques maltratados en el tránsito de regreso o productos perecederos/caducos que terminan como merma total.</li>
+                        <li><strong>Penalizaciones contractuales:</strong> Grandes distribuidores y tiendas de autoservicio en México aplican notas de cargo automáticas por líneas con faltantes o sobrantes.</li>
+                        <li><strong>Pérdida del valor de vida del cliente (LTV):</strong> Hasta un 40% de los clientes no vuelve a comprar en una tienda online o con un proveedor que comete errores recurrentes en sus entregas.</li>
+                    </ul>
+
+                    <div class="callout-box">
+                        <strong>Dato Clave de la Industria:</strong> En una operación de 1,000 pedidos diarios con un 2% de margen de error (20 pedidos equivocados al día) a un costo promedio de $600 MXN por incidencia, el almacén pierde más de <strong>$288,000 MXN mensuales</strong> únicamente por errores humanos en el surtido.
+                    </div>
+                </section>
+
+                <section>
+                    <h2>2. Principales Causas de Discrepancias en el Picking</h2>
+                    <p>
+                        Para resolver el problema, primero es indispensable identificar en qué fase de la preparación del pedido se origina la falla:
+                    </p>
+                    <ol>
+                        <li><strong>Confusión de productos similares (SKUs parecidos):</strong> Artículos con empaques idénticos o variaciones mínimas de tamaño, color o especificación técnica que el ojo humano confunde con facilidad.</li>
+                        <li><strong>Ubicaciones desorganizadas o sin señalización:</strong> Si dos productos diferentes comparten la misma posición en rack sin separación física ni código de barra de ubicación, el operario suele tomar el producto erróneo.</li>
+                        <li><strong>Conteo incorrecto de piezas:</strong> Errores en pedidos de mayoreo o empaques secundarios (por ejemplo, enviar 10 unidades en lugar de 12, o confundir cajas con piezas individuales).</li>
+                        <li><strong>Fatiga y saturación en horas pico:</strong> Durante temporadas de alta demanda (Hot Sale, Buen Fin, cierre de mes), el estrés y la prisa aumentan la tasa de errores de lectura en papel hasta en un 300%.</li>
+                        <li><strong>Desfase en la actualización del inventario:</strong> Si el sistema no descuenta la mercancía en tiempo real, dos surtidores pueden acudir a la misma tarima por un producto que ya no existe físicamente.</li>
+                    </ol>
+                </section>
+
+                <section>
+                    <h2>3. Comparativa: Picking Manual vs Picking Guiado con Tecnología AIDC</h2>
+                    <p>
+                        La diferencia entre depender del criterio humano y contar con un flujo guiado y validado por hardware industrial se refleja directamente en los indicadores de rendimiento (KPIs):
+                    </p>
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Parámetro</th>
+                                <th>Picking Tradicional (Papel)</th>
+                                <th>Picking con Código de Barras y WMS</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Nivel de Precisión</strong></td>
+                                <td>96.5% - 98.0%</td>
+                                <td><strong>99.8% - 99.95%</strong></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Validación</strong></td>
+                                <td>Inspección visual humana</td>
+                                <td>Escaneo obligatorio de ubicación y SKU</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Ruta de Recorrido</strong></td>
+                                <td>Aleatoria o según memoria del picker</td>
+                                <td>Optimizada en ruta serpiente o menor distancia</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Actualización de Stock</strong></td>
+                                <td>Diferida (captura al final del turno)</td>
+                                <td><strong>Inmediata en tiempo real</strong> en WMS/ERP</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Curva de Capacitación</strong></td>
+                                <td>2 a 4 semanas para conocer el almacén</td>
+                                <td>1 a 2 días con interfaz táctil intuitiva</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+
+                <section>
+                    <h2>4. Estrategia en 4 Pasos para Eliminar Errores de Surtido</h2>
+                    <p>
+                        Para transformar la operación de tu centro de distribución sin detener las actividades diarias, recomendamos seguir una implementación por fases:
+                    </p>
+                    
+                    <h3>Paso 1: Etiquetado de Precisión en Ubicaciones y Productos</h3>
+                    <p>
+                        Ningún sistema inteligente funciona sin una identificación clara. Cada posición de rack, estante o pasillo debe contar con una etiqueta de código de barras resistente a condiciones industriales (humedad, polvo o bajas temperaturas). Conoce las opciones recomendadas en nuestra sección de <a href="/productos/impresoras-de-etiquetas">impresoras de etiquetas industriales</a> y consumibles específicos.
+                    </p>
+
+                    <h3>Paso 2: Dotar a los Operadores de Terminales Portátiles Robustas</h3>
+                    <p>
+                        Reemplaza las hojas impresas por <a href="/productos/computadoras-para-almacen">computadoras para almacén y terminales móviles Android</a> de uso rudo (Zebra, Honeywell, Newland). Estos equipos cuentan con lectores de alto alcance que permiten validar códigos 1D y 2D a nivel de piso o en posiciones altas de rack sin esfuerzo, emitiendo una alerta sonora y visual si el operario escanea un producto incorrecto.
+                    </p>
+
+                    <h3>Paso 3: Implementar Picking Guiado mediante Software WMS</h3>
+                    <p>
+                        Un sistema de gestión de almacén (<a href="/productos/sistemas-gestion-almacen-wms">Software WMS</a>) ordena los pedidos por lotes, zonas o rutas óptimas, reduciendo hasta un 40% las caminatas innecesarias del personal. El sistema no permite avanzar al siguiente artículo hasta que el lector confirme que se tomó el código correcto en la cantidad requerida.
+                    </p>
+
+                    <h3>Paso 4: Auditoría de Empaque y Despacho con Escaneo de Salida</h3>
+                    <p>
+                        Como último filtro de seguridad antes del embarque, la estación de empaque o packing realiza una segunda verificación rápida mediante <a href="/productos/escaneres-codigo-barras">escáneres de código de barras fijos o de mano</a>. El sistema imprime automáticamente la guía de paquetería y el albarán solo si el peso y el contenido coinciden al 100%.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>5. El Rol de la Tecnología RFID en Almacenes de Alto Volumen</h2>
+                    <p>
+                        En centros de distribución donde se manejan miles de piezas por hora y el escaneo individual línea por línea representa un cuello de botella, la tecnología de identificación por radiofrecuencia (<a href="/productos/tecnologia-rfid">tecnología RFID</a>) permite verificar el contenido de un pallet o caja completa en milisegundos a su paso por un arco o portal lector, sin necesidad de contacto visual directo con la etiqueta.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>Transforma la Precisión de tu Almacén con TiKendo</h2>
+                    <p>
+                        En <strong>TiKendo</strong> diseñamos soluciones integrales de automatización para almacenes y centros logísticos en México: desde la asesoría e integración de software WMS hasta el suministro de terminales móviles, escáneres e impresoras Zebra garantizadas.
+                    </p>
+                    <p>
+                        ¿Quieres evaluar la tasa de error actual de tu operación y conocer el retorno de inversión de una solución AIDC? <a href="/contacto">Contáctanos hoy mismo para agendar un diagnóstico operativo sin compromiso</a> o consulta nuestros <a href="/servicios">servicios de integración tecnológica</a>.
+                    </p>
+                </section>
+            </div>
+
+            <footer class="post-footer">
+                <div class="post-tags">
+                    <span>Picking</span>
+                    <span>WMS</span>
+                    <span>Código de Barras</span>
+                    <span>Optimización Logística</span>
+                    <span>Terminales Móviles</span>
+                </div>
+
+                <!-- ARTÍCULOS Y RECURSOS RELACIONADOS -->
+                <div class="related-posts-section">
+                    <h3>Recursos y Artículos Relacionados</h3>
+                    <div class="related-posts-grid">
+                        <a href="/blog/guia-seleccion-wms" class="related-post-card">
+                            <span class="rel-tag">Artículo</span>
+                            <p class="rel-title">Guía para Seleccionar el WMS Adecuado para tu Almacén →</p>
+                        </a>
+                        <a href="/productos/computadoras-para-almacen" class="related-post-card">
+                            <span class="rel-tag">Producto</span>
+                            <p class="rel-title">Terminales Móviles y Computadoras para Almacén →</p>
+                        </a>
+                        <a href="/productos/sistemas-gestion-almacen-wms" class="related-post-card">
+                            <span class="rel-tag">Producto</span>
+                            <p class="rel-title">Software WMS y Soluciones de Gestión de Almacén →</p>
+                        </a>
+                        <a href="/servicios" class="related-post-card">
+                            <span class="rel-tag">Servicio</span>
+                            <p class="rel-title">Consultoría y Pólizas de Soporte AIDC en México →</p>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="post-navigation">
+                    <a href="/blog/" class="btn-back">← Volver al Blog</a>
+                </div>
+            </footer>
+        </article>
+    </main>
+
+    <!-- CTA / FOOTER -->
+    <section class="cta-section">
+        <div class="container text-center">
+            <h2 class="cta-title">¿Listo para optimizar la logística de tu almacén?</h2>
+            <p class="cta-desc">Solicita una asesoría sin costo con nuestros consultores expertos en tecnología para almacenes.</p>
+            <a href="/contacto" class="btn btn-base">Agendar Diagnóstico</a>
+        </div>
+    </section>
+
+    <!-- footer area start -->
+    <footer class="footer-area">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-footer-top">
+                            <div class="icon"><img src="../assets/img/icon/map-marker.webp"
+                                    alt="Ubicación oficinas TiKendo en Estado de México"
+                                    width="33" height="45" loading="lazy" decoding="async">
+                            </div>
+                            <div class="details">
+                                <h3 class="widget-h6-title">DIRECCIÓN:</h3>
+                                <p>Blvd. Solidaridad las Torres,</p>
+                                <p>Álvaro Obregón, 52100 San Mateo Atenco, Méx.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-footer-top">
+                            <div class="icon"><img src="../assets/img/icon/phone.webp"
+                                    alt="Teléfonos de contacto TiKendo" width="28" height="45" loading="lazy"
+                                    decoding="async"></div>
+                            <div class="details">
+                                <h3 class="widget-h6-title">CONTÁCTANOS</h3>
+                                <p>+52 55 1328 7995</p>
+                                <p>+52 722 326 0677</p>
+                                <p>automatizaciondealmacen@tikendo.mx</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-footer-top after-none">
+                            <div class="icon"><img src="../assets/img/icon/clock.webp"
+                                    alt="Horarios de atención TiKendo" width="44" height="43" loading="lazy"
+                                    decoding="async"></div>
+                            <div class="details">
+                                <h3 class="widget-h6-title">HORARIOS DE ATENCIÓN</h3>
+                                <p>Lunes a Viernes</p>
+                                <p>9:00 hrs a 18:00 hrs.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="footer-bottom-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 text-lg-start text-center">
+                    <p>&copy; Copyright 2026 By <a href="https://tikendo.com.mx">Tikendo S.A. de C.V.</a>, Todos los
+                        derechos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="back-to-top"><span class="back-top"><i class="fa fa-angle-up"></i></span></div>
+
+    <script src="../assets/js/vendor.js" defer></script>
+    <script src="../assets/js/main.js" defer></script>
+
+    <script>
+        // Scroll progress bar
+        window.addEventListener('scroll', () => {
+            const scrolled = (window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100;
+            const bar = document.getElementById('scrollProgress');
+            if (bar) bar.style.width = scrolled + '%';
+        });
+
+        // Back to top button
+        const backToTop = document.querySelector('.back-to-top');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                backToTop.classList.add('show');
+            } else {
+                backToTop.classList.remove('show');
+            }
+        });
+        backToTop.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+    <!-- GA4 Eventos automáticos -->
+    <script src="../assets/js/analytics-events.js" defer></script>
+</body>
+
+</html>
