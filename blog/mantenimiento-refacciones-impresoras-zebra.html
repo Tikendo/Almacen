@@ -81,6 +81,56 @@
       "mainEntityOfPage": "https://automatizaciondealmacen.com/blog/mantenimiento-refacciones-impresoras-zebra"
     }
     </script>
+
+    <style>
+        .related-posts-section {
+            margin-top: 40px;
+            padding-top: 30px;
+            border-top: 1px solid var(--border-color, #e2e8f0);
+        }
+        .related-posts-section h3 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--text-primary, #0f172a);
+            margin-bottom: 20px;
+        }
+        .related-posts-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 16px;
+        }
+        .related-post-card {
+            display: block;
+            padding: 16px 20px;
+            background: var(--card-bg, #f8fafc);
+            border: 1px solid var(--border-color, #e2e8f0);
+            border-radius: 10px;
+            text-decoration: none;
+            transition: transform 0.2s, border-color 0.2s, box-shadow 0.2s;
+        }
+        .related-post-card:hover {
+            transform: translateY(-2px);
+            border-color: var(--primary, #0284c7);
+            box-shadow: 0 4px 12px rgba(2, 132, 199, 0.1);
+        }
+        .related-post-card .rel-tag {
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--primary, #0284c7);
+            display: block;
+            margin-bottom: 6px;
+        }
+        .related-post-card .rel-title {
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: var(--text-primary, #0f172a);
+            line-height: 1.4;
+            margin: 0;
+        }
+    </style>
+    
 </head>
 
 <body>
@@ -234,6 +284,26 @@
                     <span>Ribbons</span>
                     <span>Mantenimiento Preventivo</span>
                 </div>
+                
+            <!-- ARTÍCULOS Y RECURSOS RELACIONADOS -->
+            <div class="related-posts-section">
+                <h3>Recursos y Artículos Relacionados</h3>
+                <div class="related-posts-grid">
+                    <a href="/productos/impresoras-de-etiquetas" class="related-post-card">
+                        <span class="rel-tag">Producto</span>
+                        <p class="rel-title">Impresoras de Etiquetas Industriales y de Escritorio →</p>
+                    </a>
+                    <a href="/productos/suministros-y-refacciones" class="related-post-card">
+                        <span class="rel-tag">Producto</span>
+                        <p class="rel-title">Refacciones Originales Zebra, Cabezales y Rodillos →</p>
+                    </a>
+                    <a href="/servicios" class="related-post-card">
+                        <span class="rel-tag">Servicio</span>
+                        <p class="rel-title">Soporte Técnico y Pólizas de Mantenimiento AIDC →</p>
+                    </a>
+                </div>
+            </div>
+    
                 <div class="post-navigation">
                     <a href="/blog/" class="btn-back">← Volver al Blog</a>
                 </div>
