@@ -9,7 +9,7 @@ Sitio web corporativo y plataforma de generación de leads B2B para soluciones d
 
 ---
 
-## 🏗️ Arquitectura Técnica y Estructura de Silos (SEO Silo Architecture)
+## Arquitectura Técnica y Estructura de Silos (SEO Silo Architecture)
 
 Para maximizar el posicionamiento en Google y evitar la canibalización de palabras clave, el sitio implementa una **Arquitectura de Silos Temáticos Estrictos** (*Thematic Topic Clusters*).
 
@@ -34,7 +34,7 @@ La arquitectura de silos organiza los contenidos del sitio web en grupos semánt
 
 ---
 
-## 📂 Mapa de URLs y Clusters Temáticos
+## Mapa de URLs y Clusters Temáticos
 
 ### 1. Núcleo Institucional y Transaccional (Nivel 0 / 1)
 - `/` — *Landing Page Principal*: Enfoque en automatización logística general e intención de marca.
@@ -70,7 +70,7 @@ Artículos de autoridad de contenido y palabras clave *long-tail* informacionale
 
 ---
 
-## 🎯 Guía de Práctica Correcta (Best Practices) para la Estructura de Silos
+## Guía de Práctica Correcta (Best Practices) para la Estructura de Silos
 
 Para mantener la efectividad del SEO y evitar diluir la autoridad de las URLs, se deben seguir estas reglas estrictas al crear o editar páginas:
 
@@ -98,7 +98,7 @@ Cada tipo de página debe contar con su esquema correspondiente:
 
 ---
 
-## 🚀 Despliegue y Flujo de Trabajo (Git Workflow)
+## Despliegue y Flujo de Trabajo (Git Workflow)
 
 - **Rama de Producción:** `production`
 - **Host / Servidor:** Apache / Docker en entorno productivo.
