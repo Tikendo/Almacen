@@ -994,3 +994,75 @@ p,
     margin-top: 20px !important;
 }
 
+
+
+/* --- Related Posts Section Enhanced Design --- */
+.related-posts-section {
+    margin-top: 50px;
+    padding-top: 30px;
+    border-top: 2px solid #e2e8f0;
+}
+
+.related-posts-section h3 {
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 24px;
+}
+
+.related-posts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+}
+
+.related-post-card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-decoration: none !important;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.related-post-card:hover {
+    transform: translateY(-4px);
+    border-color: #ff5722;
+    box-shadow: 0 12px 24px -6px rgba(255, 87, 34, 0.15);
+}
+
+.related-post-card .rel-tag {
+    background: #f1f5f9;
+    color: #ff5722;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 4px 10px;
+    border-radius: 6px;
+    width: fit-content;
+    margin-bottom: 14px;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+.related-post-card:hover .rel-tag {
+    background: #ff5722;
+    color: #ffffff;
+}
+
+.related-post-card .rel-title {
+    font-size: 0.98rem;
+    font-weight: 600;
+    color: #1e293b;
+    margin: 0;
+    line-height: 1.45;
+    transition: color 0.2s ease;
+}
+
+.related-post-card:hover .rel-title {
+    color: #ff5722;
+}
