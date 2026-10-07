@@ -1,6 +1,7 @@
 services:
   app:
     image: php:8.2-apache
+    restart: unless-stopped
     ports:
       - "3005:80"
     volumes:
@@ -16,6 +17,7 @@ services:
 
   almacen-old:
     image: php:8.2-apache
+    restart: unless-stopped
     ports:
       - "3008:80"
     volumes:
