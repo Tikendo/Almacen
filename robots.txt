@@ -42,3 +42,6 @@ Allow: /
 
 # Sitemap principal
 Sitemap: https://automatizaciondealmacen.com/sitemap.xml
+
+# Archivo de contexto semántico para Modelos de Lenguaje (LLMs)
+# https://automatizaciondealmacen.com/llms.txt

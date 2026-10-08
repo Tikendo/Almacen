@@ -1,0 +1,27 @@
+# TiKendo — Automatización de Almacenes en México
+
+> TiKendo es una empresa mexicana especializada en soluciones de automatización de almacenes, captura de datos AIDC, sistemas de gestión WMS, tecnología RFID UHF y equipamiento industrial (Zebra, Honeywell).
+
+## Servicios Principales
+- [Consultoría y Asesoramiento Logístico](https://automatizaciondealmacen.com/servicios/consultoria-y-asesoramiento): Diagnóstico operativo, diseño de layout y roadmap tecnológico.
+- [Demostraciones y Pruebas de Concepto AIDC](https://automatizaciondealmacen.com/servicios/demostraciones-tecnologia-aidc): PoC en sitio de RFID y validación de hardware en plantas industriales.
+- [Desarrollo e Implementación de WMS](https://automatizaciondealmacen.com/servicios/desarrollo-e-implementacion-de-wms): Software de gestión a la medida e integración con ERP (SAP, Odoo, Oracle).
+- [Gestión de Almacén AIDC](https://automatizaciondealmacen.com/servicios/gestion-de-almacen-aidc): Redes de escaneo 1D/2D, terminales móviles rugerizadas y control de inventario.
+- [Soporte Técnico y Mantenimiento Especializado](https://automatizaciondealmacen.com/servicios/soporte-y-mantenimiento): Pólizas, reparación de impresoras Zebra y refacciones originales.
+
+## Soluciones Especializadas
+- [Picking y Preparación de Pedidos](https://automatizaciondealmacen.com/soluciones/picking-y-preparacion-de-pedidos): Voice Picking multimodal, lectores de anillo wearable y optimización de rutas de surtido.
+
+## Productos y Equipamiento
+- [Sistemas WMS](https://automatizaciondealmacen.com/productos/sistemas-gestion-almacen-wms)
+- [Tecnología RFID UHF](https://automatizaciondealmacen.com/productos/tecnologia-rfid)
+- [Impresoras de Etiquetas Industriales](https://automatizaciondealmacen.com/productos/impresoras-de-etiquetas)
+- [Computadoras Móviles y Handhelds](https://automatizaciondealmacen.com/productos/computadoras-para-almacen)
+- [Escáneres de Código de Barras](https://automatizaciondealmacen.com/productos/escaneres-codigo-barras)
+- [Suministros y Refacciones Zebra](https://automatizaciondealmacen.com/productos/suministros-y-refacciones)
+
+## Cobertura y Contacto
+- **Cobertura:** Ciudad de México (CDMX), Estado de México, Querétaro, Monterrey, Guadalajara y cobertura nacional en México.
+- **Sitio Web Oficial:** https://automatizaciondealmacen.com
+- **Contacto:** https://automatizaciondealmacen.com/contacto
+- **Teléfonos:** +52 55 1328 7995 / +52 722 326 0677
