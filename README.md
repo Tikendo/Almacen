@@ -23,7 +23,7 @@ La arquitectura de silos organiza los contenidos del sitio web en grupos semánt
          ┌───────────────────────┬───────────┴───────────┬───────────────────────┐
          ▼                       ▼                       ▼                       ▼
  [ SILO: PRODUCTOS ]    [ SILO: SOLUCIONES ]    [ SILO: SERVICIOS ]       [ SILO: BLOG ]
-   (/productos/*)         (/soluciones/*)          (/servicios)              (/blog/*)
+   (/productos/*)         (/soluciones/*)          (/servicios/*)            (/blog/*)
    - WMS                  - Picking y Surtido      - Consultoría            - Guías Selección
    - RFID                 - Inventarios (Fase 2)   - Implementación         - Casos de Uso
    - Computadoras         - Recepción (Fase 2)     - Soporte Postventa      - Picking y Errores
@@ -48,8 +48,14 @@ Toda carpeta dentro de la estructura del proyecto debe contener obligatoriamente
 Almacen/
 ├── index.html              (Home principal / Nivel 0)
 ├── nosotros.html
-├── servicios.html
-├── soluciones.html
+├── servicios/              (Carpeta Silo Servicios)
+│   ├── index.html          (Hub de servicios /servicios/)
+│   ├── gestion-de-almacen-aidc.html
+│   ├── desarrollo-e-implementacion-de-wms.html
+│   ├── soporte-y-mantenimiento.html
+│   ├── consultoria-y-asesoramiento.html
+│   └── demostraciones-tecnologia-aidc.html
+├── soluciones/             (Carpeta Silo Soluciones)
 ├── contacto.html
 ├── faq.html
 ├── sitemap.xml
@@ -82,7 +88,7 @@ Almacen/
 ### 1. Núcleo Institucional y Transaccional (Nivel 0 / 1)
 - `/` — Landing Page Principal: Enfoque en automatización logística general e intención de marca.
 - `/nosotros` — Autoridad y Confianza: Quiénes somos, certificaciones y trayectoria en México.
-- `/servicios` — Servicios de Integración: Consultoría, diagnóstico de almacén, implementación y soporte.
+- `/servicios/` — Servicios de Integración: Consultoría, diagnóstico de almacén, implementación y soporte (hub del silo en `servicios/index.html`).
 - `/soluciones` — Soluciones por Industria: Logística, e-commerce, manufactura y retail.
 - `/contacto` — Conversión directa: Formulario de cotización y diagnóstico de almacén sin costo.
 - `/faq` — Preguntas Frecuentes: Respuestas a dudas operativas, de precios y tiempos.
@@ -122,6 +128,7 @@ Almacen/
 - **`<title>`:** Rango óptimo entre **45 y 62 caracteres**. Estructura: `Palabra Clave Principal en México | TiKendo`.
 - **`<meta name="description">`:** Rango óptimo entre **120 y 155 caracteres**, con llamada a la acción clara.
 - **`<link rel="canonical">`:** Obligatoria en cada archivo HTML con URL absoluta oficial sin extensión `.html` (excepto `index.html` que apunta con barra final si es directorio).
+- **301 de hub de silo:** El `index.html` de cada silo (`blog/`, `productos/`, `servicios/`, `soluciones/`) solo debe existir en la URL con barra final. El `.htaccess` colapsa todas las variantes (`/servicios`, `/servicios.html`, `/servicios/index.html`, `/servicios/index`) en **un solo 301** a la URL canónica. Al crear un silo nuevo, agregar su nombre a la regla `^(blog|productos|servicios|soluciones)/index(\.html)?$ /$1/` y mover el `index.html` dentro de la carpeta.
 
 ### Regla 3: Datos Estructurados (Schema.org / JSON-LD)
 - **Productos/Servicios:** `Product`, `Service`, `FAQPage`.

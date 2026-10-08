@@ -17,12 +17,18 @@ RewriteRule ^sistemas-gestion-almacen-wms(\.html)?$ /productos/sistemas-gestion-
 RewriteRule ^suministros-y-refacciones(\.html)?$ /productos/suministros-y-refacciones [R=301,L]
 RewriteRule ^tecnologia-rfid(\.html)?$ /productos/tecnologia-rfid [R=301,L]
 
-# Consolidación del Blog y Productos index
+# Consolidación del Blog, Servicios, Productos y Soluciones index
 RewriteRule ^blog\.html$ /blog/ [R=301,L]
+RewriteRule ^servicios(\.html)?$ /servicios/ [R=301,L]
 RewriteRule ^productos\.html$ /productos/ [R=301,L]
 RewriteRule ^soluciones\.html$ /soluciones/ [R=301,L]
 
-# Forzar trailing slash en directorios físicos (/blog/ y /productos/)
+# Cada hub de silo se sirve solo en su URL canónica con barra final.
+# Sin esto, /blog/index.html, /productos/index.html, /servicios/index.html y
+# /soluciones/index.html responden 200 en duplicado del hub.
+RewriteRule ^(blog|productos|servicios|soluciones)/index(\.html)?$ /$1/ [R=301,L]
+
+# Forzar trailing slash en directorios físicos (/blog/, /productos/, /servicios/ y /soluciones/)
 DirectoryIndex index.html index.php
 
 # Redirigir URLs con .html a la versión sin extensión (301 permanente para el resto)
